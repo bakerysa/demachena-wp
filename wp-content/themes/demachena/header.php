@@ -11,9 +11,29 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-<link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+<title>Dema-Chena</title>
+<link rel="icon" type="image/png" href="images/favicon.png?v=3" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#162d1c">
+<meta name="description" content="Dema Chena creates unique, artisanal, luxurious womenswear. Inspired by Africa, designed and made in Africa.">
+<meta name="keywords" content="dema-chean, dema, chena, african, fashion, womenswear">
+
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="bower_components/lightcase/src/css/lightcase.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">
+
+<meta property="og:url"                content="http://dema-chena.com" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="Dema-Chena" />
+<meta property="og:description"        content="Helping you go from day to night. Black to white. Dema to Chena." />
+<meta property="og:image"              content="http://dema-chena.com/fb.jpg" />
 
 <?php wp_head(); ?>
 </head>

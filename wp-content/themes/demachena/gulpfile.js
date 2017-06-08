@@ -29,21 +29,21 @@
 
 // START Editing Project Variables.
 // Project related.
-var project                 = 'WPGulpTheme'; // Project Name.
-var projectURL              = 'wpgulp.dev'; // Project URL. Could be something like localhost:8888.
+var project                 = 'Dema-Chena'; // Project Name.
+var projectURL              = 'localhost/bakery/wordpress/demachena-wp'; // Project URL. Could be something like localhost:8888.
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 // Translation related.
 var text_domain             = 'WPGULP'; // Your textdomain here.
 var destFile                = 'WPGULP.pot'; // Name of the transalation file.
 var packageName             = 'WPGULP'; // Package name.
-var bugReport               = 'https://AhmadAwais.com/contact/'; // Where can users report bugs.
-var lastTranslator          = 'Ahmad Awais <your_email@email.com>'; // Last translator Email ID.
-var team                    = 'WPTie <your_email@email.com>'; // Team's Email ID.
+var bugReport               = 'https://bakery.co.za'; // Where can users report bugs.
+var lastTranslator          = 'Byron Polley <byron@bakery.co.za>'; // Last translator Email ID.
+var team                    = 'Bakery <hello@bakery.co.za>'; // Team's Email ID.
 var translatePath           = './languages' // Where to save the translation files.
 
 // Style related.
-var styleSRC                = './assets/css/style.scss'; // Path to main .scss file.
+var styleSRC                = './assets/sass/style.scss'; // Path to main .scss file.
 var styleDestination        = './'; // Path to place the compiled CSS file.
 // Defualt set to root folder.
 
