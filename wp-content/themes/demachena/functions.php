@@ -22,5 +22,8 @@ function sf_child_theme_dequeue_style() {
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
-
-
+ 
+ add_action( 'wp_head', 'remove_my_action' );
+ function remove_my_action(){
+ 	remove_action( 'wp_footer', 'function_being_removed' );
+ }

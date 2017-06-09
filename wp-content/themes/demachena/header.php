@@ -37,7 +37,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'theme-green' ); ?>>
 <div id="page" class="hfeed site">
 	<?php
 	do_action( 'storefront_before_header' ); ?>
@@ -51,7 +51,7 @@
     <nav class="nav" role="navigation">
       <ul>
         <li><span><a href="about.html">About</a></span></li>
-        <li><span class="active"><a href="lookbook.html">Lookbook</a></span></li>
+        <li><span><a href="lookbook.html">Lookbook</a></span></li>
         <li><span><a href="shop.html">Shop</a></span></li>
         <li><span><a href="contact.html">Contact</a></span></li>
       </ul>
