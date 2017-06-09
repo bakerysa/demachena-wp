@@ -1,69 +1,26 @@
 <?php
+
 /**
- * Storefront engine room
+ * Storefront automatically loads the core CSS even if using a child theme as it is more efficient
+ * than @importing it in the child theme style.css file.
  *
- * @package storefront
+ * Uncomment the line below if you'd like to disable the Storefront Core CSS.
+ *
+ * If you don't plan to dequeue the Storefront Core CSS you can remove the subsequent line and as well
+ * as the sf_child_theme_dequeue_style() function declaration.
  */
+//add_action( 'wp_enqueue_scripts', 'sf_child_theme_dequeue_style', 999 );
 
 /**
- * Assign the Storefront version to a var
+ * Dequeue the Storefront Parent theme core CSS
  */
-$theme              = wp_get_theme( 'storefront' );
-$storefront_version = $theme['Version'];
-
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 980; /* pixels */
-}
-
-$storefront = (object) array(
-	'version' => $storefront_version,
-
-	/**
-	 * Initialize all the things.
-	 */
-	'main'       => require 'inc/class-storefront.php',
-	'customizer' => require 'inc/customizer/class-storefront-customizer.php',
-);
-
-require 'inc/storefront-functions.php';
-require 'inc/storefront-template-hooks.php';
-require 'inc/storefront-template-functions.php';
-
-if ( class_exists( 'Jetpack' ) ) {
-	$storefront->jetpack = require 'inc/jetpack/class-storefront-jetpack.php';
-}
-
-if ( storefront_is_woocommerce_activated() ) {
-	$storefront->woocommerce = require 'inc/woocommerce/class-storefront-woocommerce.php';
-
-	require 'inc/woocommerce/storefront-woocommerce-template-hooks.php';
-	require 'inc/woocommerce/storefront-woocommerce-template-functions.php';
-}
-
-if ( is_admin() ) {
-	$storefront->admin = require 'inc/admin/class-storefront-admin.php';
-
-	require 'inc/admin/class-storefront-plugin-install.php';
+function sf_child_theme_dequeue_style() {
+    wp_dequeue_style( 'storefront-style' );
+    wp_dequeue_style( 'storefront-woocommerce-style' );
 }
 
 /**
- * NUX
- * Only load if wp version is 4.7.3 or above because of this issue;
- * https://core.trac.wordpress.org/ticket/39610?cversion=1&cnum_hist=2
+ * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
-if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin() || is_customize_preview() ) ) {
-	require 'inc/nux/class-storefront-nux-admin.php';
-	require 'inc/nux/class-storefront-nux-guided-tour.php';
 
-	if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '3.0.0', '>=' ) ) {
-		require 'inc/nux/class-storefront-nux-starter-content.php';
-	}
-}
 
-/**
- * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
- * https://github.com/woocommerce/theme-customisations
- */
