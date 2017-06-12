@@ -39,7 +39,7 @@ li{list-style:none}
 .current-menu-item span:before{width:105%;-webkit-transition:width .5s cubic-bezier(0.22,0.61,0.36,1);transition:width .5s cubic-bezier(0.22,0.61,0.36,1)}
 .current-menu-item span:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .desktop-hide{display:none}
-.landing-grid{position:absolute;left:10rem;right:10rem;top:16rem;bottom:16rem}
+.landing-grid{height:100%;width:100%;position:absolute;left:10rem;right:10rem;top:16rem;bottom:16rem}
 .left-container{width:50%;float:left}
 .left-container,.left-container .left-contents{position:relative;height:100%}
 .left-container .left-contents:before{display:block;content:"";width:100%;padding-top:136.8%}

@@ -9,44 +9,36 @@
  *
  * Template name: Landing
  *
- * @package storefront
+ * @package demachena
  */
 
-get_header(); ?>
+get_header('landing'); ?>
 
 	<div id="primary" class="content-area">
 		<main class="main" role="main">
-
-			<header class="header">
-	      <div class="logo mobile-logo">
-	        <a href="/">
-	          <img src="images/logo-v2-light.png" alt="Logo">
-	        </a>
-	      </div>
-	    </header>
 
 	    <div class="desktop-hide">
 	      <div id="myCarousel" class="carousel slide" data-ride="carousel">
 	      <div class="carousel-inner">
 	        <div class="item active">
-	          <img src="images/landing/1.jpg">
+	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/1.jpg">
 	        </div>
 	        <div class="item">
-	          <img src="images/landing/2.jpg">
+	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/2.jpg">
 	        </div>
 	        <div class="item">
-	          <img src="images/landing/3.jpg">
+	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/3.jpg">
 	        </div>
 	        <div class="item">
-	          <img src="images/landing/4.jpg">
-	        </div>
-
-	        <div class="item">
-	          <img src="images/landing/5.jpg">
+	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/4.jpg">
 	        </div>
 
 	        <div class="item">
-	          <img src="images/landing/6.jpg">
+	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/5.jpg">
+	        </div>
+
+	        <div class="item">
+	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/6.jpg">
 	        </div>
 	      </div>
 	    </div>
@@ -59,15 +51,15 @@ get_header(); ?>
 	              <div id="carousel-1" class="carousel slide" data-ride="carousel">
 	                <div class="carousel-inner">
 	                  <div class="item active">
-	                    <img src="images/landing/1.jpg">
+	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/1.jpg">
 	                  </div>
 
 	                  <div class="item">
-	                    <img src="images/landing/3.jpg">
+	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/3.jpg">
 	                  </div>
 
 	                  <div class="item">
-	                    <img src="images/landing/5.jpg">
+	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/5.jpg">
 	                  </div>
 	                </div>
 	              </div>
@@ -80,15 +72,15 @@ get_header(); ?>
 	              <div id="carousel-2" class="carousel slide" data-ride="carousel">
 	              <div class="carousel-inner">
 	                <div class="item active">
-	                  <img src="images/landing/2.jpg">
+	                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/2.jpg">
 	                </div>
 
 	                <div class="item">
-	                  <img src="images/landing/4.jpg">
+	                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/4.jpg">
 	                </div>
 
 	                <div class="item">
-	                  <img src="images/landing/6.jpg">
+	                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/6.jpg">
 	                </div>
 	              </div>
 	            </div>
@@ -98,10 +90,10 @@ get_header(); ?>
 	      </div>
 
 	      <div class="landing-link">
-	        <span><a href="about.html">Enter</a></span>
+	        <span><a href="about">Enter</a></span>
 	      </div>
 
 	  </main>
 	</div><!-- #primary -->
 <?php
-get_footer();
+get_footer('alt');

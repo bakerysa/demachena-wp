@@ -12,7 +12,7 @@
  * @package storefront
  */
 
-get_header(); ?>
+get_header( 'alt' ); ?>
 
 	<div id="primary" class="content-area">
 		<main class="main" role="main">
