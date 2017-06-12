@@ -48,14 +48,15 @@
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-v2-light.png" alt="Logo">
         </a>
     </div>
-    <nav class="nav" role="navigation">
+		<?php wp_nav_menu() ?>
+    <!-- <nav class="nav" role="navigation">
       <ul>
         <li><span><a href="about.html">About</a></span></li>
         <li><span><a href="lookbook.html">Lookbook</a></span></li>
         <li><span><a href="shop.html">Shop</a></span></li>
         <li><span><a href="contact.html">Contact</a></span></li>
       </ul>
-    </nav>
+    </nav> -->
 	</header><!-- #masthead -->
 
 	<?php
