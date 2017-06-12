@@ -61,6 +61,16 @@ $('#myCarousel').on('slid.bs.carousel', function() {
 </script>
 
 <script>
+$('#carousel-1').carousel({
+		interval: 5500
+});
+
+$('#carousel-2').carousel({
+		interval: 3000
+});
+</script>
+
+<script>
 	if ('addEventListener' in document) {
 		document.addEventListener('DOMContentLoaded', function() {
 			FastClick.attach(document.body);

@@ -34,8 +34,10 @@ li{list-style:none}
 .nav span:after,.nav span:before{content:"";position:absolute;width:0;height:3px;top:44%}
 .nav span:before{left:-2.5px}
 .nav span:after{right:2.5px;-webkit-transition:width .8s cubic-bezier(0.22,0.61,0.36,1);transition:width .8s cubic-bezier(0.22,0.61,0.36,1)}
-.nav span.active:before,.nav span:hover:before{width:105%;-webkit-transition:width .5s cubic-bezier(0.22,0.61,0.36,1);transition:width .5s cubic-bezier(0.22,0.61,0.36,1)}
-.nav span:hover:after span.active:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
+.nav span:hover:before{width:105%;-webkit-transition:width .5s cubic-bezier(0.22,0.61,0.36,1);transition:width .5s cubic-bezier(0.22,0.61,0.36,1)}
+.nav span:hover:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
+.current-menu-item span:before{width:105%;-webkit-transition:width .5s cubic-bezier(0.22,0.61,0.36,1);transition:width .5s cubic-bezier(0.22,0.61,0.36,1)}
+.current-menu-item span:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .desktop-hide{display:none}
 .landing-grid{position:absolute;left:10rem;right:10rem;top:16rem;bottom:16rem}
 .left-container{width:50%;float:left}

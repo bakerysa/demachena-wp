@@ -22,8 +22,17 @@ function sf_child_theme_dequeue_style() {
 /**
  * Note: DO NOT! alter or remove the code above this text and only add your custom PHP functions below this text.
  */
- 
+
  add_action( 'wp_head', 'remove_my_action' );
  function remove_my_action(){
  	remove_action( 'wp_footer', 'function_being_removed' );
+ }
+
+ add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+ function special_nav_class ($classes, $item) {
+     if (in_array('current-menu-item', $classes) ){
+         $classes[] = 'active ';
+     }
+     return $classes;
  }

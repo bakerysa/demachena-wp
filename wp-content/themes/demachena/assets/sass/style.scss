@@ -263,13 +263,23 @@ li {
   transition: width 0.8s cubic-bezier(.22,.61,.36,1);
 }
 
-.nav span.active:before,
 .nav span:hover:before {
   width: 105%;
   transition: width 0.5s cubic-bezier(.22,.61,.36,1);
 }
 
-.nav span:hover:after span.active:after {
+.nav span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.current-menu-item span:before {
+  width: 105%;
+  transition: width 0.5s cubic-bezier(.22,.61,.36,1);
+}
+
+.current-menu-item span:after {
   background: transparent;
   width: 100%;
   transition: 0s;
