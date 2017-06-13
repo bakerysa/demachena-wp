@@ -1,0 +1,141 @@
+@media only screen and (max-width:992px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-previous {
+    margin-left: -15px !important;
+  }
+
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    margin-right: -15px !important;
+  }
+
+  .mobile-hide {
+    display: none!important;
+  }
+
+  .desktop-hide {
+    display: block;
+  }
+
+  .landing-grid {
+    min-height: 1px;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    position: relative;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+
+  .mobile-logo {
+    position: relative;
+    top: 3rem;
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .right-container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .landing-link {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .landing-link a {
+    font-size: 5rem;
+  }
+
+  .landing-link span:after,
+  .landing-link span:before {
+    height: 10px;
+    top: -106%;
+  }
+
+  header {
+    height: 20rem;
+  }
+
+  #mc_embed_signup_scroll .button {
+    width: 35rem;
+  }
+
+  .main {
+    position: relative;
+    left: auto;
+    transform: none;
+    &-landing {
+      height: auto;
+      width: auto;
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 3rem;
+    left: 60%;
+  }
+
+  .nav ul li {
+    display: block;
+    text-align: right;
+    width: 100%;
+    font-size: 1.7rem;
+    line-height: 4.2rem;
+  }
+
+  .nav ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nav span:after,
+  .nav span:before {
+    height: 4px;
+  }
+
+  .nav .fullpage {
+    margin-top: 2rem;
+  }
+
+  .nav .max {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .nav .margin-top {
+    margin-top: 1rem;
+  }
+
+  .num {
+    margin-bottom: 3rem;
+  }
+
+  .contact-details {
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .contact-details .contact-item {
+    line-height: 4rem;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .margin-top {
+    margin-top: 2rem;
+  }
+
+  .btn-subscribe {
+    font-size: 1.2rem;
+    max-width: 20rem;
+  }
+}

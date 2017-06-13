@@ -54,7 +54,7 @@ li{list-style:none}
 .right-container .right-contents img{float:left;display:block;max-height:100%}
 .right-container .right-contents .content{right:auto}
 .carousel,.carousel .carousel-inner,.carousel .carousel-inner .item{height:100%}
-.landing-link{position:absolute;z-index:1;left:50%;bottom:7rem;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+.landing-link{position:absolute;z-index:1;left:50%;bottom:5rem;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
 .landing-link span{position:relative;cursor:pointer;width:inherit;z-index:2}
 .landing-link span:after,.landing-link span:before{content:"";position:absolute;width:0;height:4px;top:-10%}
 .landing-link span:before{left:-2.5px}
@@ -102,6 +102,8 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-100px !important;color:pink !important;font-size:20px !important;width:20px !important;height:20px !important}
 .max{max-width:20rem}
 .item img{width:100%;height:auto}
+#swipebox-overlay{background-color:#152d1b}
+#swipebox-bottom-bar{background:#152d1b}
 @media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-15px !important}
 .mobile-hide{display:none !important}

@@ -22,6 +22,9 @@ Images License: GNU General Public License v2 or later
 /*
  * Add your own custom css below this text.
  */
+
+@import '_variables';
+
 @font-face {
   font-family: FranklinBold;
   src: url("./fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./fonts/FranklinBold.woff) format("woff"),url(./fonts/FranklinBold.ttf) format("truetype"),url(./fonts/FranklinBold.svg#FranklinBold) format("svg");
@@ -101,8 +104,8 @@ li {
 }
 
 .theme-green {
-  background: #152d1b;
-  color: #eeb7b5;
+  background: $dc-color-green;
+  color: $dc-color-pink;
 }
 
 .theme-green .landing-link span.active:before,
@@ -113,35 +116,35 @@ li {
 .theme-green .nav span:after,
 .theme-green .nav span:before,
 .theme-green .nav span:hover:before {
-  background: #eeb7b5;
+  background: $dc-color-pink;
 }
 
 .theme-green .footer .btn-subscribe {
-  color: #eeb7b5;
-  border: 1px solid #eeb7b5;
+  color: $dc-color-pink;
+  border: 1px solid $dc-color-pink;
 }
 
 .theme-green .footer .btn-subscribe:hover {
-  background: #eeb7b5;
-  border: 1px solid #152d1b;
-  color: #152d1b;
+  background: $dc-color-pink;
+  border: 1px solid $dc-color-green;
+  color: $dc-color-green;
 }
 
 .theme-green .footer .fa-facebook,
 .theme-green .footer .fa-instagram,
 .theme-green .footer .fa-twitter {
-  color: #eeb7b5;
+  color: $dc-color-pink;
 }
 
 .theme-green .footer .fa-facebook:hover,
 .theme-green .footer .fa-instagram:hover,
 .theme-green .footer .fa-twitter:hover {
-  color: #ffc8c5;
+  color: $dc-color-pink-light;
 }
 
 .theme-pink {
-  background: #eeb7b5;
-  color: #152d1b;
+  background: $dc-color-pink;
+  color: $dc-color-green;
 }
 
 .theme-pink .landing-link span.active:before,
@@ -152,18 +155,18 @@ li {
 .theme-pink .nav span:after,
 .theme-pink .nav span:before,
 .theme-pink .nav span:hover:before {
-  background: #152d1b;
+  background: $dc-color-green;
 }
 
 .theme-pink .footer .btn-subscribe {
-  color: #152d1b;
+  color: $dc-color-green;
   border: 1px solid #18261b;
 }
 
 .theme-pink .footer .btn-subscribe:hover {
-  background: #152d1b;
+  background: $dc-color-green;
   border: 1px solid #18261b;
-  color: #eeb7b5;
+  color: $dc-color-pink;
 }
 
 .theme-pink .footer .fa-facebook,
@@ -175,7 +178,7 @@ li {
 .theme-pink .footer .fa-facebook:hover,
 .theme-pink .footer .fa-instagram:hover,
 .theme-pink .footer .fa-twitter:hover {
-  color: #224a2c;
+  color: $dc-color-green-light;
 }
 
 .btn-subscribe {
@@ -194,9 +197,9 @@ li {
 }
 
 .btn-subscribe:hover {
-  background: #152d1b;
+  background: $dc-color-green;
   border: 1px solid #18261b;
-  color: #eeb7b5;
+  color: $dc-color-pink;
   outline: none;
 }
 
@@ -383,7 +386,7 @@ li {
   position: absolute;
   z-index: 1;
   left: 50%;
-  bottom: 7rem;
+  bottom: 5rem;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -426,7 +429,7 @@ li {
 }
 
 .landing-link a {
-  color: #eeb7b5;
+  color: $dc-color-pink;
   font-size: 2rem;
   text-align: center;
   font-family: FranklinBold;
@@ -439,7 +442,7 @@ li {
 
 .landing-link a:focus,
 .landing-link a:hover {
-  color: #eeb7b5;
+  color: $dc-color-pink;
 }
 
 p {
@@ -449,8 +452,8 @@ p {
 }
 
 #mc_embed_signup div.mce_inline_error {
-  background-color: #eeb7b5!important;
-  color: #152d1b!important;
+  background-color: $dc-color-pink!important;
+  color: $dc-color-green!important;
 }
 
 #mce-success-response {
@@ -460,7 +463,7 @@ p {
 #mc_embed_signup_scroll h2 {
   margin-bottom: 5rem;
   letter-spacing: 1px;
-  color: #152d1b;
+  color: $dc-color-green;
   font-size: 20px;
   text-transform: uppercase;
   font-family: FranklinBold!important;
@@ -469,15 +472,15 @@ p {
 
 #mc_embed_signup_scroll .mc-field-group {
   text-align: center;
-  color: #152d1b;
+  color: $dc-color-green;
   font-size: 1.6rem;
   font-family: FranklinBold!important;
 }
 
 #mc_embed_signup_scroll input {
-  background: #eeb7b5;
-  border: 1px solid #152d1b;
-  color: #152d1b;
+  background: $dc-color-pink;
+  border: 1px solid $dc-color-green;
+  color: $dc-color-green;
   text-size: 1.6rem;
   text-transform: uppercase;
   border-radius: 0;
@@ -491,16 +494,16 @@ p {
 }
 
 #mc_embed_signup_scroll .button {
-  color: #eeb7b5;
+  color: $dc-color-pink;
   width: 100%;
-  background: #152d1b;
+  background: $dc-color-green;
   line-height: 2rem;
   font-family: FranklinBold;
 }
 
 #mc_embed_signup_scroll .button:hover {
-  color: #152d1b;
-  background: #eeb7b5;
+  color: $dc-color-green;
+  background: $dc-color-pink;
 }
 
 .img-contain {
@@ -511,20 +514,20 @@ p {
 }
 
 ::-webkit-input-placeholder {
-  color: #152d1b;
+  color: $dc-color-green;
   padding-left: 5px;
 }
 
 ::-moz-placeholder {
-  color: #152d1b;
+  color: $dc-color-green;
 }
 
 :-ms-input-placeholder {
-  color: #152d1b;
+  color: $dc-color-green;
 }
 
 :-moz-placeholder {
-  color: #152d1b;
+  color: $dc-color-green;
 }
 
 .clearfix {
@@ -548,9 +551,9 @@ p {
 }
 
 #mc-embedded-subscribe:hover {
-  background: #152d1b;
-  border: 1px solid #152d1b;
-  color: #eeb7b5;
+  background: $dc-color-green;
+  border: 1px solid $dc-color-green;
+  color: $dc-color-pink;
   outline: none;
 }
 
@@ -618,13 +621,13 @@ p {
 }
 
 .contact-item {
-  color: #eeb7b5;
+  color: $dc-color-pink;
   display: block;
 }
 
 .contact-item:focus,
 .contact-item:hover {
-  color: #eeb7b5;
+  color: $dc-color-pink;
 }
 
 .footer {
@@ -686,144 +689,13 @@ p {
     height: auto;
   }
 }
-@media only screen and (max-width:992px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .icon-previous {
-    margin-left: -15px !important;
-  }
 
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next {
-    margin-right: -15px !important;
-  }
-
-  .mobile-hide {
-    display: none!important;
-  }
-
-  .desktop-hide {
-    display: block;
-  }
-
-  .landing-grid {
-    min-height: 1px;
-    top: auto;
-    left: auto;
-    bottom: auto;
-    right: auto;
-    position: relative;
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-  }
-
-  .mobile-logo {
-    position: relative;
-    top: 3rem;
-    left: 0;
-    margin: 0 auto;
-  }
-
-  .right-container {
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-  }
-
-  .landing-link {
-    position: absolute;
-    z-index: 1;
-  }
-
-  .landing-link a {
-    font-size: 5rem;
-  }
-
-  .landing-link span:after,
-  .landing-link span:before {
-    height: 10px;
-    top: -106%;
-  }
-
-  header {
-    height: 20rem;
-  }
-
-  #mc_embed_signup_scroll .button {
-    width: 35rem;
-  }
-
-  .main {
-    position: relative;
-    left: auto;
-    transform: none;
-    &-landing {
-      height: auto;
-      width: auto;
-    }
-  }
-
-  .nav {
-    position: absolute;
-    top: 3rem;
-    left: 60%;
-  }
-
-  .nav ul li {
-    display: block;
-    text-align: right;
-    width: 100%;
-    font-size: 1.7rem;
-    line-height: 4.2rem;
-  }
-
-  .nav ul li a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .nav span:after,
-  .nav span:before {
-    height: 4px;
-  }
-
-  .nav .fullpage {
-    margin-top: 2rem;
-  }
-
-  .nav .max {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .nav .margin-top {
-    margin-top: 1rem;
-  }
-
-  .num {
-    margin-bottom: 3rem;
-  }
-
-  .contact-details {
-    font-size: 1.6rem;
-    text-align: center;
-    padding-bottom: 2rem;
-  }
-
-  .contact-details .contact-item {
-    line-height: 4rem;
-  }
-
-  .footer {
-    position: relative;
-  }
-
-  .margin-top {
-    margin-top: 2rem;
-  }
-
-  .btn-subscribe {
-    font-size: 1.2rem;
-    max-width: 20rem;
-  }
+#swipebox-overlay {
+  background-color: $dc-color-green;
 }
+
+#swipebox-bottom-bar {
+  background: $dc-color-green;
+}
+
+@import '_responsive';
