@@ -44,7 +44,7 @@
 
 	<header class="header">
     <div class="logo">
-      <a href="index.html">
+      <a href="<?php echo get_home_url(); ?>">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-v2-dark.png" alt="Logo">
         </a>
     </div>

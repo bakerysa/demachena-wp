@@ -18,12 +18,8 @@
 
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-	window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');
-</script>
+
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
@@ -42,16 +38,6 @@ $('#myCarousel').carousel({
 $('#myCarousel').on('slid.bs.carousel', function() {
 		currentIndex = $('div.active').index() + 1;
 	 $('.num').html(''+currentIndex+'/'+totalItems+'');
-});
-</script>
-
-<script>
-$('#carousel-1').carousel({
-		interval: 5500
-});
-
-$('#carousel-2').carousel({
-		interval: 3000
 });
 </script>
 
@@ -89,6 +75,8 @@ $('#carousel-2').carousel({
 	ga('create', 'UA-99071631-1');
 	ga('send', 'pageview');
 </script>
+
+<?php wp_footer(); ?>
 
 </body>
 </html>

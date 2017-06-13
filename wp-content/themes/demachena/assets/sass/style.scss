@@ -290,9 +290,7 @@ li {
 }
 
 .landing-grid {
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  position: relative;
   left: 10rem;
   right: 10rem;
   top: 16rem;
@@ -443,6 +441,7 @@ li {
 p {
   font-size: 1.3rem;
   line-height: 1.62em;
+  margin: 0 0 10px !important;
 }
 
 #mc_embed_signup div.mce_inline_error {
@@ -522,6 +521,10 @@ p {
 
 :-moz-placeholder {
   color: #152d1b;
+}
+
+.clearfix {
+  clear: both;
 }
 
 #mc-embedded-subscribe {
@@ -671,6 +674,13 @@ p {
 
 .max {
   max-width: 20rem;
+}
+
+.item {
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width:992px) {
   .carousel-control .glyphicon-chevron-left,

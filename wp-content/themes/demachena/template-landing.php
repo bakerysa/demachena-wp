@@ -14,86 +14,41 @@
 
 get_header('landing'); ?>
 
-	<div id="primary" class="content-area">
-		<main class="main" role="main">
+	<!-- <div id="primary" class="content-area"> -->
+		<main role="main">
 
 	    <div class="desktop-hide">
-	      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	      <div class="carousel-inner">
-	        <div class="item active">
-	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/1.jpg">
-	        </div>
-	        <div class="item">
-	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/2.jpg">
-	        </div>
-	        <div class="item">
-	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/3.jpg">
-	        </div>
-	        <div class="item">
-	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/4.jpg">
-	        </div>
-
-	        <div class="item">
-	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/5.jpg">
-	        </div>
-
-	        <div class="item">
-	          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/6.jpg">
-	        </div>
-	      </div>
+				<?php
+				    echo do_shortcode("[metaslider id=45]");
+				?>
 	    </div>
-	    </div>
+			<!-- END desktop-hide -->
 
-	      <div class="landing-grid mobile-hide">
-	        <div class="left-container">
-	          <div class="left-contents" >
-	            <div class="content">
-	              <div id="carousel-1" class="carousel slide" data-ride="carousel">
-	                <div class="carousel-inner">
-	                  <div class="item active">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/1.jpg">
-	                  </div>
+			<!-- START landing-grid -->
+      <div class="mobile-hide">
+				<div class="col-md-6">
+					<?php
+							echo do_shortcode("[metaslider id=31]");
+					?>
+				</div>
+      </div>
+			<div class="mobile-hide">
+				<div class="col-md-6">
+					<?php
+							echo do_shortcode("[metaslider id=41]");
+					?>
+				</div>
+			</div>
+			<!-- END landing-grid -->
 
-	                  <div class="item">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/3.jpg">
-	                  </div>
-
-	                  <div class="item">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/5.jpg">
-	                  </div>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="right-container mobile-hide">
-	          <div class="right-contents" >
-	            <div class="content">
-	              <div id="carousel-2" class="carousel slide" data-ride="carousel">
-	              <div class="carousel-inner">
-	                <div class="item active">
-	                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/2.jpg">
-	                </div>
-
-	                <div class="item">
-	                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/4.jpg">
-	                </div>
-
-	                <div class="item">
-	                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/landing/6.jpg">
-	                </div>
-	              </div>
-	            </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-
-	      <div class="landing-link">
-	        <span><a href="about">Enter</a></span>
-	      </div>
+			<!-- START landing-link -->
+      <div class="landing-link">
+        <span><a href="about">Enter</a></span>
+      </div>
+			<!-- END landing-grid -->
 
 	  </main>
-	</div><!-- #primary -->
+	<!-- </div> -->
+	<!-- #primary -->
 <?php
 get_footer('alt');
