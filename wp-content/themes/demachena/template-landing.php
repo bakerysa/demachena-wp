@@ -15,7 +15,7 @@
 get_header('landing'); ?>
 
 	<!-- <div id="primary" class="content-area"> -->
-		<main role="main">
+		<main role="main" class="main main-landing">
 
 	    <div class="desktop-hide">
 				<?php
@@ -26,14 +26,14 @@ get_header('landing'); ?>
 
 			<!-- START landing-grid -->
       <div class="mobile-hide">
-				<div class="col-md-6">
+				<div class="col-md-6" style="padding: 0;">
 					<?php
 							echo do_shortcode("[metaslider id=31]");
 					?>
 				</div>
       </div>
 			<div class="mobile-hide">
-				<div class="col-md-6">
+				<div class="col-md-6" style="padding: 0;">
 					<?php
 							echo do_shortcode("[metaslider id=41]");
 					?>
@@ -41,13 +41,13 @@ get_header('landing'); ?>
 			</div>
 			<!-- END landing-grid -->
 
-			<!-- START landing-link -->
-      <div class="landing-link">
-        <span><a href="about">Enter</a></span>
-      </div>
-			<!-- END landing-grid -->
-
 	  </main>
+
+		<!-- START landing-link -->
+	  <div class="landing-link">
+	    <span><a href="about">Enter</a></span>
+	  </div>
+		<!-- END landing-link -->
 	<!-- </div> -->
 	<!-- #primary -->
 <?php

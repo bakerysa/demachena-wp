@@ -24,9 +24,7 @@
 <meta name="keywords" content="dema-chean, dema, chena, african, fashion, womenswear">
 
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/lightcase/src/css/lightcase.css">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">
 
 <meta property="og:url" content="http://dema-chena.com" />
 <meta property="og:type" content="website" />

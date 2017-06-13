@@ -6,6 +6,7 @@
 #browser,#browser-assist{text-align:justify;width:350px;margin:0 0 0 auto;display:inline-block;font-family:Imprint MT Pro;font-size:14px;line-height:21px}
 body{font-family:Imprint MT Pro !important;height:100%}
 .main{position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
+.main-landing{height:50rem;width:100rem}
 .text-center{text-align:center}
 .center{max-width:74rem}
 a:focus,a:hover{text-decoration:none !important}
@@ -113,7 +114,8 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .landing-link span:after,.landing-link span:before{height:10px;top:-106%}
 header{height:20rem}
 #mc_embed_signup_scroll .button{width:35rem}
-.main{position:relative;left:auto;-webkit-transform:none;-ms-transform:none;transform:none;padding-top:5%}
+.main{position:relative;left:auto;-webkit-transform:none;-ms-transform:none;transform:none}
+.main-landing{height:auto;width:auto}
 .nav{position:absolute;top:3rem;left:60%}
 .nav ul li{display:block;text-align:right;width:100%;font-size:1.7rem;line-height:4.2rem}
 .nav ul li a{color:inherit;text-decoration:none}

@@ -77,6 +77,10 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  &-landing {
+    height: 50rem;
+    width: 100rem;
+  }
 }
 
 .text-center {
@@ -752,9 +756,11 @@ p {
   .main {
     position: relative;
     left: auto;
-    -webkit-transform: none;
     transform: none;
-    padding-top: 5%;
+    &-landing {
+      height: auto;
+      width: auto;
+    }
   }
 
   .nav {
