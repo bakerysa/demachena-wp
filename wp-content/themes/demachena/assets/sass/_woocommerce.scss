@@ -1,0 +1,171 @@
+// Store Page
+
+.woocommerce .widget-area {
+  display: none;
+}
+
+.products {
+  padding-top: 10rem;
+}
+
+.woocommerce-loop-product__title {
+  font-size: 1.8rem !important;
+  color: $dc-color-green;
+  font-family: $dc-font-imprint;
+}
+
+.price {
+  color: $dc-color-green !important;
+  font-family: $dc-font-franklin;
+}
+
+.add_to_cart_button {
+  background-color: $dc-color-pink;
+  color: $dc-color-green;
+  font-family: $dc-font-franklin;
+  border: 1px solid $dc-color-green;
+  text-transform: capitalize;
+  &:hover {
+    background: $dc-color-green;
+    border: 1px solid $dc-color-pink;
+    color: $dc-color-pink;
+  }
+}
+
+.added_to_cart {
+  background-color: $dc-color-pink;
+  color: $dc-color-green;
+  font-family: $dc-font-franklin;
+  border: 1px solid $dc-color-green;
+  text-transform: capitalize;
+  &:hover {
+    background: $dc-color-green;
+    border: 1px solid $dc-color-pink;
+    color: $dc-color-pink;
+  }
+}
+
+.woocommerce-message {
+  background-color: $dc-color-green;
+  margin-top: 6rem;
+  color: $dc-color-pink;
+  font-size: 1.4rem;
+  border-radius: 0px;
+  border-left: none;
+}
+
+// shopping cart widget
+
+  .theme-green {
+    .woocommerce-cart-tab {
+      background-color: $dc-color-green !important;
+      path {
+        fill: $dc-color-pink !important;
+      }
+      .woocommerce-cart-tab__contents {
+        background-color: $dc-color-green !important;
+        color: $dc-color-pink !important;
+        border: 1px solid $dc-color-pink;
+      }
+    }
+    .widget_shopping_cart {
+      background-color: $dc-color-green;
+      color: $dc-color-pink !important;
+      a {
+        color: $dc-color-pink !important;
+      }
+      .widgettitle {
+        background-color: $dc-color-green !important;
+        color: $dc-color-pink !important;
+      }
+      .buttons {
+        background-color: $dc-color-green !important;
+        .button {
+          background-color: $dc-color-green;
+          color: $dc-color-pink;
+          font-family: $dc-font-franklin;
+          border: 1px solid $dc-color-pink;
+          text-transform: capitalize;
+          &:hover {
+            background: $dc-color-pink;
+            color: $dc-color-green !important;
+          }
+        }
+      }
+    }
+  }
+
+  .theme-pink {
+    .woocommerce-cart-tab {
+      background-color: $dc-color-pink !important;
+      path {
+        fill: $dc-color-green !important;
+      }
+      .woocommerce-cart-tab__contents {
+        background-color: $dc-color-pink !important;
+        color: $dc-color-green !important;
+        border: 1px solid $dc-color-green;
+      }
+    }
+    .widget_shopping_cart {
+      background-color: $dc-color-pink;
+      color: $dc-color-green !important;
+      a {
+        color: $dc-color-green !important;
+      }
+      .widgettitle {
+        background-color: $dc-color-pink !important;
+        color: $dc-color-green !important;
+      }
+      .buttons {
+        background-color: $dc-color-pink !important;
+        .button {
+          background-color: $dc-color-pink;
+          color: $dc-color-green;
+          font-family: $dc-font-franklin;
+          border: 1px solid $dc-color-green;
+          text-transform: capitalize;
+          &:hover {
+            background: $dc-color-green;
+            color: $dc-color-pink !important;
+          }
+        }
+      }
+    }
+  }
+
+// product page
+
+.product {
+  margin-top: 14rem;
+}
+
+.single_add_to_cart_button {
+  background-color: $dc-color-pink !important;
+  color: $dc-color-green !important;
+  font-family: $dc-font-franklin;
+  border: 1px solid $dc-color-green !important;
+  text-transform: capitalize;
+  &:hover {
+    background: $dc-color-green !important;
+    border: 1px solid $dc-color-pink !important;
+    color: $dc-color-pink !important;
+  }
+}
+
+.quantity {
+  .input-text {
+    background-color: $dc-color-pink !important;
+    color: $dc-color-green !important;
+    border: 1px solid $dc-color-green !important;
+  }
+}
+
+.woocommerce-Tabs-panel {
+  .panel {
+    background-color: $dc-color-pink !important;
+    color: $dc-color-green-green !important;
+    border: none;
+  }
+
+}
