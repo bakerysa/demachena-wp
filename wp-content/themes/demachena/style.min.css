@@ -134,7 +134,13 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .product{margin-top:14rem}
 .single_add_to_cart_button{background-color:#eeb7b5 !important;color:#152d1b !important;font-family:"FranklinBold";border:1px solid #152d1b !important;text-transform:capitalize}
 .single_add_to_cart_button:hover{background:#152d1b !important;border:1px solid #eeb7b5 !important;color:#eeb7b5 !important}
-.quantity .input-text{background-color:#eeb7b5 !important;color:#152d1b !important;border:1px solid #152d1b !important}
+.quantity .input-text{background-color:#eeb7b5 !important;color:#152d1b !important;border:1px solid #152d1b !important;font-size:1.4rem !important}
+.panel{background-color:#eeb7b5 !important;color:#152d1b !important;border:1px solid #152d1b;border-radius:0;padding:2rem}
+.form-submit .submit{background-color:#eeb7b5 !important;color:#152d1b !important;font-family:"FranklinBold";border:1px solid #152d1b !important;text-transform:capitalize}
+.form-submit .submit:hover{background:#152d1b !important;border:1px solid #eeb7b5 !important;color:#eeb7b5 !important}
+.comment-form-comment textarea{background-color:#eeb7b5;color:#152d1b;box-shadow:none;border:1px solid #152d1b}
+#respond{background-color:#eeb7b5}
+.woocommerce-noreviews{background-color:#152d1b;color:#eeb7b5;border-left:0}
 @media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-15px !important}
 .mobile-hide{display:none !important}

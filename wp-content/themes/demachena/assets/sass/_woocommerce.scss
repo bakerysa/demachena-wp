@@ -158,14 +158,48 @@
     background-color: $dc-color-pink !important;
     color: $dc-color-green !important;
     border: 1px solid $dc-color-green !important;
+    font-size: 1.4rem !important;
   }
 }
 
-.woocommerce-Tabs-panel {
-  .panel {
-    background-color: $dc-color-pink !important;
-    color: $dc-color-green-green !important;
-    border: none;
-  }
+.panel {
+  background-color: $dc-color-pink !important;
+  color: $dc-color-green !important;
+  border: 1px solid $dc-color-green;
+  border-radius: 0px;
+  padding: 2rem;
+}
 
+.form-submit {
+  .submit {
+    background-color: $dc-color-pink !important;
+    color: $dc-color-green !important;
+    font-family: $dc-font-franklin;
+    border: 1px solid $dc-color-green !important;
+    text-transform: capitalize;
+    &:hover {
+      background: $dc-color-green !important;
+      border: 1px solid $dc-color-pink !important;
+      color: $dc-color-pink !important;
+    }
+  }
+}
+
+.comment-form-comment {
+  textarea {
+    background-color: $dc-color-pink;
+    color: $dc-color-green;
+    box-shadow: none;
+    border: 1px solid $dc-color-green;
+  }
+}
+
+#respond {
+  background-color: $dc-color-pink;
+}
+
+.woocommerce-noreviews {
+  background-color: $dc-color-green;
+  color: $dc-color-pink;
+  border-left: none;
 }
