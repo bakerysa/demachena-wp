@@ -59,3 +59,12 @@ function woo_hide_page_title() {
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+//Remove WooCommerce Tabs - this code removes all 3 tabs - to be more specific just remove actual unset lines
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+function woo_remove_product_tabs( $tabs ) {
+ unset( $tabs['description'] );      	// Remove the description tab
+ unset( $tabs['reviews'] ); 			// Remove the reviews tab
+ unset( $tabs['additional_information'] );  	// Remove the additional information tab
+ return $tabs;
+}

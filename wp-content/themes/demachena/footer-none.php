@@ -14,26 +14,9 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
-	<footer class="footer" role="contentinfo" style="position: absolute;">
-		<a href="subscribe.html" class="btn-subscribe" style="margin-top: 5rem;">Sign Up For Early Access To Our Launch</a>
-		<div class="social">
-			<a href="https://www.instagram.com/dema_chena/">
-				<i class="fa fa-instagram" aria-hidden="true"></i>
-			</a>
-			<a href="https://twitter.com/dema_chena">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-			</a>
-			<a href="https://www.facebook.com/demachena/">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-			</a>
-		</div>
-	</footer>
-
 	<?php do_action( 'storefront_after_footer' ); ?>
 
 </div><!-- #page -->
-
-<?php wp_footer(); ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -62,6 +45,8 @@
 	ga('create', 'UA-99071631-1');
 	ga('send', 'pageview');
 </script>
+
+<?php wp_footer(); ?>
 
 </body>
 </html>

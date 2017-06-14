@@ -38,4 +38,4 @@ get_header('alt'); ?>
     </main>
 	</div><!-- #primary -->
 <?php
-get_footer();
+get_footer('alt');
