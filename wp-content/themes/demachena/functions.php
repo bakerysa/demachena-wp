@@ -36,3 +36,26 @@ function sf_child_theme_dequeue_style() {
      }
      return $classes;
  }
+
+ // remove default sorting dropdown in StoreFront Theme
+
+ add_action('init','delay_remove');
+
+ function delay_remove() {
+ remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
+ }
+
+
+ // remove default sorting dropdown
+
+add_filter( 'woocommerce_show_page_title' , 'woo_hide_page_title' );
+
+function woo_hide_page_title() {
+
+	return false;
+
+}
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );

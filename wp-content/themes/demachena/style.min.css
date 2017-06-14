@@ -1,5 +1,5 @@
-@font-face{font-family:FranklinBold;src:url("./fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./fonts/FranklinBold.woff) format("woff"),url(./fonts/FranklinBold.ttf) format("truetype"),url(./fonts/FranklinBold.svg#FranklinBold) format("svg");font-weight:400;font-style:normal}
-@font-face{font-family:Imprint MT Pro;src:url("./fonts/ImprintMTPro-Regular.eot");src:url("./fonts/ImprintMTPro-Regular.eot?#iefix") format("embedded-opentype"),url(./fonts/ImprintMTPro-Regular.woff2) format("woff2"),url(./fonts/ImprintMTPro-Regular.woff) format("woff"),url(./fonts/ImprintMTPro-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:FranklinBold;src:url("./assets/fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/FranklinBold.woff) format("woff"),url(./assets/fonts/FranklinBold.ttf) format("truetype"),url(./assets/fonts/FranklinBold.svg#FranklinBold) format("svg");font-weight:400;font-style:normal}
+@font-face{font-family:Imprint MT Pro;src:url("./assets/fonts/ImprintMTPro-Regular.eot");src:url("./assets/fonts/ImprintMTPro-Regular.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/ImprintMTPro-Regular.woff2) format("woff2"),url(./assets/fonts/ImprintMTPro-Regular.woff) format("woff"),url(./assets/fonts/ImprintMTPro-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
 .sans{font-family:FranklinBold}
 .example{margin:1.35em auto;text-align:center;font-size:14px;line-height:21px}
 .example ul{display:inline-block;list-style-type:none;padding:0 0 0 1.5em;margin:0 auto 0 0;text-align:right}
@@ -93,7 +93,7 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .contact-details span:hover:after span.active:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .contact-item{color:#eeb7b5;display:block}
 .contact-item:focus,.contact-item:hover{color:#eeb7b5}
-.footer{width:100%;margin-top:2rem;position:absolute;bottom:2rem;display:block}
+.footer{width:100%;margin-top:2rem;position:relative;bottom:2rem;display:block}
 .social{width:10.2rem;margin:0 auto}
 .img-responsive{position:relative;width:100%}
 .fa-instagram,.fa-twitter{font-size:2.3rem !important;margin-right:1.4rem;margin-top:.5rem}
@@ -104,6 +104,37 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .item img{width:100%;height:auto}
 #swipebox-overlay{background-color:#152d1b}
 #swipebox-bottom-bar{background:#152d1b}
+.woocommerce .widget-area{display:none}
+.products{padding-top:10rem}
+.woocommerce-loop-product__title{font-size:1.8rem !important;color:#152d1b;font-family:"Imprint MT Pro"}
+.price{color:#152d1b !important;font-family:"FranklinBold"}
+.add_to_cart_button{background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
+.add_to_cart_button:hover{background:#152d1b;border:1px solid #eeb7b5;color:#eeb7b5}
+.added_to_cart{background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
+.added_to_cart:hover{background:#152d1b;border:1px solid #eeb7b5;color:#eeb7b5}
+.woocommerce-message{background-color:#152d1b;margin-top:6rem;color:#eeb7b5;font-size:1.4rem;border-radius:0;border-left:0}
+.theme-green .woocommerce-cart-tab{background-color:#152d1b !important}
+.theme-green .woocommerce-cart-tab path{fill:#eeb7b5 !important}
+.theme-green .woocommerce-cart-tab .woocommerce-cart-tab__contents{background-color:#152d1b !important;color:#eeb7b5 !important;border:1px solid #eeb7b5}
+.theme-green .widget_shopping_cart{background-color:#152d1b;color:#eeb7b5 !important}
+.theme-green .widget_shopping_cart a{color:#eeb7b5 !important}
+.theme-green .widget_shopping_cart .widgettitle{background-color:#152d1b !important;color:#eeb7b5 !important}
+.theme-green .widget_shopping_cart .buttons{background-color:#152d1b !important}
+.theme-green .widget_shopping_cart .buttons .button{background-color:#152d1b;color:#eeb7b5;font-family:"FranklinBold";border:1px solid #eeb7b5;text-transform:capitalize}
+.theme-green .widget_shopping_cart .buttons .button:hover{background:#eeb7b5;color:#152d1b !important}
+.theme-pink .woocommerce-cart-tab{background-color:#eeb7b5 !important}
+.theme-pink .woocommerce-cart-tab path{fill:#152d1b !important}
+.theme-pink .woocommerce-cart-tab .woocommerce-cart-tab__contents{background-color:#eeb7b5 !important;color:#152d1b !important;border:1px solid #152d1b}
+.theme-pink .widget_shopping_cart{background-color:#eeb7b5;color:#152d1b !important}
+.theme-pink .widget_shopping_cart a{color:#152d1b !important}
+.theme-pink .widget_shopping_cart .widgettitle{background-color:#eeb7b5 !important;color:#152d1b !important}
+.theme-pink .widget_shopping_cart .buttons{background-color:#eeb7b5 !important}
+.theme-pink .widget_shopping_cart .buttons .button{background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
+.theme-pink .widget_shopping_cart .buttons .button:hover{background:#152d1b;color:#eeb7b5 !important}
+.product{margin-top:14rem}
+.single_add_to_cart_button{background-color:#eeb7b5 !important;color:#152d1b !important;font-family:"FranklinBold";border:1px solid #152d1b !important;text-transform:capitalize}
+.single_add_to_cart_button:hover{background:#152d1b !important;border:1px solid #eeb7b5 !important;color:#eeb7b5 !important}
+.quantity .input-text{background-color:#eeb7b5 !important;color:#152d1b !important;border:1px solid #152d1b !important}
 @media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-15px !important}
 .mobile-hide{display:none !important}
@@ -117,7 +148,7 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 header{height:20rem}
 #mc_embed_signup_scroll .button{width:35rem}
 .main{position:relative;left:auto;-webkit-transform:none;-ms-transform:none;transform:none}
-.main-landing{height:auto;width:auto}
+.main-landing{padding:20%;height:auto;width:auto}
 .nav{position:absolute;top:3rem;left:60%}
 .nav ul li{display:block;text-align:right;width:100%;font-size:1.7rem;line-height:4.2rem}
 .nav ul li a{color:inherit;text-decoration:none}

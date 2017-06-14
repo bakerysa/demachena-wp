@@ -27,14 +27,14 @@ Images License: GNU General Public License v2 or later
 
 @font-face {
   font-family: FranklinBold;
-  src: url("./fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./fonts/FranklinBold.woff) format("woff"),url(./fonts/FranklinBold.ttf) format("truetype"),url(./fonts/FranklinBold.svg#FranklinBold) format("svg");
+  src: url("./assets/fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/FranklinBold.woff) format("woff"),url(./assets/fonts/FranklinBold.ttf) format("truetype"),url(./assets/fonts/FranklinBold.svg#FranklinBold) format("svg");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Imprint MT Pro;
-  src: url("./fonts/ImprintMTPro-Regular.eot");
-  src: url("./fonts/ImprintMTPro-Regular.eot?#iefix") format("embedded-opentype"),url(./fonts/ImprintMTPro-Regular.woff2) format("woff2"),url(./fonts/ImprintMTPro-Regular.woff) format("woff"),url(./fonts/ImprintMTPro-Regular.ttf) format("truetype");
+  src: url("./assets/fonts/ImprintMTPro-Regular.eot");
+  src: url("./assets/fonts/ImprintMTPro-Regular.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/ImprintMTPro-Regular.woff2) format("woff2"),url(./assets/fonts/ImprintMTPro-Regular.woff) format("woff"),url(./assets/fonts/ImprintMTPro-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -633,7 +633,7 @@ p {
 .footer {
   width: 100%;
   margin-top: 2rem;
-  position: absolute;
+  position: relative;
   bottom: 2rem;
   display: block;
 }
@@ -697,5 +697,7 @@ p {
 #swipebox-bottom-bar {
   background: $dc-color-green;
 }
+
+@import '_woocommerce';
 
 @import '_responsive';
