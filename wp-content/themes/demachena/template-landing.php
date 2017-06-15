@@ -14,7 +14,7 @@
 
 get_header('landing'); ?>
 
-	<!-- <div id="primary" class="content-area"> -->
+	<div id="primary">
 		<main role="main" class="main main-landing">
 
 	    <div class="desktop-hide">
@@ -51,4 +51,4 @@ get_header('landing'); ?>
 	<!-- </div> -->
 	<!-- #primary -->
 <?php
-get_footer('alt');
+get_footer('none');
