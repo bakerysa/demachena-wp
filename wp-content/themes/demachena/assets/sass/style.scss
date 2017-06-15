@@ -130,13 +130,13 @@ li {
   color: $dc-color-green;
 }
 
-.theme-green .footer .fa-facebook,
+.theme-green .footer .fa-facebook-official,
 .theme-green .footer .fa-instagram,
 .theme-green .footer .fa-twitter {
   color: $dc-color-pink;
 }
 
-.theme-green .footer .fa-facebook:hover,
+.theme-green .footer .fa-facebook-official:hover,
 .theme-green .footer .fa-instagram:hover,
 .theme-green .footer .fa-twitter:hover {
   color: $dc-color-pink-light;
@@ -169,13 +169,13 @@ li {
   color: $dc-color-pink;
 }
 
-.theme-pink .footer .fa-facebook,
+.theme-pink .footer .fa-facebook-official,
 .theme-pink .footer .fa-instagram,
 .theme-pink .footer .fa-twitter {
   color: #162d1c;
 }
 
-.theme-pink .footer .fa-facebook:hover,
+.theme-pink .footer .fa-facebook-official:hover,
 .theme-pink .footer .fa-instagram:hover,
 .theme-pink .footer .fa-twitter:hover {
   color: $dc-color-green-light;
@@ -191,7 +191,7 @@ li {
   font-family: FranklinBold;
   font-size: 1.4rem;
   display: block;
-  max-width: 38rem;
+  max-width: 12rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -639,7 +639,7 @@ p {
 }
 
 .social {
-  width: 10.2rem;
+  width: 12.9rem;
   margin: 0 auto;
 }
 
@@ -649,16 +649,12 @@ p {
 }
 
 .fa-instagram,
-.fa-twitter {
-  font-size: 2.3rem!important;
-  margin-right: 1.4rem;
-  margin-top: 0.5rem;
-}
-
-.fa-facebook {
-  font-size: 1.9rem!important;
-  margin-right: 1.4rem;
-  margin-top: 0.5rem;
+.fa-twitter,
+.fa-facebook-official {
+  font-size: 2.3rem !important;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .carousel-control .glyphicon-chevron-left,

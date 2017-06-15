@@ -15,15 +15,15 @@ li{list-style:none}
 .theme-green .landing-link span.active:before,.theme-green .landing-link span:after,.theme-green .landing-link span:before,.theme-green .landing-link span:hover:before,.theme-green .nav span.active:before,.theme-green .nav span:after,.theme-green .nav span:before,.theme-green .nav span:hover:before{background:#eeb7b5}
 .theme-green .footer .btn-subscribe{color:#eeb7b5;border:1px solid #eeb7b5}
 .theme-green .footer .btn-subscribe:hover{background:#eeb7b5;border:1px solid #152d1b;color:#152d1b}
-.theme-green .footer .fa-facebook,.theme-green .footer .fa-instagram,.theme-green .footer .fa-twitter{color:#eeb7b5}
-.theme-green .footer .fa-facebook:hover,.theme-green .footer .fa-instagram:hover,.theme-green .footer .fa-twitter:hover{color:#ffc8c5}
+.theme-green .footer .fa-facebook-official,.theme-green .footer .fa-instagram,.theme-green .footer .fa-twitter{color:#eeb7b5}
+.theme-green .footer .fa-facebook-official:hover,.theme-green .footer .fa-instagram:hover,.theme-green .footer .fa-twitter:hover{color:#ffc8c5}
 .theme-pink{background:#eeb7b5;color:#152d1b}
 .theme-pink .landing-link span.active:before,.theme-pink .landing-link span:after,.theme-pink .landing-link span:before,.theme-pink .landing-link span:hover:before,.theme-pink .nav span.active:before,.theme-pink .nav span:after,.theme-pink .nav span:before,.theme-pink .nav span:hover:before{background:#152d1b}
 .theme-pink .footer .btn-subscribe{color:#152d1b;border:1px solid #18261b}
 .theme-pink .footer .btn-subscribe:hover{background:#152d1b;border:1px solid #18261b;color:#eeb7b5}
-.theme-pink .footer .fa-facebook,.theme-pink .footer .fa-instagram,.theme-pink .footer .fa-twitter{color:#162d1c}
-.theme-pink .footer .fa-facebook:hover,.theme-pink .footer .fa-instagram:hover,.theme-pink .footer .fa-twitter:hover{color:#224a2c}
-.btn-subscribe{cursor:pointer;padding:.2rem;line-height:28px;text-transform:uppercase;font-weight:700;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;font-family:FranklinBold;font-size:1.4rem;display:block;max-width:38rem;margin:0 auto;text-align:center}
+.theme-pink .footer .fa-facebook-official,.theme-pink .footer .fa-instagram,.theme-pink .footer .fa-twitter{color:#162d1c}
+.theme-pink .footer .fa-facebook-official:hover,.theme-pink .footer .fa-instagram:hover,.theme-pink .footer .fa-twitter:hover{color:#224a2c}
+.btn-subscribe{cursor:pointer;padding:.2rem;line-height:28px;text-transform:uppercase;font-weight:700;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;font-family:FranklinBold;font-size:1.4rem;display:block;max-width:12rem;margin:0 auto;text-align:center}
 .btn-subscribe:hover{background:#152d1b;border:1px solid #18261b;color:#eeb7b5;outline:0}
 .logo{width:85px;position:absolute;z-index:4;top:4rem;left:4rem}
 .logo img{width:100%}
@@ -94,10 +94,9 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .contact-item{color:#eeb7b5;display:block}
 .contact-item:focus,.contact-item:hover{color:#eeb7b5}
 .footer{width:100%;margin-top:2rem;position:relative;bottom:2rem;display:block}
-.social{width:10.2rem;margin:0 auto}
+.social{width:12.9rem;margin:0 auto}
 .img-responsive{position:relative;width:100%}
-.fa-instagram,.fa-twitter{font-size:2.3rem !important;margin-right:1.4rem;margin-top:.5rem}
-.fa-facebook{font-size:1.9rem !important;margin-right:1.4rem;margin-top:.5rem}
+.fa-instagram,.fa-twitter,.fa-facebook-official{font-size:2.3rem !important;margin-right:1rem;margin-top:1rem;margin-left:1rem}
 .carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-100px !important;color:pink !important;font-size:20px !important;width:20px !important;height:20px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-100px !important;color:pink !important;font-size:20px !important;width:20px !important;height:20px !important}
 .max{max-width:20rem}
@@ -105,10 +104,9 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 #swipebox-overlay{background-color:#152d1b}
 #swipebox-bottom-bar{background:#152d1b}
 .woocommerce .widget-area{display:none}
-.products{padding-top:10rem}
 .woocommerce-loop-product__title{font-size:1.8rem !important;color:#152d1b;font-family:"Imprint MT Pro"}
 .price{color:#152d1b !important;font-family:"FranklinBold"}
-.add_to_cart_button{background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
+.add_to_cart_button{display:none;background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
 .add_to_cart_button:hover{background:#152d1b;border:1px solid #eeb7b5;color:#eeb7b5}
 .added_to_cart{background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
 .added_to_cart:hover{background:#152d1b;border:1px solid #eeb7b5;color:#eeb7b5}
@@ -131,7 +129,9 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .theme-pink .widget_shopping_cart .buttons{background-color:#eeb7b5 !important}
 .theme-pink .widget_shopping_cart .buttons .button{background-color:#eeb7b5;color:#152d1b;font-family:"FranklinBold";border:1px solid #152d1b;text-transform:capitalize}
 .theme-pink .widget_shopping_cart .buttons .button:hover{background:#152d1b;color:#eeb7b5 !important}
-.product{margin-top:14rem}
+.woocommerce-cart-tab-container--right .woocommerce-cart-tab{z-index:100;height:100%}
+.woocommerce-cart-tab__contents{top:5.4rem;right:20px !important;bottom:auto}
+.woocommerce-cart-tab .woocommerce-cart-tab__icon{left:auto !important;top:4rem !important;right:30px !important;-webkit-transform:none !important;-ms-transform:none !important;transform:none !important}
 .single_add_to_cart_button{background-color:#eeb7b5 !important;color:#152d1b !important;font-family:"FranklinBold";border:1px solid #152d1b !important;text-transform:capitalize}
 .single_add_to_cart_button:hover{background:#152d1b !important;border:1px solid #eeb7b5 !important;color:#eeb7b5 !important}
 .quantity .input-text{background-color:#eeb7b5 !important;color:#152d1b !important;border:1px solid #152d1b !important;font-size:1.4rem !important}
@@ -141,6 +141,10 @@ p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .comment-form-comment textarea{background-color:#eeb7b5;color:#152d1b;box-shadow:none;border:1px solid #152d1b}
 #respond{background-color:#eeb7b5}
 .woocommerce-noreviews{background-color:#152d1b;color:#eeb7b5;border-left:0}
+.woocommerce-LoopProduct-link img{border-radius:0}
+.woocommerce-loop-product__title{display:none}
+.woocommerce-Price-amount{display:none}
+ul .products{margin-top:10rem}
 @media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-15px !important}
 .mobile-hide{display:none !important}
@@ -168,4 +172,5 @@ header{height:20rem}
 .footer{position:relative}
 .margin-top{margin-top:2rem}
 .btn-subscribe{font-size:1.2rem;max-width:20rem}
+.product{margin-top:0 !important}
 }

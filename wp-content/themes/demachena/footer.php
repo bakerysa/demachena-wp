@@ -15,7 +15,7 @@
 	<?php do_action( 'storefront_before_footer' ); ?>
 
 	<footer class="footer" role="contentinfo">
-		<a href="subscribe.html" class="btn-subscribe" style="margin-top: 5rem;">Sign Up For Early Access To Our Launch</a>
+		<a href="subscribe.html" class="btn-subscribe" style="margin-top: 5rem;">Subscribe</a>
 		<div class="social">
 			<a href="https://www.instagram.com/dema_chena/">
 				<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -24,7 +24,7 @@
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 			</a>
 			<a href="https://www.facebook.com/demachena/">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-facebook-official" aria-hidden="true"></i>
 			</a>
 		</div>
 	</footer>
