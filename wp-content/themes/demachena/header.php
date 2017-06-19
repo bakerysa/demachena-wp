@@ -14,7 +14,6 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link rel="icon" type="image/png" href="images/favicon.png?v=3" />
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="">
