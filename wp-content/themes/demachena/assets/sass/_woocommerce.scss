@@ -1,5 +1,9 @@
 // Store Page
 
+#primary {
+  padding-top: 13rem;
+}
+
 .woocommerce .widget-area {
   display: none;
 }
@@ -155,7 +159,7 @@
   color: $dc-color-green !important;
   font-family: $dc-font-franklin;
   border: 1px solid $dc-color-green !important;
-  text-transform: capitalize;
+  text-transform: uppercase;
   &:hover {
     background: $dc-color-green !important;
     border: 1px solid $dc-color-pink !important;
@@ -224,12 +228,26 @@
   display: none;
 }
 
-.woocommerce-Price-amount {
-  display: none ;
-}
-
 ul {
   .products {
     margin-top: 10rem;
   }
 }
+
+  .widget,
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product{
+  margin-bottom: 0px;
+  margin: 0 auto !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 33.33% !important;
+}
+
+  #pa_size {
+    background-color: #eeb7b5;
+    color: #152d1b !important;
+    border: none;
+    font-size: 1.4rem !important;
+    text-transform: uppercase;
+  }

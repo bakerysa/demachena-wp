@@ -143,4 +143,15 @@
   .product {
     margin-top: 0rem !important;
   }
+
+  #primary {
+    padding-top: 0rem !important;
+  }
+
+  .widget,
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product{
+  margin-bottom: 10rem !important;
+  width: 100% !important;
+}
 }
