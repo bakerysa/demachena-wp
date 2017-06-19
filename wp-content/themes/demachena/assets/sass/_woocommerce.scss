@@ -17,6 +17,7 @@
 .price {
   color: $dc-color-green !important;
   font-family: $dc-font-franklin;
+  line-height: 1.8rem;
 }
 
 .add_to_cart_button {
@@ -254,3 +255,102 @@ ul {
       display: none;
     }
   }
+
+  .woocommerce-LoopProduct-link {
+    .woocommerce-Price-amount {
+      display: none;
+    }
+  }
+
+  .product_title {
+    font-size: 1.8rem;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+  }
+
+  .woocommerce-product-details__short-description {
+    margin-top: 3rem;
+    font-size: 1.6rem !important;
+  }
+
+ .size-shop_single {
+   border-radius: 0;
+ }
+
+.flex-control-nav {
+  li {
+    img {
+      border-radius: 0;
+    }
+  }
+}
+
+.single-product div.product p.price {
+  margin: 0;
+}
+
+.variations {
+  .label {
+    display: none !important;
+  }
+}
+
+.woocommerce-cart-form__contents {
+  thead {
+    tr {
+      th {
+        background-color: $dc-color-pink;
+        color: $dc-color-green;
+      }
+    }
+  }
+}
+
+.woocommerce-cart-form__cart-item {
+    td {
+      background-color: $dc-color-pink !important;
+    }
+    a {
+      color: $dc-color-green;
+    }
+}
+
+.actions {
+  border-top: none !important;
+  .coupon {
+    input {
+      background-color: $dc-color-pink;
+      border: 1px solid $dc-color-green;
+    }
+  }
+}
+
+.cart-subtotal, .order-total {
+  th {
+    background-color: $dc-color-pink !important;
+  }
+  td {
+    background-color: $dc-color-pink-light !important;
+  }
+}
+
+.checkout-button {
+  background-color: $dc-color-green !important;
+  color: $dc-color-pink !important;
+  font-family: FranklinBold;
+  text-transform: uppercase;
+  font-size: 1.4rem !important;
+  border: 1px solid $dc-color-green;
+  &:hover {
+    background-color: $dc-color-pink !important;
+    color: $dc-color-green !important;
+  }
+}
+
+a.remove:before {
+  color: $dc-color-green !important;
+}
+
+table.cart .product-thumbnail img {
+  max-width: 10rem !important;
+}
