@@ -292,6 +292,42 @@ li {
   transition: 0s;
 }
 
+.cart-menu-item {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  text-transform: uppercase;
+  font-family: FranklinBold!important;
+  background-color: $dc-color-green;
+  padding: 0.5rem 2.5rem;
+  margin-top: -5px;
+  text-align: center;
+  color: $dc-color-pink;
+  &:hover {
+    background-color: $dc-color-pink;
+    border: 1px solid $dc-color-green;
+    color: $dc-color-green;
+  }
+}
+
+.cart-menu-item-alt {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  text-transform: uppercase;
+  font-family: FranklinBold!important;
+  background-color: $dc-color-pink;
+  padding: 0.5rem 2.5rem;
+  margin-top: -5px;
+  text-align: center;
+  color: $dc-color-green;
+  &:hover {
+    background-color: $dc-color-green;
+    border: 1px solid $dc-color-pink;
+    color: $dc-color-pink;
+  }
+}
+
 .desktop-hide {
   display: none;
 }
