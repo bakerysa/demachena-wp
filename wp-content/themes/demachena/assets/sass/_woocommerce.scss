@@ -250,4 +250,7 @@ ul {
     border: none;
     font-size: 1.4rem !important;
     text-transform: uppercase;
+    label {
+      display: none;
+    }
   }

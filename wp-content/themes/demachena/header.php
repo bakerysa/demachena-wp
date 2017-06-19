@@ -48,8 +48,9 @@
     </div>
 		<?php wp_nav_menu( array( 'container_class' => 'nav', 'before' => '<span>',
         'after' => '</span>' ) ); ?>
+					<a class="cart-menu-item" href="<?php global $woocommerce;
+					$aUrl = $woocommerce->cart->get_cart_url(); ?>">Cart <?php echo sprintf (_n( '%d item', '%d',count( WC()->cart->get_cart())),count( WC()->cart->get_cart())); ?></a>
 	</header><!-- #masthead -->
-
 	<?php
 	/**
 	 * Functions hooked in to storefront_before_content
