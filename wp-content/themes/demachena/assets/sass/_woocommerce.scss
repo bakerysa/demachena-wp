@@ -354,3 +354,29 @@ a.remove:before {
 table.cart .product-thumbnail img {
   max-width: 10rem !important;
 }
+
+@media (min-width: 0px) {
+
+/* Make image 75% width to make room to its right */
+
+.flex-viewport {
+    width: 75%;
+    float: left;
+}
+
+/* Make Gallery 25% width and place it beside the image */
+
+.flex-control-nav {
+    width: 25%;
+    float: left;
+}
+
+/* Style each Thumbnail with width and margins */
+
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li {
+    width: 90%;
+    float: none;
+    margin: 0 0 15% 0;
+}
+
+}

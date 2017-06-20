@@ -13,6 +13,7 @@ body{font-family:Imprint MT Pro !important;height:100%}
 a:focus,a:hover{text-decoration:none !important}
 li{list-style:none}
 img{border-radius:0}
+a{outline:0 !important}
 .theme-green{background:#152d1b;color:#eeb7b5}
 .theme-green .landing-link span.active:before,.theme-green .landing-link span:after,.theme-green .landing-link span:before,.theme-green .landing-link span:hover:before,.theme-green .nav span.active:before,.theme-green .nav span:after,.theme-green .nav span:before,.theme-green .nav span:hover:before{background:#eeb7b5}
 .theme-green .footer .btn-subscribe{color:#eeb7b5;border:1px solid #eeb7b5}
@@ -42,7 +43,8 @@ img{border-radius:0}
 .current-menu-item span:before{width:105%;-webkit-transition:width .5s cubic-bezier(0.22,0.61,0.36,1);transition:width .5s cubic-bezier(0.22,0.61,0.36,1)}
 .current-menu-item span:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .cart-menu-item{position:absolute;top:4rem;right:10rem;text-transform:uppercase;font-family:FranklinBold !important;background-color:#152d1b;padding:.5rem 2.5rem;margin-top:-5px;text-align:center;color:#eeb7b5}
-.cart-menu-item:hover{background-color:#eeb7b5;border:1px solid #152d1b;color:#152d1b}
+.cart-menu-item:hover{background-color:#eeb7b5;border:1px solid #152d1b;color:#152d1b !important}
+.cart-menu-item:focus{color:#eeb7b5}
 .cart-menu-item-alt{position:absolute;top:4rem;right:10rem;text-transform:uppercase;font-family:FranklinBold !important;background-color:#eeb7b5;padding:.5rem 2.5rem;margin-top:-5px;text-align:center;color:#152d1b}
 .cart-menu-item-alt:hover{background-color:#152d1b;border:1px solid #eeb7b5;color:#eeb7b5}
 .desktop-hide{display:none}
@@ -171,7 +173,10 @@ ul .products{margin-top:10rem}
 .checkout-button:hover{background-color:#eeb7b5 !important;color:#152d1b !important}
 a.remove:before{color:#152d1b !important}
 table.cart .product-thumbnail img{max-width:10rem !important}
-@media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}
+@media(min-width:0){.flex-viewport{width:75%;float:left}
+.flex-control-nav{width:25%;float:left}
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li{width:90%;float:none;margin:0 0 15% 0}
+}@media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}
 .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-15px !important}
 .mobile-hide{display:none !important}
 .desktop-hide{display:block}
@@ -201,5 +206,5 @@ header{height:20rem}
 .product{margin-top:0 !important}
 #primary{padding-top:0 !important}
 .widget,.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{margin-bottom:10rem !important;width:100% !important}
-.cart-menu-item{position:relative;padding:.5rem 2.5rem;margin-top:-5px}
+.cart-menu-item{position:relative;padding:.5rem 11rem;margin-top:-5px;top:auto;right:auto;margin:0 auto}
 }

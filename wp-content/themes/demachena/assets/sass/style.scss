@@ -112,6 +112,10 @@ img {
   border-radius: 0px;
 }
 
+a {
+  outline: 0 !important;
+}
+
 .theme-green {
   background: $dc-color-green;
   color: $dc-color-pink;
@@ -315,7 +319,10 @@ img {
   &:hover {
     background-color: $dc-color-pink;
     border: 1px solid $dc-color-green;
-    color: $dc-color-green;
+    color: $dc-color-green !important;
+  }
+  &:focus {
+    color: $dc-color-pink;
   }
 }
 

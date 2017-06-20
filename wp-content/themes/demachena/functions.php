@@ -75,3 +75,21 @@ function woo_remove_product_tabs( $tabs ) {
 
 // remove default sorting dropdown
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+
+add_filter ( 'woocommerce_product_thumbnails_columns', 'bbloomer_change_gallery_columns' );
+
+function bbloomer_change_gallery_columns() {
+     return 1;
+}
+
+// ---------------------
+// For Storefront theme:
+
+add_filter ( 'storefront_product_thumbnail_columns', 'bbloomer_change_gallery_columns_storefront' );
+
+function bbloomer_change_gallery_columns_storefront() {
+     return 1;
+}
+
+// ---------------------
