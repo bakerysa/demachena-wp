@@ -14,6 +14,7 @@ a:focus,a:hover{text-decoration:none !important}
 li{list-style:none}
 img{border-radius:0}
 a{outline:0 !important}
+button{outline:0 !important}
 .theme-green{background:#152d1b;color:#eeb7b5}
 .theme-green .landing-link span.active:before,.theme-green .landing-link span:after,.theme-green .landing-link span:before,.theme-green .landing-link span:hover:before,.theme-green .nav span.active:before,.theme-green .nav span:after,.theme-green .nav span:before,.theme-green .nav span:hover:before{background:#eeb7b5}
 .theme-green .footer .btn-subscribe{color:#eeb7b5;border:1px solid #eeb7b5}
@@ -153,7 +154,7 @@ a{outline:0 !important}
 .woocommerce-loop-product__title{display:none}
 ul .products{margin-top:10rem}
 .widget,.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{margin-bottom:0;margin:0 auto !important;padding-left:10px;padding-right:10px;width:33.33% !important}
-#pa_size{background-color:#eeb7b5;color:#152d1b !important;border:0;font-size:1.4rem !important;text-transform:uppercase}
+#pa_size{background-color:#eeb7b5;color:#152d1b !important;border:0;font-size:1.8rem !important;text-transform:uppercase;font-weight:bold}
 #pa_size label{display:none}
 .woocommerce-LoopProduct-link .woocommerce-Price-amount{display:none}
 .product_title{font-size:1.8rem;letter-spacing:0;margin-bottom:0}
@@ -163,17 +164,41 @@ ul .products{margin-top:10rem}
 .single-product div.product p.price{margin:0}
 .variations .label{display:none !important}
 .woocommerce-cart-form__contents thead tr th{background-color:#eeb7b5;color:#152d1b}
+.woocommerce-cart-form__cart-item{max-width:28rem;margin:0 auto}
 .woocommerce-cart-form__cart-item td{background-color:#eeb7b5 !important}
 .woocommerce-cart-form__cart-item a{color:#152d1b}
-.actions{border-top:none !important}
+.actions{border-top:none !important;padding-top:5rem !important}
 .actions .coupon input{background-color:#eeb7b5;border:1px solid #152d1b}
 .cart-subtotal th,.order-total th{background-color:#eeb7b5 !important}
-.cart-subtotal td,.order-total td{background-color:#ffc8c5 !important}
+.cart-subtotal td,.order-total td{background-color:#eeb7b5 !important}
 .checkout-button{background-color:#152d1b !important;color:#eeb7b5 !important;font-family:FranklinBold;text-transform:uppercase;font-size:1.4rem !important;border:1px solid #152d1b}
 .checkout-button:hover{background-color:#eeb7b5 !important;color:#152d1b !important}
 a.remove:before{color:#152d1b !important}
-table.cart .product-thumbnail img{max-width:10rem !important}
-@media(min-width:0){.flex-viewport{width:75%;float:left}
+table.cart .product-thumbnail img{max-width:16rem !important}
+.reset_variations{color:#152d1b !important}
+.reset_variations:hover{color:#224a2c !important}
+.woocommerce-product-gallery__image{width:288px !important}
+.storefront-hero__button-edit{display:none}
+.site-main{padding-top:0 !important}
+.wc-backward{background-color:#152d1b !important;color:#eeb7b5 !important;font-family:FranklinBold;text-transform:uppercase;font-size:1.4rem !important;border:1px solid #152d1b !important}
+.wc-backward:hover{background-color:#eeb7b5 !important;color:#152d1b !important}
+.cart_totals{float:none !important;margin:0 auto !important;text-transform:uppercase;font-family:FranklinBold}
+.cart_totals h2{display:none}
+td.product-subtotal{display:none !important}
+.product-thumbnail{position:relative}
+.product-thumbnail img{width:28rem;margin-bottom:1.2em !important}
+.product-name{width:28rem;margin:0 auto;font-size:1.8rem;text-align:left}
+.product-remove{font-size:2rem;position:absolute;top:1rem;right:1rem}
+.price-quantity{width:28rem;margin:0 auto;font-size:1.8rem;text-align:left}
+.price-quantity .product-price{display:inline-block;border-right:3px solid #152d1b;padding-right:1rem;font-weight:bold}
+.price-quantity .product-quantity{display:inline-block;padding-left:1rem;font-weight:bold}
+.coupon{margin-top:1rem}
+.coupon label{display:none}
+.button{height:45px;background-color:#152d1b !important;color:#eeb7b5 !important;font-family:FranklinBold;text-transform:uppercase;font-size:1.4rem !important;border:1px solid #152d1b !important}
+.button:hover{background-color:#eeb7b5 !important;color:#152d1b !important}
+.storefront-recent-products{display:none}
+.storefront-best-selling-products{display:none}
+@media(min-width:0){.flex-viewport{width:75%;float:right}
 .flex-control-nav{width:25%;float:left}
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li{width:90%;float:none;margin:0 0 15% 0}
 }@media only screen and (max-width:992px){.carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-15px !important}

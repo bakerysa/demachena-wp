@@ -249,8 +249,9 @@ ul {
     background-color: #eeb7b5;
     color: #152d1b !important;
     border: none;
-    font-size: 1.4rem !important;
+    font-size: 1.8rem !important;
     text-transform: uppercase;
+    font-weight: bold;
     label {
       display: none;
     }
@@ -307,6 +308,8 @@ ul {
 }
 
 .woocommerce-cart-form__cart-item {
+  max-width: 28rem;
+  margin: 0 auto;
     td {
       background-color: $dc-color-pink !important;
     }
@@ -317,6 +320,7 @@ ul {
 
 .actions {
   border-top: none !important;
+  padding-top: 5rem !important;
   .coupon {
     input {
       background-color: $dc-color-pink;
@@ -330,7 +334,7 @@ ul {
     background-color: $dc-color-pink !important;
   }
   td {
-    background-color: $dc-color-pink-light !important;
+    background-color: $dc-color-pink !important;
   }
 }
 
@@ -352,7 +356,7 @@ a.remove:before {
 }
 
 table.cart .product-thumbnail img {
-  max-width: 10rem !important;
+  max-width: 16rem !important;
 }
 
 @media (min-width: 0px) {
@@ -361,7 +365,7 @@ table.cart .product-thumbnail img {
 
 .flex-viewport {
     width: 75%;
-    float: left;
+    float: right;
 }
 
 /* Make Gallery 25% width and place it beside the image */
@@ -379,4 +383,119 @@ table.cart .product-thumbnail img {
     margin: 0 0 15% 0;
 }
 
+}
+
+.reset_variations {
+  color: $dc-color-green !important;
+  &:hover {
+    color: $dc-color-green-light !important;
+  }
+}
+
+.woocommerce-product-gallery__image {
+  width: 288px !important;
+}
+
+.storefront-hero__button-edit {
+  display: none;
+}
+
+.site-main {
+  padding-top: 0 !important;
+}
+
+.wc-backward {
+  background-color: $dc-color-green !important;
+  color: $dc-color-pink !important;
+  font-family: FranklinBold;
+  text-transform: uppercase;
+  font-size: 1.4rem !important;
+  border: 1px solid $dc-color-green !important;
+  &:hover {
+    background-color: $dc-color-pink !important;
+    color: $dc-color-green !important;
+  }
+}
+
+.cart_totals {
+  h2 {
+    display: none;
+  }
+ float: none !important;
+ margin: 0 auto !important;
+ text-transform: uppercase;
+ font-family: FranklinBold;
+}
+
+td.product-subtotal  {
+  display: none !important;
+}
+
+.product-thumbnail {
+  position: relative;
+  img {
+    width: 28rem;
+    margin-bottom: 1.2em !important;
+  }
+}
+
+.product-name {
+  width: 28rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.product-remove {
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.price-quantity {
+  width: 28rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: left;
+  .product-price {
+    display: inline-block;
+    border-right: 3px solid $dc-color-green;
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+  .product-quantity {
+    display: inline-block;
+    padding-left: 1rem;
+    font-weight: bold;
+  }
+}
+
+.coupon {
+  margin-top: 1rem;
+  label {
+    display: none;
+  }
+}
+
+.button {
+  height: 45px;
+  background-color: $dc-color-green !important;
+  color: $dc-color-pink !important;
+  font-family: FranklinBold;
+  text-transform: uppercase;
+  font-size: 1.4rem !important;
+  border: 1px solid $dc-color-green !important;
+  &:hover {
+    background-color: $dc-color-pink !important;
+    color: $dc-color-green !important;
+  }
+}
+
+.storefront-recent-products {
+  display: none;
+}
+
+.storefront-best-selling-products {
+  display: none;
 }
