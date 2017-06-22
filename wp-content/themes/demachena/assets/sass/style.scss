@@ -755,11 +755,10 @@ pre {
   word-wrap: normal;
   background-color: $dc-color-pink;
   border-radius: 0px;
-  border-color: $dc-color-green;
+  border: none;
 }
 .accordion-title {
-  color: $dc-color-green;
-    border-top: 1px solid $dc-color-green;
+    color: $dc-color-green;
     margin: 0;
     padding-top: 2rem;
     font-size: 1.6rem;
@@ -784,6 +783,8 @@ pre {
 }
 
 .accordion-content {
+  font-family: Imprint MT Pro;
+  font-size: 1.6rem;
   padding-bottom: 0px;
 }
 

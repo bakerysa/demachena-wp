@@ -112,13 +112,13 @@ button{outline:0 !important}
 .item img{width:100%;height:auto}
 #swipebox-overlay{background-color:#152d1b}
 #swipebox-bottom-bar{background:#152d1b}
-pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5;border-radius:0;border-color:#152d1b}
-.accordion-title{color:#152d1b;border-top:1px solid #152d1b;margin:0;padding-top:2rem;font-size:1.6rem;font-family:FranklinBold;text-transform:uppercase;padding-bottom:0;cursor:pointer}
+pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5;border-radius:0;border:0}
+.accordion-title{color:#152d1b;margin:0;padding-top:2rem;font-size:1.6rem;font-family:FranklinBold;text-transform:uppercase;padding-bottom:0;cursor:pointer}
 .accordion-title:hover{color:#224a2c}
 .accordion-title:focus{outline:0}
 .accordion-title:first-child{border:0}
 .accordion-title.open{cursor:default}
-.accordion-content{padding-bottom:0}
+.accordion-content{font-family:Imprint MT Pro;font-size:1.6rem;padding-bottom:0}
 .entry-title{text-align:center;font-size:2.6rem;text-transform:uppercase;margin-bottom:2rem;margin-top:2rem}
 #primary{padding-top:13rem}
 .woocommerce .widget-area{display:none}
