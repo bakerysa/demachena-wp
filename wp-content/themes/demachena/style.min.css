@@ -114,7 +114,7 @@ button{outline:0 !important}
 #swipebox-bottom-bar{background:#152d1b}
 pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5;border-radius:0;border:0}
 .accordion-title{color:#152d1b;margin:0;padding-top:2rem;font-size:1.6rem;font-family:FranklinBold;text-transform:uppercase;padding-bottom:0;cursor:pointer}
-.accordion-title:hover{color:#224a2c}
+.accordion-title:hover{color:#224a2c;cursor:pointer}
 .accordion-title:focus{outline:0}
 .accordion-title:first-child{border:0}
 .accordion-title.open{cursor:default}

@@ -768,6 +768,7 @@ pre {
     cursor: pointer;
     &:hover {
       color: $dc-color-green-light;
+      cursor: pointer;
     }
     &:focus {
       outline: none;
