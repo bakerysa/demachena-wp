@@ -39,6 +39,10 @@ Images License: GNU General Public License v2 or later
   font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: FranklinBold;
+}
+
 .sans {
   font-family: FranklinBold;
   p {
@@ -742,6 +746,45 @@ button {
 
 #swipebox-bottom-bar {
   background: $dc-color-green;
+}
+
+/* Accordion Styles */
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+  background-color: $dc-color-pink;
+  border-radius: 0px;
+  border-color: $dc-color-green;
+}
+.accordion-title {
+  color: $dc-color-green;
+    border-top: 1px solid $dc-color-green;
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 1.6rem;
+    font-family: FranklinBold;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    cursor: pointer;
+    &:hover {
+      color: $dc-color-green-light;
+    }
+    &:focus {
+      outline: none;
+    }
+}
+
+.accordion-title:first-child {
+  border: none;
+}
+
+.accordion-title.open {
+  cursor: default;
+}
+
+.accordion-content {
+  padding-bottom: 0px;
 }
 
 @import '_woocommerce';

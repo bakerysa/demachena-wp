@@ -1,5 +1,6 @@
 @font-face{font-family:FranklinBold;src:url("./assets/fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/FranklinBold.woff) format("woff"),url(./assets/fonts/FranklinBold.ttf) format("truetype"),url(./assets/fonts/FranklinBold.svg#FranklinBold) format("svg");font-weight:400;font-style:normal}
 @font-face{font-family:Imprint MT Pro;src:url("./assets/fonts/ImprintMTPro-Regular.eot");src:url("./assets/fonts/ImprintMTPro-Regular.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/ImprintMTPro-Regular.woff2) format("woff2"),url(./assets/fonts/ImprintMTPro-Regular.woff) format("woff"),url(./assets/fonts/ImprintMTPro-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
+h1,h2,h3,h4,h5,h6{font-family:FranklinBold}
 .sans{font-family:FranklinBold}
 .sans p{font-size:1.3rem;line-height:1.62em;margin:0 0 10px !important}
 .example{margin:1.35em auto;text-align:center;font-size:14px;line-height:21px}
@@ -111,6 +112,14 @@ button{outline:0 !important}
 .item img{width:100%;height:auto}
 #swipebox-overlay{background-color:#152d1b}
 #swipebox-bottom-bar{background:#152d1b}
+pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5;border-radius:0;border-color:#152d1b}
+.accordion-title{color:#152d1b;border-top:1px solid #152d1b;margin:0;padding-top:2rem;font-size:1.6rem;font-family:FranklinBold;text-transform:uppercase;padding-bottom:0;cursor:pointer}
+.accordion-title:hover{color:#224a2c}
+.accordion-title:focus{outline:0}
+.accordion-title:first-child{border:0}
+.accordion-title.open{cursor:default}
+.accordion-content{padding-bottom:0}
+.entry-title{text-align:center;font-size:2.6rem;text-transform:uppercase;margin-bottom:2rem;margin-top:2rem}
 #primary{padding-top:13rem}
 .woocommerce .widget-area{display:none}
 .woocommerce-loop-product__title{font-size:1.8rem !important;color:#152d1b;font-family:"Imprint MT Pro"}
