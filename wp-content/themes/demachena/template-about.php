@@ -12,7 +12,7 @@
  * @package storefront
  */
 
-get_header(); ?>
+get_header('pink'); ?>
 
 	<div id="primary">
 		<main class="main" role="main">
@@ -23,15 +23,8 @@ get_header(); ?>
 	      </div>
 	      <div class="col-md-6 margin-top sans">
 	        <p>
-	          Dema Chena creates unique, artisanal, luxurious womenswear. We celebrate our African roots by merging traditional craftsmanship with contemporary, clean cut silhouettes, creating beautiful, wearable garments. Our pieces are made with care and consideration
-	          to help you build a timeless, season - less wardrobe.
+	          Dema Chena creates unique, artisanal, luxurious womenswear. We celebrate our African roots by merging traditional craftsmanship with contemporary, clean cut silhouettes, creating beautiful, wearable garments. Our pieces are made with care and consideration to help you build a timeless, season - less wardrobe. Inspired by Africa, designed and made in Africa, but with global appeal, Dema Chena is for the discerning woman who has been everywhere and seen everything. Helping you go from day to night. Black to white. Dema to Chena.
 	        </p>
-	        <p>Inspired by Africa, designed and made in Africa, but with global appeal, Dema Chena is for the discerning woman who has been everywhere and seen everything.
-	        </p>
-	        <p>
-	          Helping you go from day to night. Black to white. Dema to Chena.
-	        </p>
-
 	      </div>
 	    </div>
 

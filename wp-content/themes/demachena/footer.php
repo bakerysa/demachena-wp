@@ -16,17 +16,33 @@
 
 	<footer class="footer" role="contentinfo">
 		<a href="subscribe.html" class="btn-subscribe" style="margin-top: 5rem;">Subscribe</a>
-		<div class="social">
-			<a href="https://www.instagram.com/dema_chena/">
-				<i class="fa fa-instagram" aria-hidden="true"></i>
-			</a>
-			<a href="https://twitter.com/dema_chena">
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-			</a>
-			<a href="https://www.facebook.com/demachena/">
-				<i class="fa fa-facebook-official" aria-hidden="true"></i>
-			</a>
-		</div>
+		<ul class="footer-nav">
+			<li>
+				FAQ
+			</li>
+			<li>
+				Terms &amp; Conditions
+			</li>
+			<li>
+				<div class="social">
+					<a href="https://www.instagram.com/dema_chena/">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+					<a href="https://twitter.com/dema_chena">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.facebook.com/demachena/">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					</a>
+				</div>
+			</li>
+			<li>
+				Shipping &amp; Returns
+			</li>
+			<li>
+				Privacy Policy
+			</li>
+		</ul>
 	</footer>
 
 	<?php do_action( 'storefront_after_footer' ); ?>

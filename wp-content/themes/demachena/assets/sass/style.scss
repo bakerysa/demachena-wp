@@ -1,33 +1,8 @@
-/*
-Theme Name:     Dema-Chena Child Theme
-Theme URI:      https://github.com/stuartduff/storefront-child-theme
-Author:         Stuart Duff
-Author URI:     http://stuartduff.com
-Template:     	storefront
-Description:  	This is a blank child theme for WooThemes StoreFront theme
-Version:      	1.0.0
-License:      	GNU General Public License v2 or later
-License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:  	storefront
-Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
-Images License: GNU General Public License v2 or later
-*/
-/*
- * Add your own custom css below this text.
- */
-
 @import '_variables';
 
 @font-face {
   font-family: FranklinBold;
-  src: url("./assets/fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/FranklinBold.woff) format("woff"),url(./assets/fonts/FranklinBold.ttf) format("truetype"),url(./assets/fonts/FranklinBold.svg#FranklinBold) format("svg");
+  src: url("./assets/fonts/FranklinBold.eot?#iefix") format("embedded-opentype"),url(./assets/fonts/FranklinBold.woff) format("woff"),url(./assets/fonts/FranklinBold.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -39,15 +14,42 @@ Images License: GNU General Public License v2 or later
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: FranklinBold;
+@font-face {
+	font-family: Franklin Book;
+	src: url('./assets/fonts/FranklinBook.eot');
+	src: url('./assets/fonts/FranklinBook.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/FranklinBook.woff') format('woff'),
+		url('./assets/fonts/FranklinBook.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
 }
 
+@font-face {
+	font-family: Franklin Gothic;
+	src: url('./assets/fonts/FranklinGothic.eot');
+	src: url('./assets/fonts/FranklinGothic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/FranklinGothic.woff') format('woff'),
+		url('./assets/fonts/FranklinGothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Franklin Gothic Bold;
+	src: url('./assets/fonts/FranklinGothic.eot');
+	src: url('./assets/fonts/FranklinGothic.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/FranklinGothic.woff') format('woff'),
+		url('./assets/fonts/FranklinGothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 .sans {
-  font-family: FranklinBold;
+  font-family: Franklin Book !important;
   p {
     font-size: 1.3rem;
-    line-height: 1.62em;
+    line-height: 1.7em;
     margin: 0 0 10px !important;
   }
 }
@@ -100,7 +102,7 @@ body {
 }
 
 .center {
-  max-width: 74rem;
+  max-width: 70rem;
 }
 
 a:focus,
@@ -213,8 +215,11 @@ button {
   font-size: 1.4rem;
   display: block;
   max-width: 12rem;
-  margin: 0 auto;
+  position: absolute;
   text-align: center;
+  bottom: 2rem;
+  left: 2rem;
+  padding: 0 1rem;
 }
 
 .btn-subscribe:hover {
@@ -279,11 +284,11 @@ button {
   position: absolute;
   width: 0;
   height: 3px;
-  top: 44%;
+  top: 95%;
 }
 
 .nav span:before {
-  left: -2.5px;
+  left: 0px;
 }
 
 .nav span:after {
@@ -292,7 +297,7 @@ button {
 }
 
 .nav span:hover:before {
-  width: 105%;
+  width: 100%;
   transition: width 0.5s cubic-bezier(.22,.61,.36,1);
 }
 
@@ -303,7 +308,7 @@ button {
 }
 
 .current-menu-item span:before {
-  width: 105%;
+  width: 100%;
   transition: width 0.5s cubic-bezier(.22,.61,.36,1);
 }
 
@@ -319,15 +324,16 @@ button {
   right: 10rem;
   text-transform: uppercase;
   font-family: FranklinBold!important;
-  background-color: $dc-color-green;
+  background-color: transparent;
   padding: 0.5rem 2.5rem;
   margin-top: -5px;
   text-align: center;
-  color: $dc-color-pink;
+  color: white;
+  border: 1px solid $dc-color-green;
+  background-color: $dc-color-green;
   &:hover {
-    background-color: $dc-color-pink;
-    border: 1px solid $dc-color-green;
-    color: $dc-color-green !important;
+    background-color: white;
+    color: $dc-color-green;
   }
   &:focus {
     color: $dc-color-pink;
@@ -690,12 +696,20 @@ button {
   position: relative;
   bottom: 2rem;
   display: block;
+  ul {
+    text-align: center;
+    width: 70rem;
+    display: block;
+    margin: 0 auto;
+    li {
+      float: left;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      display: inline-block;
+    }
+  }
 }
 
-.social {
-  width: 12.9rem;
-  margin: 0 auto;
-}
 
 .img-responsive {
   position: relative;

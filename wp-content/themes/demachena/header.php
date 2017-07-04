@@ -18,7 +18,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#eeb7b5">
+<meta name="theme-color" content="#fff">
 <meta name="description" content="Dema Chena creates unique, artisanal, luxurious womenswear. Inspired by Africa, designed and made in Africa.">
 <meta name="keywords" content="dema-chean, dema, chena, african, fashion, womenswear">
 
@@ -35,7 +35,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'theme-pink' ); ?>>
+<body <?php body_class( '' ); ?>>
 <div id="page" class="hfeed site">
 	<?php
 	do_action( 'storefront_before_header' ); ?>
