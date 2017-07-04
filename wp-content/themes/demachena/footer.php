@@ -15,13 +15,13 @@
 	<?php do_action( 'storefront_before_footer' ); ?>
 
 	<footer class="footer" role="contentinfo">
-		<a href="subscribe.html" class="btn-subscribe" style="margin-top: 5rem;">Subscribe</a>
+		<a href="subscribe.html" class="btn-subscribe">Subscribe</a>
 		<ul class="footer-nav">
 			<li>
-				FAQ
+				<a href="<?php echo get_site_url(); ?>/faqs">FAQ</a>
 			</li>
 			<li>
-				Terms &amp; Conditions
+				<a href="<?php echo get_site_url(); ?>/terms-of-service">Terms of Service</a>
 			</li>
 			<li>
 				<div class="social">
@@ -37,10 +37,10 @@
 				</div>
 			</li>
 			<li>
-				Shipping &amp; Returns
+				<a href="<?php echo get_site_url(); ?>/shipping-returns">Shipping &amp; Returns</a>
 			</li>
 			<li>
-				Privacy Policy
+				<a href="<?php echo get_site_url(); ?>/privacy-statement">Privacy Statement</a>
 			</li>
 		</ul>
 	</footer>

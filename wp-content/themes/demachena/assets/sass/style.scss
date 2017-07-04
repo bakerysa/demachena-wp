@@ -1,3 +1,28 @@
+/*
+Theme Name:   	Dema-Chena
+Theme URI:    	https://github.com/stuartduff/storefront-child-theme
+Author:       	Stuart Duff
+Author URI:     http://stuartduff.com
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+/*
+ * Add your own custom css below this text.
+ */
+
 @import '_variables';
 
 @font-face {
@@ -167,6 +192,10 @@ button {
 
 .theme-pink {
   background: $dc-color-pink;
+  color: $dc-color-green;
+}
+
+.theme-white {
   color: $dc-color-green;
 }
 
@@ -470,11 +499,11 @@ button {
   position: absolute;
   width: 0;
   height: 4px;
-  top: -10%;
+  top: 85%;
 }
 
 .landing-link span:before {
-  left: -2.5px;
+  left: 0px;
 }
 
 .landing-link span:after {
@@ -484,7 +513,7 @@ button {
 
 .landing-link span.active:before,
 .landing-link span:hover:before {
-  width: 105%;
+  width: 100%;
   transition: width 0.5s cubic-bezier(.22,.61,.36,1);
 }
 
@@ -698,7 +727,7 @@ button {
   display: block;
   ul {
     text-align: center;
-    width: 70rem;
+    width: 72rem;
     display: block;
     margin: 0 auto;
     li {
@@ -706,6 +735,9 @@ button {
       margin-left: 2rem;
       margin-right: 2rem;
       display: inline-block;
+      a {
+        color: $dc-color-green;
+      }
     }
   }
 }
@@ -721,7 +753,6 @@ button {
 .fa-facebook-official {
   font-size: 2.3rem !important;
   margin-right: 1rem;
-  margin-top: 1rem;
   margin-left: 1rem;
 }
 
@@ -767,7 +798,7 @@ button {
 pre {
   word-break: normal;
   word-wrap: normal;
-  background-color: $dc-color-pink;
+  background-color: white;
   border-radius: 0px;
   border: none;
 }

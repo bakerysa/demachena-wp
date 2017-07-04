@@ -14,7 +14,7 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
-	<footer class="footer" role="contentinfo" style="position: absolute;">
+	<footer class="footer" role="contentinfo">
 		<a href="subscribe.html" class="btn-subscribe" style="margin-top: 5rem;">Subscribe</a>
 		<div class="social">
 			<a href="https://www.instagram.com/dema_chena/">

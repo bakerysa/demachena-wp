@@ -35,7 +35,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( '' ); ?>>
+<body <?php body_class( 'theme-white' ); ?>>
 <div id="page" class="hfeed site">
 	<?php
 	do_action( 'storefront_before_header' ); ?>
@@ -49,7 +49,7 @@
 		<?php wp_nav_menu( array( 'container_class' => 'nav', 'before' => '<span>',
         'after' => '</span>' ) ); ?>
 	</header><!-- #masthead -->
-	<a class="cart-menu-item" href="<?php echo WC()->cart->get_cart_url(); ?>">Cart <?php echo sprintf (_n( '%d item', '%d',count( WC()->cart->get_cart())),count( WC()->cart->get_cart())); ?></a>
+	<a class="cart-menu-item" href="<?php echo WC()->cart->get_cart_url(); ?>">Cart (<?php echo sprintf (_n( '%d item', '%d',count( WC()->cart->get_cart())),count( WC()->cart->get_cart())); ?>)</a>
 	<?php
 	/**
 	 * Functions hooked in to storefront_before_content
