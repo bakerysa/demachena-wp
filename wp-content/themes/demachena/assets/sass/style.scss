@@ -151,86 +151,131 @@ button {
   outline: 0 !important;
 }
 
+.theme-white {
+  color: $dc-color-green;
+  background: white;
+  .nav {
+    span:before, span:after, span:after, span:hover:before, span.active:before {
+      background: $dc-color-green;
+    }
+  }
+  .cart-menu-item {
+  color: white;
+  border: 1px solid $dc-color-green;
+  background-color: $dc-color-green;
+  &:hover {
+    background-color: white;
+    color: $dc-color-green;
+  }
+  &:focus {
+    color: $dc-color-green;
+  }
+}
+  .btn-subscribe {
+    color: white;
+    background: $dc-color-green;
+    border: solid 1px $dc-color-green;
+    &:hover {
+        background: white;
+        color: $dc-color-green;
+      }
+  }
+  .footer {
+    .fa-facebook, .fa-twitter, .fa-instagram {
+    color:  $dc-color-green;
+    &:hover {
+      color: $dc-color-green-light;
+      }
+    }
+    ul li a {
+      color: $dc-color-green;
+    }
+  }
+}
+
 .theme-green {
   background: $dc-color-green;
   color: $dc-color-pink;
-}
-
-.theme-green .landing-link span.active:before,
-.theme-green .landing-link span:after,
-.theme-green .landing-link span:before,
-.theme-green .landing-link span:hover:before,
-.theme-green .nav span.active:before,
-.theme-green .nav span:after,
-.theme-green .nav span:before,
-.theme-green .nav span:hover:before {
-  background: $dc-color-pink;
-}
-
-.theme-green .footer .btn-subscribe {
-  color: $dc-color-pink;
-  border: 1px solid $dc-color-pink;
-}
-
-.theme-green .footer .btn-subscribe:hover {
-  background: $dc-color-pink;
-  border: 1px solid $dc-color-green;
+  .nav, .landing-link {
+    span:before, span:after, span:after, span:hover:before, span.active:before {
+      background: $dc-color-pink;
+    }
+  }
+  .cart-menu-item {
   color: $dc-color-green;
+  border: 1px solid $dc-color-pink;
+  background-color: $dc-color-pink;
+  &:hover {
+    background-color: $dc-color-green;
+    color: $dc-color-pink;
+  }
+  &:focus {
+    color: $dc-color-green;
+  }
 }
-
-.theme-green .footer .fa-facebook-official,
-.theme-green .footer .fa-instagram,
-.theme-green .footer .fa-twitter {
-  color: $dc-color-pink;
-}
-
-.theme-green .footer .fa-facebook-official:hover,
-.theme-green .footer .fa-instagram:hover,
-.theme-green .footer .fa-twitter:hover {
-  color: $dc-color-pink-light;
+  .btn-subscribe {
+    color: $dc-color-pink;
+    border: solid 1px $dc-color-pink;
+    &:hover {
+        background: $dc-color-pink;
+        border: solid 1px $dc-color-green;
+        color: $dc-color-green;
+      }
+  }
+  .footer {
+    .fa-facebook, .fa-twitter, .fa-instagram {
+    color: $dc-color-pink;
+    &:hover {
+      color: $dc-color-pink-light;
+      }
+    }
+    ul li a {
+      color: $dc-color-pink;
+    }
+  }
 }
 
 .theme-pink {
   background: $dc-color-pink;
   color: $dc-color-green;
-}
-
-.theme-white {
-  color: $dc-color-green;
-}
-
-.theme-pink .landing-link span.active:before,
-.theme-pink .landing-link span:after,
-.theme-pink .landing-link span:before,
-.theme-pink .landing-link span:hover:before,
-.theme-pink .nav span.active:before,
-.theme-pink .nav span:after,
-.theme-pink .nav span:before,
-.theme-pink .nav span:hover:before {
-  background: $dc-color-green;
-}
-
-.theme-pink .footer .btn-subscribe {
-  color: $dc-color-green;
-  border: 1px solid #18261b;
-}
-
-.theme-pink .footer .btn-subscribe:hover {
-  background: $dc-color-green;
-  border: 1px solid #18261b;
+  .nav, .landing-link {
+    span:before, span:after, span:after, span:hover:before, span.active:before {
+      background: $dc-color-green;
+    }
+  }
+  .cart-menu-item {
   color: $dc-color-pink;
+  border: 1px solid $dc-color-green;
+  background-color: $dc-color-green;
+  &:hover {
+    background-color: $dc-color-pink;
+    color: $dc-color-green;
+  }
+  &:focus {
+    color: $dc-color-pink;
+  }
 }
-
-.theme-pink .footer .fa-facebook-official,
-.theme-pink .footer .fa-instagram,
-.theme-pink .footer .fa-twitter {
-  color: #162d1c;
-}
-
-.theme-pink .footer .fa-facebook-official:hover,
-.theme-pink .footer .fa-instagram:hover,
-.theme-pink .footer .fa-twitter:hover {
-  color: $dc-color-green-light;
+  .btn-subscribe {
+    z-index: 1000;
+    color: $dc-color-green;
+    border: solid 1px #18261B;
+    &:hover {
+        background: $dc-color-green;
+        border: solid 1px #18261B;
+        color: $dc-color-pink;
+      }
+  }
+  .footer {
+    .fa-facebook, .fa-twitter, .fa-instagram {
+    color: #162d1c;
+    &:hover {
+      color: #224a2c;
+      }
+    }
+    ul li a {
+      color: $dc-color-green;
+    }
+  }
 }
 
 .btn-subscribe {
@@ -246,16 +291,9 @@ button {
   max-width: 12rem;
   position: absolute;
   text-align: center;
-  bottom: 2rem;
-  left: 2rem;
-  padding: 0 1rem;
-}
-
-.btn-subscribe:hover {
-  background: $dc-color-green;
-  border: 1px solid #18261b;
-  color: $dc-color-pink;
-  outline: none;
+  bottom: 4rem;
+  left: 4rem;
+  padding: 0.3rem 1.2rem;
 }
 
 .logo {
@@ -357,16 +395,6 @@ button {
   padding: 0.5rem 2.5rem;
   margin-top: -5px;
   text-align: center;
-  color: white;
-  border: 1px solid $dc-color-green;
-  background-color: $dc-color-green;
-  &:hover {
-    background-color: white;
-    color: $dc-color-green;
-  }
-  &:focus {
-    color: $dc-color-pink;
-  }
 }
 
 .cart-menu-item-alt {
@@ -722,8 +750,8 @@ button {
 .footer {
   width: 100%;
   margin-top: 2rem;
-  position: relative;
-  bottom: 2rem;
+  position: absolute;
+  bottom: 4rem;
   display: block;
   ul {
     text-align: center;
@@ -735,9 +763,6 @@ button {
       margin-left: 2rem;
       margin-right: 2rem;
       display: inline-block;
-      a {
-        color: $dc-color-green;
-      }
     }
   }
 }

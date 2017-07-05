@@ -441,11 +441,6 @@ td.product-subtotal  {
   font-family: FranklinBold;
   text-transform: uppercase;
   font-size: 1.2rem !important;
-  border: 1px solid $dc-color-green !important;
-  &:hover {
-    background-color: white !important;
-    color: $dc-color-green !important;
-  }
 }
 
 .checkout-button {

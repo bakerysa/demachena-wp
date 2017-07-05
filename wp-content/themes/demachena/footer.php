@@ -14,8 +14,9 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
+	<a href="<?php echo get_site_url(); ?>/subscribe" class="btn-subscribe">Subscribe</a>
+
 	<footer class="footer" role="contentinfo">
-		<a href="subscribe.html" class="btn-subscribe">Subscribe</a>
 		<ul class="footer-nav">
 			<li>
 				<a href="<?php echo get_site_url(); ?>/faqs">FAQ</a>

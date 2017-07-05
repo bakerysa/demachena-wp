@@ -18,21 +18,37 @@ li{list-style:none}
 img{border-radius:0}
 a{outline:0 !important}
 button{outline:0 !important}
+.theme-white{color:#142c1c;background:white}
+.theme-white .nav span:before,.theme-white .nav span:after,.theme-white .nav span:after,.theme-white .nav span:hover:before,.theme-white .nav span.active:before{background:#142c1c}
+.theme-white .cart-menu-item{color:white;border:1px solid #142c1c;background-color:#142c1c}
+.theme-white .cart-menu-item:hover{background-color:white;color:#142c1c}
+.theme-white .cart-menu-item:focus{color:#142c1c}
+.theme-white .btn-subscribe{color:white;background:#142c1c;border:solid 1px #142c1c}
+.theme-white .btn-subscribe:hover{background:white;color:#142c1c}
+.theme-white .footer .fa-facebook,.theme-white .footer .fa-twitter,.theme-white .footer .fa-instagram{color:#142c1c}
+.theme-white .footer .fa-facebook:hover,.theme-white .footer .fa-twitter:hover,.theme-white .footer .fa-instagram:hover{color:#224a2c}
+.theme-white .footer ul li a{color:#142c1c}
 .theme-green{background:#142c1c;color:#eeb7b5}
-.theme-green .landing-link span.active:before,.theme-green .landing-link span:after,.theme-green .landing-link span:before,.theme-green .landing-link span:hover:before,.theme-green .nav span.active:before,.theme-green .nav span:after,.theme-green .nav span:before,.theme-green .nav span:hover:before{background:#eeb7b5}
-.theme-green .footer .btn-subscribe{color:#eeb7b5;border:1px solid #eeb7b5}
-.theme-green .footer .btn-subscribe:hover{background:#eeb7b5;border:1px solid #142c1c;color:#142c1c}
-.theme-green .footer .fa-facebook-official,.theme-green .footer .fa-instagram,.theme-green .footer .fa-twitter{color:#eeb7b5}
-.theme-green .footer .fa-facebook-official:hover,.theme-green .footer .fa-instagram:hover,.theme-green .footer .fa-twitter:hover{color:#ffc8c5}
+.theme-green .nav span:before,.theme-green .nav span:after,.theme-green .nav span:after,.theme-green .nav span:hover:before,.theme-green .nav span.active:before,.theme-green .landing-link span:before,.theme-green .landing-link span:after,.theme-green .landing-link span:after,.theme-green .landing-link span:hover:before,.theme-green .landing-link span.active:before{background:#eeb7b5}
+.theme-green .cart-menu-item{color:#142c1c;border:1px solid #eeb7b5;background-color:#eeb7b5}
+.theme-green .cart-menu-item:hover{background-color:#142c1c;color:#eeb7b5}
+.theme-green .cart-menu-item:focus{color:#142c1c}
+.theme-green .btn-subscribe{color:#eeb7b5;border:solid 1px #eeb7b5}
+.theme-green .btn-subscribe:hover{background:#eeb7b5;border:solid 1px #142c1c;color:#142c1c}
+.theme-green .footer .fa-facebook,.theme-green .footer .fa-twitter,.theme-green .footer .fa-instagram{color:#eeb7b5}
+.theme-green .footer .fa-facebook:hover,.theme-green .footer .fa-twitter:hover,.theme-green .footer .fa-instagram:hover{color:#ffc8c5}
+.theme-green .footer ul li a{color:#eeb7b5}
 .theme-pink{background:#eeb7b5;color:#142c1c}
-.theme-white{color:#142c1c}
-.theme-pink .landing-link span.active:before,.theme-pink .landing-link span:after,.theme-pink .landing-link span:before,.theme-pink .landing-link span:hover:before,.theme-pink .nav span.active:before,.theme-pink .nav span:after,.theme-pink .nav span:before,.theme-pink .nav span:hover:before{background:#142c1c}
-.theme-pink .footer .btn-subscribe{color:#142c1c;border:1px solid #18261b}
-.theme-pink .footer .btn-subscribe:hover{background:#142c1c;border:1px solid #18261b;color:#eeb7b5}
-.theme-pink .footer .fa-facebook-official,.theme-pink .footer .fa-instagram,.theme-pink .footer .fa-twitter{color:#162d1c}
-.theme-pink .footer .fa-facebook-official:hover,.theme-pink .footer .fa-instagram:hover,.theme-pink .footer .fa-twitter:hover{color:#224a2c}
-.btn-subscribe{cursor:pointer;padding:.2rem;line-height:28px;text-transform:uppercase;font-weight:700;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;font-family:FranklinBold;font-size:1.4rem;display:block;max-width:12rem;position:absolute;text-align:center;bottom:2rem;left:2rem;padding:0 1rem}
-.btn-subscribe:hover{background:#142c1c;border:1px solid #18261b;color:#eeb7b5;outline:0}
+.theme-pink .nav span:before,.theme-pink .nav span:after,.theme-pink .nav span:after,.theme-pink .nav span:hover:before,.theme-pink .nav span.active:before,.theme-pink .landing-link span:before,.theme-pink .landing-link span:after,.theme-pink .landing-link span:after,.theme-pink .landing-link span:hover:before,.theme-pink .landing-link span.active:before{background:#142c1c}
+.theme-pink .cart-menu-item{color:#eeb7b5;border:1px solid #142c1c;background-color:#142c1c}
+.theme-pink .cart-menu-item:hover{background-color:#eeb7b5;color:#142c1c}
+.theme-pink .cart-menu-item:focus{color:#eeb7b5}
+.theme-pink .btn-subscribe{z-index:1000;color:#142c1c;border:solid 1px #18261b}
+.theme-pink .btn-subscribe:hover{background:#142c1c;border:solid 1px #18261b;color:#eeb7b5}
+.theme-pink .footer .fa-facebook,.theme-pink .footer .fa-twitter,.theme-pink .footer .fa-instagram{color:#162d1c}
+.theme-pink .footer .fa-facebook:hover,.theme-pink .footer .fa-twitter:hover,.theme-pink .footer .fa-instagram:hover{color:#224a2c}
+.theme-pink .footer ul li a{color:#142c1c}
+.btn-subscribe{cursor:pointer;padding:.2rem;line-height:28px;text-transform:uppercase;font-weight:700;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;font-family:FranklinBold;font-size:1.4rem;display:block;max-width:12rem;position:absolute;text-align:center;bottom:4rem;left:4rem;padding:.3rem 1.2rem}
 .logo{width:85px;position:absolute;z-index:4;top:4rem;left:4rem}
 .logo img{width:100%}
 .nav{position:absolute;top:4rem;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width:66%;text-transform:uppercase;font-family:FranklinBold !important}
@@ -47,9 +63,7 @@ button{outline:0 !important}
 .nav span:hover:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .current-menu-item span:before{width:100%;-webkit-transition:width .5s cubic-bezier(0.22,0.61,0.36,1);transition:width .5s cubic-bezier(0.22,0.61,0.36,1)}
 .current-menu-item span:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
-.cart-menu-item{position:absolute;top:4rem;right:10rem;text-transform:uppercase;font-family:FranklinBold !important;background-color:transparent;padding:.5rem 2.5rem;margin-top:-5px;text-align:center;color:white;border:1px solid #142c1c;background-color:#142c1c}
-.cart-menu-item:hover{background-color:white;color:#142c1c}
-.cart-menu-item:focus{color:#eeb7b5}
+.cart-menu-item{position:absolute;top:4rem;right:10rem;text-transform:uppercase;font-family:FranklinBold !important;background-color:transparent;padding:.5rem 2.5rem;margin-top:-5px;text-align:center}
 .cart-menu-item-alt{position:absolute;top:4rem;right:10rem;text-transform:uppercase;font-family:FranklinBold !important;background-color:#eeb7b5;padding:.5rem 2.5rem;margin-top:-5px;text-align:center;color:#142c1c}
 .cart-menu-item-alt:hover{background-color:#142c1c;border:1px solid #eeb7b5;color:#eeb7b5}
 .desktop-hide{display:none}
@@ -105,10 +119,9 @@ button{outline:0 !important}
 .contact-details span:hover:after span.active:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .contact-item{color:#eeb7b5;display:block}
 .contact-item:focus,.contact-item:hover{color:#eeb7b5}
-.footer{width:100%;margin-top:2rem;position:relative;bottom:2rem;display:block}
+.footer{width:100%;margin-top:2rem;position:absolute;bottom:4rem;display:block}
 .footer ul{text-align:center;width:72rem;display:block;margin:0 auto}
 .footer ul li{float:left;margin-left:2rem;margin-right:2rem;display:inline-block}
-.footer ul li a{color:#142c1c}
 .img-responsive{position:relative;width:100%}
 .fa-instagram,.fa-twitter,.fa-facebook-official{font-size:2.3rem !important;margin-right:1rem;margin-left:1rem}
 .carousel-control .glyphicon-chevron-left,.carousel-control .icon-previous{margin-left:-100px !important;color:pink !important;font-size:20px !important;width:20px !important;height:20px !important}
@@ -197,8 +210,7 @@ td.product-subtotal{display:none !important}
 .price-quantity .product-quantity{display:inline-block;padding-left:1rem;font-weight:bold}
 .coupon{margin-top:1rem}
 .coupon label{display:none}
-.button{height:36px;font-family:FranklinBold;text-transform:uppercase;font-size:1.2rem !important;border:1px solid #142c1c !important}
-.button:hover{background-color:white !important;color:#142c1c !important}
+.button{height:36px;font-family:FranklinBold;text-transform:uppercase;font-size:1.2rem !important}
 .checkout-button{color:white !important}
 .storefront-recent-products{display:none}
 .storefront-best-selling-products{display:none}

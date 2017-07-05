@@ -31,4 +31,4 @@ get_header('pink'); ?>
 	  </main>
 	</div><!-- #primary -->
 <?php
-get_footer('alt');
+get_footer();
