@@ -28,4 +28,4 @@ get_header('green'); ?>
 	  </main>
 	</div><!-- #primary -->
 <?php
-get_footer('none');
+get_footer('alt');

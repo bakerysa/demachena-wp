@@ -363,15 +363,18 @@ table.cart .product-thumbnail img {
 }
 
 .wc-backward {
-  background-color: $dc-color-green !important;
-  color: $dc-color-pink !important;
+  background-color: $dc-color-green;
+  color: white !important;
   font-family: FranklinBold;
   text-transform: uppercase;
-  font-size: 1.4rem !important;
+  font-size: 1.4rem;
   border: 1px solid $dc-color-green !important;
   &:hover {
-    background-color: $dc-color-pink !important;
+    background-color: white;
     color: $dc-color-green !important;
+  }
+  &:focus {
+    color: $dc-color-green;
   }
 }
 

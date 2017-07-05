@@ -1,27 +1,8 @@
 /*
 Theme Name:   	Dema-Chena
-Theme URI:    	https://github.com/stuartduff/storefront-child-theme
-Author:       	Stuart Duff
-Author URI:     http://stuartduff.com
 Template:     	storefront
-Description:  	This is a blank child theme for WooThemes StoreFront theme
-Version:      	1.0.0
-License:      	GNU General Public License v2 or later
-License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  	storefront
-Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-Resetting and rebuilding styles have been helped along thanks to the fine work of
-Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
-along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
-Images License: GNU General Public License v2 or later
 */
-/*
- * Add your own custom css below this text.
- */
 
 @import '_variables';
 
@@ -189,6 +170,20 @@ button {
     }
     ul li a {
       color: $dc-color-green;
+      &:hover {
+        color: $dc-color-green-light;
+      }
+    }
+  }
+  .search-field {
+    background-color: white;
+    color: $dc-color-green;
+    border: 1px solid $dc-color-green;
+    &:focus {
+      background-color: white;
+    }
+    &::placeholder {
+      color: $dc-color-green;
     }
   }
 }
@@ -230,6 +225,22 @@ button {
       }
     }
     ul li a {
+      color: $dc-color-pink;
+      &:hover {
+        color: $dc-color-pink-light;
+      }
+    }
+  }
+  .search-field {
+    background-color: $dc-color-green;
+    border: 1px solid $dc-color-pink;
+    input {
+      color: $dc-color-pink;
+    }
+    &:focus {
+      background-color: $dc-color-green-light;
+    }
+    &::placeholder {
       color: $dc-color-pink;
     }
   }
@@ -274,6 +285,23 @@ button {
     }
     ul li a {
       color: $dc-color-green;
+      &:hover {
+        color: $dc-color-green-light;
+      }
+    }
+  }
+  .search-field {
+    background-color: $dc-color-pink;
+    color: $dc-color-green;
+    border: 1px solid $dc-color-green;
+    &:focus {
+      background-color: $dc-color-pink-light;
+    }
+    textarea {
+      color: red;
+    }
+    &::placeholder {
+      color: $dc-color-green;
     }
   }
 }
@@ -291,9 +319,20 @@ button {
   max-width: 12rem;
   position: absolute;
   text-align: center;
-  bottom: 4rem;
+  bottom: 0rem;
   left: 4rem;
   padding: 0.3rem 1.2rem;
+}
+
+.search-form {
+  position: absolute;
+  text-align: center;
+  bottom: 0rem;
+  right: 4rem;
+  margin: 0;
+  .search-submit {
+    display: none;
+  }
 }
 
 .logo {
@@ -744,13 +783,13 @@ button {
 
 .contact-item:focus,
 .contact-item:hover {
-  color: $dc-color-pink;
+  color: $dc-color-pink-light;
 }
 
 .footer {
   width: 100%;
   margin-top: 2rem;
-  position: absolute;
+  position: relative;
   bottom: 4rem;
   display: block;
   ul {
@@ -764,6 +803,16 @@ button {
       margin-right: 2rem;
       display: inline-block;
     }
+  }
+}
+
+.search-field {
+  height: 36px;
+  width: 16rem;
+  box-shadow: none !important;
+  &::placeholder {
+    text-align: center;
+    font-family: Imprint Pro MT;
   }
 }
 

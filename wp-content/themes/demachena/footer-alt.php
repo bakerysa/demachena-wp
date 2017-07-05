@@ -14,9 +14,8 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
-	<a href="<?php echo get_site_url(); ?>/subscribe" class="btn-subscribe">Subscribe</a>
-
-	<footer class="footer" role="contentinfo">
+	<footer class="footer" style="position: absolute;" role="contentinfo">
+		<a href="<?php echo get_site_url(); ?>/subscribe" class="btn-subscribe">Subscribe</a>
 		<ul class="footer-nav">
 			<li>
 				<a href="<?php echo get_site_url(); ?>/faqs">FAQ</a>
@@ -44,9 +43,8 @@
 				<a href="<?php echo get_site_url(); ?>/privacy-statement">Privacy Statement</a>
 			</li>
 		</ul>
+		<?php get_search_form(); ?>
 	</footer>
-
-	<?php get_search_form(); ?>
 
 	<?php do_action( 'storefront_after_footer' ); ?>
 
