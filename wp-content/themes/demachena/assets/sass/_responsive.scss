@@ -156,11 +156,28 @@
 }
 
 .cart-menu-item {
-  position: relative;
-  padding: 0.5rem 11rem;
+  width: 100%;
   margin-top: -5px;
   top: auto;
   right: auto;
-  margin: 0 auto;
+  z-index: 1000;
+  }
+  .woocommerce-loop-product__title {
+    text-align: center !important;
+  }
+  ul.products li.product .woocommerce-Price-amount {
+    margin-right: 0;
+  }
+  .product-name {
+    text-align: center !important;
+  }
+  .price-quantity {
+    text-align: center;
+  }
+  .input-text {
+    width: 14rem;
+  }
+  .entry-title {
+    text-align: center;
   }
 }
