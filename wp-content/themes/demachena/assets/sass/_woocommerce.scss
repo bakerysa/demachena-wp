@@ -199,6 +199,10 @@ ul {
     }
   }
 
+  .woocommerce-products-header {
+    display: none;
+  }
+
   ul.products li.product .woocommerce-Price-amount {
     font-size: 1.6rem;
     margin-right: 100%;

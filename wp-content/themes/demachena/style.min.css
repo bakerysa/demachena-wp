@@ -9,7 +9,9 @@
 .example ul{display:inline-block;list-style-type:none;padding:0 0 0 1.5em;margin:0 auto 0 0;text-align:right}
 #browser,#browser-assist{text-align:justify;width:350px;margin:0 0 0 auto;display:inline-block;font-family:Imprint MT Pro;font-size:14px;line-height:21px}
 body{font-family:Imprint MT Pro !important;height:100%}
-.main{position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
+ul.order_details:before{background:white}
+ul.order_details:after{background:white}
+.main{overflow:hidden;position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
 .main-landing{height:50rem;width:100rem}
 .text-center{text-align:center}
 .center{max-width:70rem}
@@ -199,6 +201,7 @@ ul .products{margin-top:10rem}
 .widget,.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{margin-bottom:0;margin:0 auto !important;padding-left:10px;padding-right:10px;width:33.33% !important}
 #pa_size{background-color:white;color:#152d1b;border:0;font-size:1.8rem !important;text-transform:uppercase;font-weight:bold}
 #pa_size label{display:none}
+.woocommerce-products-header{display:none}
 ul.products li.product .woocommerce-Price-amount{font-size:1.6rem;margin-right:100%}
 ul.products li.product .woocommerce-loop-product__title{margin-bottom:0;text-align:left}
 .product_title{font-size:1.8rem;letter-spacing:0;margin-bottom:0}
@@ -295,17 +298,21 @@ header{height:20rem}
 .num{margin-bottom:3rem}
 .contact-details{font-size:1.6rem;text-align:center;padding-bottom:2rem}
 .contact-details .contact-item{line-height:4rem}
-.footer{position:relative}
+.footer{height:auto;position:relative !important;left:0;right:0;margin-top:2rem;bottom:2rem;display:block}
+.footer ul{text-align:center;width:auto;margin:0 auto}
+.footer ul li{margin-left:2rem;margin-right:0;display:block}
 .margin-top{margin-top:2rem}
 .btn-subscribe{font-size:1.2rem;max-width:20rem}
 .product{margin-top:0 !important}
-#primary{padding-top:0 !important}
+#primary{padding-top:2rem !important}
 .widget,.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{margin-bottom:10rem !important;width:100% !important}
-.cart-menu-item{width:100%;margin-top:-5px;top:auto;right:auto;z-index:1000}
+.cart-menu-item{position:relative;left:4rem;margin-top:-5px;top:auto;right:auto;z-index:1000}
 .woocommerce-loop-product__title{text-align:center !important}
 ul.products li.product .woocommerce-Price-amount{margin-right:0}
 .product-name{text-align:center !important}
 .price-quantity{text-align:center}
 .input-text{width:14rem}
 .entry-title{text-align:center}
+.btn-subscribe{margin-left:2rem;position:relative;margin-bottom:2rem;left:auto;bottom:auto;display:inline-block}
+.search-form{position:relative;margin-bottom:2rem;right:auto;display:inline-block}
 }

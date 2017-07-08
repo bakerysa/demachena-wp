@@ -128,7 +128,23 @@
   }
 
   .footer {
-    position: relative;
+    height: auto;
+    position: relative !important;
+    left: 0;
+    right: 0;
+    margin-top: 2rem;
+    bottom: 2rem;
+    display: block;
+    ul {
+      text-align: center;
+      width: auto;
+      margin: 0 auto;
+      li {
+        margin-left: 2rem;
+        margin-right: 0rem;
+        display: block;
+      }
+    }
   }
 
   .margin-top {
@@ -145,7 +161,7 @@
   }
 
   #primary {
-    padding-top: 0rem !important;
+    padding-top: 2rem !important;
   }
 
   .widget,
@@ -156,7 +172,8 @@
 }
 
 .cart-menu-item {
-  width: 100%;
+  position: relative;
+  left: 4rem;
   margin-top: -5px;
   top: auto;
   right: auto;
@@ -179,5 +196,21 @@
   }
   .entry-title {
     text-align: center;
+  }
+
+
+  .btn-subscribe {
+    margin-left: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+    left: auto;
+    bottom: auto;
+    display: inline-block;
+  }
+  .search-form {
+    position: relative;
+    margin-bottom: 2rem;
+    right: auto;
+    display: inline-block;
   }
 }

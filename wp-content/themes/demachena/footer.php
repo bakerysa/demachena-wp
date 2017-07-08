@@ -16,6 +16,7 @@
 
 	<footer class="footer" role="contentinfo">
 		<a href="<?php echo get_site_url(); ?>/subscribe" class="btn-subscribe">Subscribe</a>
+		<?php get_search_form(); ?>
 		<ul class="footer-nav">
 			<li>
 				<a href="<?php echo get_site_url(); ?>/faqs">FAQ</a>
@@ -43,7 +44,6 @@
 				<a href="<?php echo get_site_url(); ?>/privacy-statement">Privacy Statement</a>
 			</li>
 		</ul>
-		<?php get_search_form(); ?>
 	</footer>
 
 	<?php do_action( 'storefront_after_footer' ); ?>
