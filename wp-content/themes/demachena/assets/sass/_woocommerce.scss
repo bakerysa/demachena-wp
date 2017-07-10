@@ -366,10 +366,6 @@ table.cart .product-thumbnail img {
   }
 }
 
-.woocommerce-product-gallery__image {
-  width: 288px !important;
-}
-
 .storefront-hero__button-edit {
   display: none;
 }
@@ -619,4 +615,16 @@ label {
   font-family: $dc-font-franklin;
   font-size: 1.4rem;
   padding: 0 !important;
+}
+
+ul.products li.product .woocommerce-LoopProduct-link {
+    position: relative;
+}
+
+.pif-has-gallery .secondary-image {
+    position: absolute;
+    top: 0;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
 }

@@ -232,7 +232,6 @@ table th{background-color:white !important}
 table td{background-color:white !important}
 .reset_variations{color:#142c1c !important}
 .reset_variations:hover{color:#224a2c !important}
-.woocommerce-product-gallery__image{width:288px !important}
 .storefront-hero__button-edit{display:none}
 .site-main{padding-top:0 !important}
 .wc-backward{background-color:#142c1c;color:white !important;font-family:FranklinBold;text-transform:uppercase;font-size:1.4rem;border:1px solid #142c1c !important}
@@ -283,6 +282,8 @@ label .payment_method_cheque{background-color:white}
 .remodal .remodal-close{color:#eeb7b5}
 .remodal .remodal-close:hover{background:#eeb7b5;color:#142c1c}
 #chart-button{font-family:"FranklinBold";font-size:1.4rem;padding:0 !important}
+ul.products li.product .woocommerce-LoopProduct-link{position:relative}
+.pif-has-gallery .secondary-image{position:absolute;top:0;width:auto;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
 @media(min-width:0){.flex-viewport{width:75%;float:right}
 .flex-control-nav{width:25%;float:left}
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li{width:90%;float:none;margin:0 0 15% 0}
