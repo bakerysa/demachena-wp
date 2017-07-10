@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce  Flipper v0.1\n"
+"Project-Id-Version: WooCommerce Product Image Flipper v0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2015-02-17 10:16:58+0000\n"
+"PO-Revision-Date: 2013-10-17 10:16:58+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,38 +20,38 @@ msgstr ""
 "X-Textdomain-Support: yes"
 
 #. translators: plugin header field 'Name'
-#: wc-flipper.php:0
-#@ woocommerce-flipper
-msgid "WooCommerce  Flipper"
+#: image-flipper.php:0
+#@ woocommerce-product-image-flipper
+msgid "WooCommerce Product Image Flipper"
 msgstr ""
 
 #. translators: plugin header field 'PluginURI'
-#: wc-flipper.php:0
-#@ woocommerce-flipper
-msgid "https://wordpress.org/plugins/woocommerce-flipper/"
+#: image-flipper.php:0
+#@ woocommerce-product-image-flipper
+msgid "http://jameskoster.co.uk/tag/product-image-flipper/"
 msgstr ""
 
 #. translators: plugin header field 'Description'
-#: wc-flipper.php:0
-#@ woocommerce-flipper
-msgid "A very simple plugin that Show's Front and backside view of any product."
+#: image-flipper.php:0
+#@ woocommerce-product-image-flipper
+msgid "Adds a secondary image on product archives that is revealed on hover. Perfect for displaying front/back shots of clothing and other products."
 msgstr ""
 
 #. translators: plugin header field 'Author'
-#: wc-flipper.php:0
-#@ woocommerce-flipper
-msgid "srinivasan"
+#: image-flipper.php:0
+#@ woocommerce-product-image-flipper
+msgid "jameskoster"
 msgstr ""
 
 #. translators: plugin header field 'AuthorURI'
 #: image-flipper.php:0
 #@ woocommerce-product-image-flipper
-msgid "http://google.com"
+msgid "http://jameskoster.co.uk"
 msgstr ""
 
 #. translators: plugin header field 'Version'
-#: wc-flipper.php:0
-#@ woocommerce-flipper
+#: image-flipper.php:0
+#@ woocommerce-product-image-flipper
 msgid "0.1"
 msgstr ""
 
