@@ -83,3 +83,18 @@ add_filter ( 'storefront_product_thumbnail_columns', 'bbloomer_change_gallery_co
 function bbloomer_change_gallery_columns_storefront() {
      return 1;
 }
+
+
+// Add To Cart Button text
+
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_single_add_to_cart_text' );
+
+function woo_custom_single_add_to_cart_text() {
+
+    return __( 'Add To Cart', 'woocommerce' );
+
+}
+
+if (wc_get_page_id( 'cart' ) == get_the_ID()) {
+  get_footer('alt');
+}
