@@ -5,6 +5,16 @@
   font-size: 2.6rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  a {
+    color: #333;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.alpha {
+  text-align: center;
 }
 
 // Store Page
@@ -449,10 +459,14 @@ td.product-subtotal  {
 .button {
   background-color: $dc-color-green !important;
   color: white !important;
+  border: 1px solid $dc-color-green;
   height: 35px;
   font-family: FranklinBold;
   text-transform: uppercase;
   font-size: 1.2rem !important;
+  &:hover {
+    background-color: white !important;
+  }
 }
 
 .checkout-button {
@@ -570,4 +584,39 @@ label {
   box-shadow: none !important;
   border: 1px solid $dc-color-green !important;
   background-color: white !important;
+}
+
+.page-header {
+  border: none;
+}
+
+.entry-content {
+  img {
+    margin: 0 auto;
+    max-width: 50rem;
+  }
+}
+
+.remodal {
+  background: $dc-color-green !important;
+  #modal1Title {
+    color: $dc-color-pink !important;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase !important;
+    font-family: $dc-font-franklin;
+  }
+  .remodal-close {
+    color: $dc-color-pink;
+    &:hover {
+      background: $dc-color-pink;
+      color: $dc-color-green;
+    }
+  }
+}
+
+#chart-button {
+  font-family: $dc-font-franklin;
+  font-size: 1.4rem;
+  padding: 0 !important;
 }

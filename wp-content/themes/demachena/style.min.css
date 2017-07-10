@@ -5,6 +5,7 @@
 @font-face{font-family:Franklin Gothic Bold;src:url("./assets/fonts/FranklinGothic.eot");src:url("./assets/fonts/FranklinGothic.eot?#iefix") format("embedded-opentype"),url("./assets/fonts/FranklinGothic.woff") format("woff"),url("./assets/fonts/FranklinGothic.ttf") format("truetype");font-weight:normal;font-style:normal}
 .sans{font-family:Franklin Book !important}
 .sans p{font-size:1.3rem;line-height:1.7em;margin:0 0 10px !important}
+p{font-size:1.4rem}
 .example{margin:1.35em auto;text-align:center;font-size:14px;line-height:21px}
 .example ul{display:inline-block;list-style-type:none;padding:0 0 0 1.5em;margin:0 auto 0 0;text-align:right}
 #browser,#browser-assist{text-align:justify;width:350px;margin:0 0 0 auto;display:inline-block;font-family:Imprint MT Pro;font-size:14px;line-height:21px}
@@ -20,6 +21,7 @@ li{list-style:none}
 img{border-radius:0}
 a{outline:0 !important}
 button{outline:0 !important}
+textarea{resize:none}
 .theme-white{color:#142c1c;background:white}
 .theme-white .nav span:before,.theme-white .nav span:after,.theme-white .nav span:after,.theme-white .nav span:hover:before,.theme-white .nav span.active:before{background:#142c1c}
 .theme-white button{color:white;background:#142c1c;border:solid 1px #142c1c}
@@ -75,7 +77,7 @@ button{outline:0 !important}
 .btn-subscribe{cursor:pointer;padding:.2rem;line-height:28px;text-transform:uppercase;font-weight:700;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;font-family:FranklinBold;font-size:1.4rem;display:block;max-width:12rem;position:absolute;text-align:center;bottom:0;left:4rem;padding:.3rem 1.2rem}
 .search-form{position:absolute;text-align:center;bottom:0;right:4rem;margin:0}
 .search-form .search-submit{display:none}
-.logo{width:85px;position:absolute;z-index:4;top:4rem;left:4rem}
+.logo{width:85px;position:absolute;z-index:4;top:4rem;left:3rem}
 .logo img{width:100%}
 .nav{position:absolute;top:4rem;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width:66%;text-transform:uppercase;font-family:FranklinBold !important}
 .nav ul{list-style:none;margin:0;padding:0;text-align:center}
@@ -116,23 +118,22 @@ button{outline:0 !important}
 .landing-link span:hover:after span.active:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .landing-link a{color:#eeb7b5;font-size:2rem;text-align:center;font-family:FranklinBold;text-transform:uppercase;text-decoration:none;font-weight:700;position:relative;z-index:3}
 .landing-link a:focus,.landing-link a:hover{color:#eeb7b5}
-.page-title{font-family:"FranklinBold";text-transform:uppercase;font-size:2.5rem !important}
+.page-title{font-family:"FranklinBold";text-transform:uppercase;font-size:2rem !important}
+.mc-field-group{border:1px solid #142c1c}
 #mc_embed_signup div.mce_inline_error{background-color:#eeb7b5 !important;color:#142c1c !important}
 #mce-success-response{width:30rem}
 #mc_embed_signup_scroll h2{margin-bottom:5rem;letter-spacing:1px;color:#142c1c;font-size:20px;text-transform:uppercase;font-family:FranklinBold !important;text-align:center}
 #mc_embed_signup_scroll .mc-field-group{text-align:center;color:#142c1c;font-size:1.6rem;font-family:FranklinBold !important}
-#mc_embed_signup_scroll input{background:#eeb7b5;border:1px solid #142c1c;color:#142c1c;text-size:1.6rem;text-transform:uppercase;border-radius:0;text-align:center;height:4.2rem;width:35rem}
+#mc_embed_signup_scroll input{background:#eeb7b5;color:#142c1c;text-size:1.6rem;text-transform:uppercase;border-radius:0;text-align:center;height:4.2rem;width:35rem}
 #mc_embed_signup_scroll .mc-field-group{margin-bottom:10px}
-#mc_embed_signup_scroll .button{color:#eeb7b5;width:100%;background:#142c1c;line-height:2rem;font-family:FranklinBold}
-#mc_embed_signup_scroll .button:hover{color:#142c1c;background:#eeb7b5}
 .img-contain{position:relative;max-width:200px;max-height:150px;margin:25px auto}
 ::-webkit-input-placeholder{color:#142c1c;padding-left:5px}
 ::-moz-placeholder{color:#142c1c}
 :-ms-input-placeholder{color:#142c1c}
 :-moz-placeholder{color:#142c1c}
 .clearfix{clear:both}
-#mc-embedded-subscribe{letter-spacing:1px;color:#e0bb97;font-size:15px;text-transform:uppercase;cursor:pointer;right:50%;outline:0;position:relative;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);margin-top:20px;font-weight:700}
-#mc-embedded-subscribe:hover{background:#142c1c;border:1px solid #142c1c;color:#eeb7b5;outline:0}
+#mc-embedded-subscribe{letter-spacing:1px;color:#eeb7b5 !important;border:1px solid #142c1c;font-size:15px;text-transform:uppercase;cursor:pointer;right:50%;outline:0;position:relative;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);margin-top:20px;font-weight:700}
+#mc-embedded-subscribe:hover{background:#eeb7b5 !important;color:#142c1c !important;outline:0}
 .num{text-align:center;margin-top:3rem;margin-bottom:1rem;font-size:1rem;font-family:FranklinBold}
 #myCarousel{margin:0 auto;max-width:50rem}
 .h-margin-top{margin-top:3rem}
@@ -146,10 +147,10 @@ button{outline:0 !important}
 .contact-details span:hover:after span.active:after{background:transparent;width:100%;-webkit-transition:0s;transition:0s}
 .contact-item{color:#eeb7b5;display:block}
 .contact-item:focus,.contact-item:hover{color:#ffc8c5}
-.footer{width:100%;height:3rem;margin-top:2rem;position:relative;left:0;bottom:3rem;display:block}
+.footer{width:100%;height:3rem;margin-top:5%;position:relative;left:0;bottom:3rem;display:block}
 .footer ul{text-align:center;width:72rem;display:block;margin:0 auto}
 .footer ul li{float:left;margin-left:2rem;margin-right:2rem;display:inline-block}
-.search-field{height:36px;width:16rem;box-shadow:none !important}
+.search-field{height:36px;width:16rem;border-radius:0;box-shadow:none !important}
 .search-field::-webkit-input-placeholder{text-align:center;font-family:Imprint Pro MT}
 .search-field::-moz-placeholder{text-align:center;font-family:Imprint Pro MT}
 .search-field:-ms-input-placeholder{text-align:center;font-family:Imprint Pro MT}
@@ -163,7 +164,7 @@ button{outline:0 !important}
 .item img{width:100%;height:auto}
 #swipebox-overlay{background-color:#142c1c}
 #swipebox-bottom-bar{background:#142c1c}
-pre{word-break:normal;word-wrap:normal;background-color:white;border-radius:0;border:0}
+pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5;border-radius:0;border:0}
 .accordion-title{color:#142c1c;margin:0;padding-top:2rem;font-size:1.6rem;font-family:FranklinBold;text-transform:uppercase;padding-bottom:0;cursor:pointer}
 .accordion-title:hover{color:#224a2c;cursor:pointer}
 .accordion-title:focus{outline:0}
@@ -172,6 +173,9 @@ pre{word-break:normal;word-wrap:normal;background-color:white;border-radius:0;bo
 .accordion-content{font-family:Imprint MT Pro;font-size:1.6rem;padding-bottom:0}
 .widget-area{display:none}
 .entry-title{text-align:left;font-size:2.6rem;margin-bottom:2rem;margin-top:2rem}
+.entry-title a{color:#333}
+.entry-title a:hover{text-decoration:underline !important}
+.alpha{text-align:center}
 #primary{padding-top:13rem}
 .woocommerce .widget-area{display:none}
 .woocommerce-loop-product__title{font-size:1.8rem !important;color:#142c1c;font-family:"Imprint MT Pro"}
@@ -246,7 +250,8 @@ td.product-subtotal{display:none !important}
 .price-quantity .product-quantity{display:inline-block;padding-left:1rem;font-weight:bold}
 .coupon{margin-top:1.5rem;padding-bottom:1rem}
 .coupon label{display:none}
-.button{background-color:#142c1c !important;color:white !important;height:35px;font-family:FranklinBold;text-transform:uppercase;font-size:1.2rem !important}
+.button{background-color:#142c1c !important;color:white !important;border:1px solid #142c1c;height:35px;font-family:FranklinBold;text-transform:uppercase;font-size:1.2rem !important}
+.button:hover{background-color:white !important}
 .checkout-button{color:white !important}
 .storefront-recent-products{display:none}
 .storefront-best-selling-products{display:none}
@@ -271,6 +276,13 @@ label .payment_method_cheque{background-color:white}
 .cart_item{margin-bottom:4rem}
 .apply_coupon{heiht:60px !important}
 .input-text{overflow:hidden;height:35px;box-shadow:none !important;border:1px solid #142c1c !important;background-color:white !important}
+.page-header{border:0}
+.entry-content img{margin:0 auto;max-width:50rem}
+.remodal{background:#142c1c !important}
+.remodal #modal1Title{color:#eeb7b5 !important;text-align:center;font-size:3rem;text-transform:uppercase !important;font-family:"FranklinBold"}
+.remodal .remodal-close{color:#eeb7b5}
+.remodal .remodal-close:hover{background:#eeb7b5;color:#142c1c}
+#chart-button{font-family:"FranklinBold";font-size:1.4rem;padding:0 !important}
 @media(min-width:0){.flex-viewport{width:75%;float:right}
 .flex-control-nav{width:25%;float:left}
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li{width:90%;float:none;margin:0 0 15% 0}
@@ -284,11 +296,11 @@ label .payment_method_cheque{background-color:white}
 .landing-link{position:absolute;z-index:1}
 .landing-link a{font-size:5rem}
 .landing-link span:after,.landing-link span:before{height:10px;top:-106%}
-header{height:20rem}
+header{height:18rem}
 #mc_embed_signup_scroll .button{width:35rem}
 .main{position:relative;left:auto;-webkit-transform:none;-ms-transform:none;transform:none}
 .main-landing{padding:20%;height:auto;width:auto}
-.nav{position:absolute;top:3rem;left:60%}
+.nav{position:absolute;top:2.6rem;left:60%}
 .nav ul li{display:block;text-align:right;width:100%;font-size:1.7rem;line-height:4.2rem}
 .nav ul li a{color:inherit;text-decoration:none}
 .nav span:after,.nav span:before{height:4px}
@@ -298,7 +310,7 @@ header{height:20rem}
 .num{margin-bottom:3rem}
 .contact-details{font-size:1.6rem;text-align:center;padding-bottom:2rem}
 .contact-details .contact-item{line-height:4rem}
-.footer{height:auto;position:relative !important;left:0;right:0;margin-top:2rem;bottom:2rem;display:block}
+.footer{height:auto;position:relative !important;left:0;right:0;margin-top:4rem;text-align:center;bottom:2rem;display:block}
 .footer ul{text-align:center;width:auto;margin:0 auto}
 .footer ul li{margin-left:2rem;margin-right:0;display:block}
 .margin-top{margin-top:2rem}
@@ -306,13 +318,13 @@ header{height:20rem}
 .product{margin-top:0 !important}
 #primary{padding-top:2rem !important}
 .widget,.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{margin-bottom:10rem !important;width:100% !important}
-.cart-menu-item{position:relative;left:4rem;margin-top:-5px;top:auto;right:auto;z-index:1000}
+.cart-menu-item{position:relative;display:inline-block;left:3rem;margin-top:4rem;margin-bottom:2rem;top:auto;right:auto;z-index:1000}
 .woocommerce-loop-product__title{text-align:center !important}
 ul.products li.product .woocommerce-Price-amount{margin-right:0}
 .product-name{text-align:center !important}
 .price-quantity{text-align:center}
 .input-text{width:14rem}
 .entry-title{text-align:center}
-.btn-subscribe{margin-left:2rem;position:relative;margin-bottom:2rem;left:auto;bottom:auto;display:inline-block}
+.btn-subscribe{position:relative;margin-bottom:2rem;left:auto;bottom:auto;display:inline-block}
 .search-form{position:relative;margin-bottom:2rem;right:auto;display:inline-block}
 }

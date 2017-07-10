@@ -60,6 +60,10 @@ Text Domain:  	storefront
   }
 }
 
+p {
+  font-size: 1.4rem;
+}
+
 .example {
   margin: 1.35em auto;
   text-align: center;
@@ -142,6 +146,10 @@ a {
 
 button {
   outline: 0 !important;
+}
+
+textarea {
+   resize: none;
 }
 
 .theme-white {
@@ -352,7 +360,7 @@ button {
   position: absolute;
   z-index: 4;
   top: 4rem;
-  left: 4rem;
+  left: 3rem;
 }
 
 .logo img {
@@ -622,7 +630,11 @@ button {
 .page-title {
   font-family: $dc-font-franklin;
   text-transform: uppercase;
-  font-size: 2.5rem !important;
+  font-size: 2rem !important;
+}
+
+.mc-field-group {
+  border: 1px solid $dc-color-green;
 }
 
 
@@ -654,7 +666,6 @@ button {
 
 #mc_embed_signup_scroll input {
   background: $dc-color-pink;
-  border: 1px solid $dc-color-green;
   color: $dc-color-green;
   text-size: 1.6rem;
   text-transform: uppercase;
@@ -666,19 +677,6 @@ button {
 
 #mc_embed_signup_scroll .mc-field-group {
   margin-bottom: 10px;
-}
-
-#mc_embed_signup_scroll .button {
-  color: $dc-color-pink;
-  width: 100%;
-  background: $dc-color-green;
-  line-height: 2rem;
-  font-family: FranklinBold;
-}
-
-#mc_embed_signup_scroll .button:hover {
-  color: $dc-color-green;
-  background: $dc-color-pink;
 }
 
 .img-contain {
@@ -711,7 +709,8 @@ button {
 
 #mc-embedded-subscribe {
   letter-spacing: 1px;
-  color: #e0bb97;
+  color: $dc-color-pink !important;
+  border: 1px solid $dc-color-green;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -723,13 +722,11 @@ button {
   transform: translateX(-50%);
   margin-top: 20px;
   font-weight: 700;
-}
-
-#mc-embedded-subscribe:hover {
-  background: $dc-color-green;
-  border: 1px solid $dc-color-green;
-  color: $dc-color-pink;
-  outline: none;
+  &:hover {
+    background: $dc-color-pink !important;
+    color: $dc-color-green !important;
+    outline: none;
+  }
 }
 
 .num {
@@ -808,7 +805,7 @@ button {
 .footer {
   width: 100%;
   height: 3rem;
-  margin-top: 2rem;
+  margin-top: 5%;
   position: relative;
   left: 0;
   bottom: 3rem;
@@ -830,6 +827,7 @@ button {
 .search-field {
   height: 36px;
   width: 16rem;
+  border-radius: 0px;
   box-shadow: none !important;
   &::placeholder {
     text-align: center;
@@ -897,7 +895,7 @@ button {
 pre {
   word-break: normal;
   word-wrap: normal;
-  background-color: white;
+  background-color: $dc-color-pink;
   border-radius: 0px;
   border: none;
 }
@@ -935,6 +933,10 @@ pre {
 
 .widget-area {
   display: none;
+}
+
+.entry-header {
+
 }
 
 @import '_woocommerce';
