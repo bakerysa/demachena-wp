@@ -28,7 +28,7 @@
 // START Editing Project Variables.
 // Project related.
 var project                 = 'Dema-Chena'; // Project Name.
-var projectURL              = 'http://localhost/bakery/demachena-wp/'; // Project URL. Could be something like localhost:8888.
+var projectURL              = 'http://localhost/bakery/wordpress/demachena-wp/'; // Project URL. Could be something like localhost:8888.
 var productURL              = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 // Translation related.

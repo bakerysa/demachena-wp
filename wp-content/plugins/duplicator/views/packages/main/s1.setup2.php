@@ -6,7 +6,7 @@
     form#dup-form-opts fieldset {border-radius:4px;  border-top:1px solid #dfdfdf;  line-height:20px}
     form#dup-form-opts fieldset{padding:10px 15px 15px 15px; min-height:275px; margin:0 10px 10px 10px}
     form#dup-form-opts textarea, input[type="text"] {width:100%}
-    form#dup-form-opts textarea#filter-dirs {height:85px}
+    form#dup-form-opts textarea#filter-dirs {height:95px;}
     form#dup-form-opts textarea#filter-exts {height:27px}
     textarea#package_notes {height:37px;}
 	div.dup-notes-add {float:right; margin:-4px 2px 4px 0;}
@@ -21,6 +21,7 @@
     span#dup-archive-filter-db {color:#A62426; display:none}
     div#dup-file-filter-items, div#dup-db-filter-items {padding:5px 0;}
 	div#dup-db-filter-items {font-stretch:ultra-condensed; font-family:Calibri; }
+	form#dup-form-opts textarea#filter-files {height:85px}
     div.dup-quick-links {font-size:11px; float:right; display:inline-block; margin-top:2px; font-style:italic}
     div.dup-tabs-opts-help {font-style:italic; font-size:11px; margin:10px 0 0 10px; color:#777}
     table#dup-dbtables td {padding:1px 15px 1px 4px}
@@ -43,7 +44,7 @@
 	ul.add-menu-item-tabs li, ul.category-tabs li {padding:3px 30px 5px}
 </style>
 
-<form id="dup-form-opts" method="post" action="?page=duplicator&tab=new2" data-validate="parsley">
+<form id="dup-form-opts" method="post" action="?page=duplicator&tab=new2<?php echo $retry_enabled ? '&retry=1' : '';?>" data-validate="parsley">
 <input type="hidden" id="dup-form-opts-action" name="action" value="">
 <div>
 	<label for="package-name"><b><?php _e('Name', 'duplicator') ?>:</b> </label>
@@ -156,6 +157,7 @@ ARCHIVE -->
 							<a href="javascript:void(0)" onclick="jQuery('#filter-dirs').val('')"><?php _e("(clear)", 'duplicator') ?></a>
 						</div>
 						<textarea name="filter-dirs" id="filter-dirs" placeholder="/full_path/exclude_path1;/full_path/exclude_path2;"><?php echo str_replace(";", ";\n", esc_textarea($Package->Archive->FilterDirs)) ?></textarea><br/>
+
 						<label class="no-select" title="<?php _e("Separate all filters by semicolon", 'duplicator'); ?>"><?php _e("File extensions", 'duplicator') ?>:</label>
 						<div class='dup-quick-links'>
 							<a href="javascript:void(0)" onclick="Duplicator.Pack.AddExcludeExts('avi;mov;mp4;mpeg;mpg;swf;wmv;aac;m3u;mp3;mpa;wav;wma')">[<?php _e("media", 'duplicator') ?>]</a>
@@ -164,19 +166,17 @@ ARCHIVE -->
 						</div>
 						<textarea name="filter-exts" id="filter-exts" placeholder="ext1;ext2;ext3;"><?php echo esc_textarea($Package->Archive->FilterExts); ?></textarea>
 
-						<div class="dup-tabs-opts-help">
-							<?php _e("The directory paths and extensions above will be be excluded from the archive file if enabled is checked.", 'duplicator'); ?> <br/>
-							<?php _e("Use the full path for directories and semicolons to separate all items.", 'duplicator'); ?>
+						<label class="no-select" title="<?php _e("Separate all filters by semicolon", 'duplicator'); ?>"><?php _e("Files", 'duplicator') ?>:</label>
+						<div class='dup-quick-links'>
+							<a href="javascript:void(0)" onclick="Duplicator.Pack.AddExcludeFilePath('<?php echo rtrim(DUPLICATOR_WPROOTPATH, '/'); ?>')"><?php _e("(file path)", 'duplicator') ?></a>
+							<a href="javascript:void(0)" onclick="jQuery('#filter-files').val('')"><?php _e("(clear)", 'duplicator') ?></a>
 						</div>
-						<br/>
-						<span class="dup-pro-text">
-							<?php echo sprintf(__('%1$s are available in', 'duplicator'), 'Individual file filters'); ?>
-							<a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=free_file_filters&utm_campaign=duplicator_pro" target="_blank"><?php _e('Professional', 'duplicator');?></a>
-							<i class="fa fa-lightbulb-o"
-								data-tooltip-title="<?php _e("File Filters:", 'duplicator'); ?>"
-								data-tooltip="<?php _e('File filters allows you to select individual files and add them to an exclusion list that will filter them from the package.', 'duplicator'); ?>">
-							 </i>
-						</span>
+						<textarea name="filter-files" id="filter-files" placeholder="/full_path/exclude_file_1.ext;/full_path/exclude_file2.ext"><?php echo str_replace(";", ";\n", esc_textarea($Package->Archive->FilterFiles)) ?></textarea>
+
+						<div class="dup-tabs-opts-help">
+							<?php _e("The directory, file and extensions paths above will be excluded from the archive file if enabled is checked.", 'duplicator'); ?> <br/>
+							<?php _e("Use the full path for directories and files with semicolons to separate all paths.", 'duplicator'); ?>
+						</div>
 					</div>
 				</div>
 
@@ -446,11 +446,11 @@ jQuery(document).ready(function ($)
 		var $filterItems = $('#dup-file-filter-items');
 		if ($("#filter-on").is(':checked')) {
 			$filterItems.removeAttr('disabled').css({color:'#000'});
-			$('#filter-exts,#filter-dirs').removeAttr('readonly').css({color:'#000'});
+			$('#filter-exts,#filter-dirs, #filter-files').removeAttr('readonly').css({color:'#000'});
 			$('#dup-archive-filter-file').show();
 		} else {
 			$filterItems.attr('disabled', 'disabled').css({color:'#999'});
-			$('#filter-dirs, #filter-exts').attr('readonly', 'readonly').css({color:'#999'});
+			$('#filter-dirs, #filter-exts,  #filter-files').attr('readonly', 'readonly').css({color:'#999'});
 			$('#dup-archive-filter-file').hide();
 		}
 	};
@@ -483,6 +483,12 @@ jQuery(document).ready(function ($)
 	{
 		var text = $("#filter-exts").val() + path + ';';
 		$("#filter-exts").val(text);
+	};
+
+	Duplicator.Pack.AddExcludeFilePath = function (path)
+	{
+		var text = $("#filter-files").val() + path + '/file.ext;\n';
+		$("#filter-files").val(text);
 	};
 	
 	Duplicator.Pack.ConfirmReset = function () 
