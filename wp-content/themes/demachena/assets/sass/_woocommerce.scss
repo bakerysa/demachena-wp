@@ -201,6 +201,9 @@ ul {
     background-color: white;
     color: #152d1b;
     border: none;
+    text-align: left;
+    padding-left: none;
+    margin-left: none;
     font-size: 1.8rem !important;
     text-transform: uppercase;
     font-weight: bold;
@@ -627,4 +630,17 @@ ul.products li.product .woocommerce-LoopProduct-link {
     width: auto;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.woocommerce-currency-switcher {
+  width: 165px !important;
+  font-family: $dc-font-franklin;
+  font-size: 1rem;
+  position: absolute;
+  top: 8rem;
+  right: 10rem;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
 }

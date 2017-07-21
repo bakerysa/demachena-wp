@@ -153,6 +153,9 @@ textarea {
 }
 
 .theme-white {
+  .woocommerce-currency-switcher {
+    color: $dc-color-green;
+  }
   color: $dc-color-green;
   background: white;
   .nav {
@@ -215,6 +218,9 @@ textarea {
 }
 
 .theme-green {
+  .woocommerce-currency-switcher {
+    color: $dc-color-pink;
+  }
   background: $dc-color-green;
   color: $dc-color-pink;
   .nav, .landing-link {
@@ -232,12 +238,14 @@ textarea {
   }
 }
   .btn-subscribe {
-    color: $dc-color-pink;
+    color: $dc-color-green;
     border: solid 1px $dc-color-pink;
+    background: $dc-color-pink;
     &:hover {
-        background: $dc-color-pink;
+        background: $dc-color-green;
         border: solid 1px $dc-color-green;
-        color: $dc-color-green;
+        color: $dc-color-pink;
+        border: solid 1px $dc-color-pink;
       }
   }
   .footer {
@@ -270,6 +278,9 @@ textarea {
 }
 
 .theme-pink {
+  .woocommerce-currency-switcher {
+    color: $dc-color-green;
+  }
   background: $dc-color-pink;
   color: $dc-color-green;
   .nav, .landing-link {
@@ -895,7 +906,7 @@ textarea {
 pre {
   word-break: normal;
   word-wrap: normal;
-  background-color: $dc-color-pink;
+  background-color: white;
   border-radius: 0px;
   border: none;
 }
