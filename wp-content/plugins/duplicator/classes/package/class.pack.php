@@ -119,7 +119,7 @@ class DUP_Package
         $report['ARC']['FilterInfo'] = $this->Archive->FilterInfo;
         $report['ARC']['Status']['Size']  = ($this->Archive->Size > DUPLICATOR_SCAN_SIZE_DEFAULT) ? 'Warn' : 'Good';
         $report['ARC']['Status']['Names'] = (count($this->Archive->FilterInfo->Files->Warning) + count($this->Archive->FilterInfo->Dirs->Warning)) ? 'Warn' : 'Good';
-        $report['ARC']['Status']['Big']   = count($this->Archive->FilterInfo->Files->Size) ? 'Warn' : 'Good';
+        //$report['ARC']['Status']['Big']   = count($this->Archive->FilterInfo->Files->Size) ? 'Warn' : 'Good';
         $report['ARC']['Dirs']  = $this->Archive->Dirs;
         $report['ARC']['Files'] = $this->Archive->Files;
 
@@ -128,15 +128,15 @@ class DUP_Package
         $db  = $this->Database->getScannerData();
         $report['DB'] = $db;
 
-        $warnings = array($report['SRV']['WEB']['ALL'],
+        $warnings = array(
             $report['SRV']['PHP']['ALL'],
             $report['SRV']['WP']['ALL'],
             $report['ARC']['Status']['Size'],
             $report['ARC']['Status']['Names'],
-            $report['ARC']['Status']['Big'],
-            $db['Status']['Size'],
-            $db['Status']['Rows'],
-            $db['Status']['Case']);
+            //$report['ARC']['Status']['Big'],
+            $db['Status']['DB_Size'],
+            $db['Status']['DB_Rows'],
+            $db['Status']['DB_Case']);
 
         //array_count_values will throw a warning message if it has null values,
         //so lets replace all nulls with empty string
@@ -485,11 +485,13 @@ class DUP_Package
      *
      *  @return string   A default packagename such as 20170218_blogname
      */
-    public static function getDefaultName()
+    public static function getDefaultName($preDate = true)
     {
         //Remove specail_chars from final result
         $special_chars = array(".", "-");
-        $name          = date('Ymd').'_'.sanitize_title(get_bloginfo('name', 'display'));
+        $name          = ($preDate) 
+							? date('Ymd') . '_' . sanitize_title(get_bloginfo('name', 'display'))
+							: sanitize_title(get_bloginfo('name', 'display')) . '_' . date('Ymd');
         $name          = substr(sanitize_file_name($name), 0, 40);
         $name          = str_replace($special_chars, '', $name);
         return $name;

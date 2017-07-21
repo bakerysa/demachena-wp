@@ -24,7 +24,7 @@
 	form#form-duplicator {text-align:center; max-width:650px; min-height:200px; margin:0px auto 0px auto; padding:0px;}
 	div.dup-progress-title {font-size:22px; padding:5px 0 20px 0; font-weight:bold}
 	div#dup-msg-success {padding:0 5px 5px 5px; text-align:left}
-	div#dup-msg-success div.details {padding:10px 15px 10px 15px; margin:5px 0 15px 0; background:#fff; border-radius:5px; border:1px solid #ddd; }
+	div#dup-msg-success div.details {padding:10px 15px 10px 15px; margin:5px 0 15px 0; background:#fff; border-radius:5px; border:1px solid #ddd; box-shadow:0 8px 6px -6px #999; }
 	div#dup-msg-success div.details-title {font-size:20px; border-bottom:1px solid #dfdfdf; padding:5px; margin:0 0 10px 0; font-weight:bold}
 	div#dup-msg-success-subtitle {color:#999; margin:0; font-size:11px}
 	div.dup-scan-filter-status {display:inline; float:right; font-size:11px; margin-right:10px; color:#630f0f;}
@@ -41,12 +41,14 @@
 	div.scan-item div.title {background-color:#F1F1F1; width:100%; padding:4px 0 4px 0; cursor:pointer; height:20px;}
 	div.scan-item div.title:hover {background-color:#ECECEC;}
 	div.scan-item div.text {font-weight:bold; font-size:14px; float:left;  position:relative; left:10px}
-	div.scan-item div.badge-pass {float:right; background:green; border-radius:5px; color:#fff; min-width:40px; text-align:center; position:relative; right:10px; font-size:12px}
-	div.scan-item div.badge-warn {float:right; background:#630f0f; border-radius:5px; color:#fff; min-width:40px; text-align:center; position:relative; right:10px; font-size:12px}
+	div.scan-item div.badge-pass {float:right; background:green; border-radius:5px; color:#fff; min-width:45px; text-align:center; position:relative; right:10px; font-size:12px}
+	div.scan-item div.badge-warn {float:right; background:#630f0f; border-radius:5px; color:#fff; min-width:45px; text-align:center; position:relative; right:10px; font-size:12px}
 	div.scan-item div.info {display:none; padding:10px; background:#fff}
 	div.scan-good {display:inline-block; color:green;font-weight:bold;}
 	div.scan-warn {display:inline-block; color:#630f0f;font-weight:bold;}
 	div.dup-more-details {float:right; font-size:14px}
+	div.dup-more-details a{color:black}
+	div.dup-more-details a:hover {color:#777; cursor:pointer}
 	div.dup-more-details:hover {color:#777; cursor:pointer}
 
 	/*FILES */
@@ -80,10 +82,9 @@
 	div#size-more-details li {margin:0}
 
 	/*DATABASE*/
-	div#dup-scan-db-info {margin:0px 0px 0px 10px}
-	div#data-db-tablelist {max-height:300px; overflow-y:scroll; border:1px dashed silver; padding:5px; margin-top:5px}
-	div#data-db-tablelist div{padding:0px 0px 0px 15px;}
-	div#data-db-tablelist span{display:inline-block; min-width:75px}
+	div#dup-scan-db-info {margin-top:5px}
+	div#data-db-tablelist {max-height:250px; overflow-y:scroll; border:1px solid silver; padding:8px; background: #efefef; border-radius: 4px}
+	div#data-db-tablelist td{padding:0 5px 3px 20px; min-width:100px}
 	div#data-db-size1 {display:inline-block; float:right; font-size:11px; margin-right:5px;}
 	
 	/*WARNING-CONTINUE*/
@@ -175,7 +176,7 @@ TOOL BAR:STEPS -->
 		<div class="details">
 			<?php
 				include ('s2.scan2.php');
-				echo '<br/><br/>';
+				echo '<br/>';
 				include ('s2.scan3.php')
 			?>
 		</div>
@@ -184,7 +185,7 @@ TOOL BAR:STEPS -->
 		<div id="dup-scan-warning-continue">
 			<div class="msg1">
 				<label for="dup-scan-warning-continue-checkbox">
-					<?php _e('A warning status was detected, are you sure you want to continue?', 'duplicator');?>
+					<?php _e('A notice status has been detected, are you sure you want to continue?', 'duplicator');?>
 				</label>
 				<div style="padding:8px 0">
 					<input type="checkbox" id="dup-scan-warning-continue-checkbox" onclick="Duplicator.Pack.warningContinue(this)"/>
@@ -328,9 +329,9 @@ jQuery(document).ready(function($)
 		var result;
 		switch (status) {
 			case false :    result = '<div class="scan-warn"><i class="fa fa-exclamation-triangle"></i></div>'; break;
-			case 'Warn' :   result = '<div class="badge-warn">Warn</div>'; break;
+			case 'Warn' :   result = '<div class="badge-warn"><?php _e("Notice", 'duplicator') ?></div>'; break;
 			case true :     result = '<div class="scan-good"><i class="fa fa-check"></i></div>'; break;
-			case 'Good' :   result = '<div class="badge-pass">Good</div>'; break;
+			case 'Good' :   result = '<div class="badge-pass"><?php _e("Good", 'duplicator') ?></div>'; break;
 			default :
 				result = 'unable to read';
 		}
