@@ -178,7 +178,7 @@ textarea {
   background-color: $dc-color-green;
   &:hover {
     background-color: white;
-    color: $dc-color-green;
+    color: $dc-color-green !important;
   }
 }
   .btn-subscribe {
@@ -187,7 +187,7 @@ textarea {
     border: solid 1px $dc-color-green;
     &:hover {
         background: white;
-        color: $dc-color-green;
+        color: $dc-color-green !important;
       }
   }
   .footer {
@@ -207,7 +207,7 @@ textarea {
   .search-field {
     background-color: white;
     color: $dc-color-green;
-    border: 1px solid $dc-color-green;
+    border: 2px solid $dc-color-green;
     &:focus {
       background-color: white;
     }
@@ -229,22 +229,22 @@ textarea {
     }
   }
   .cart-menu-item {
-  color: $dc-color-green;
+  color: white;
   border: 1px solid $dc-color-pink;
   background-color: $dc-color-pink;
   &:hover {
     background-color: $dc-color-green;
-    color: $dc-color-pink;
+    color: $dc-color-pink !important;
   }
 }
   .btn-subscribe {
-    color: $dc-color-green;
+    color: white;
     border: solid 1px $dc-color-pink;
     background: $dc-color-pink;
     &:hover {
         background: $dc-color-green;
         border: solid 1px $dc-color-green;
-        color: $dc-color-pink;
+        color: $dc-color-pink !important;
         border: solid 1px $dc-color-pink;
       }
   }
@@ -264,7 +264,7 @@ textarea {
   }
   .search-field {
     background-color: $dc-color-green;
-    border: 1px solid $dc-color-pink;
+    border: 2px solid $dc-color-pink;
     input {
       color: $dc-color-pink;
     }
@@ -289,22 +289,22 @@ textarea {
     }
   }
   .cart-menu-item {
-  color: $dc-color-pink;
+  color: white;
   border: 1px solid $dc-color-green;
   background-color: $dc-color-green;
   &:hover {
     background-color: $dc-color-pink;
-    color: $dc-color-green;
+    color: $dc-color-green !important;
   }
 }
   .btn-subscribe {
     z-index: 1000;
-    color: $dc-color-green;
-    border: solid 1px #18261B;
+    color: white;
+    border: solid 1px $dc-color-green;
+    background: $dc-color-green;
     &:hover {
-        background: $dc-color-green;
-        border: solid 1px #18261B;
-        color: $dc-color-pink;
+        background: $dc-color-pink;
+        color: $dc-color-green !important;
       }
   }
   .footer {
@@ -324,7 +324,7 @@ textarea {
   .search-field {
     background-color: $dc-color-pink;
     color: $dc-color-green;
-    border: 1px solid $dc-color-green;
+    border: 2px solid $dc-color-green;
     &:focus {
       background-color: $dc-color-pink-light;
     }
@@ -351,7 +351,7 @@ textarea {
   position: absolute;
   text-align: center;
   bottom: 0rem;
-  left: 4rem;
+  left: 9rem;
   padding: 0.3rem 1.2rem;
 }
 
@@ -359,7 +359,7 @@ textarea {
   position: absolute;
   text-align: center;
   bottom: 0rem;
-  right: 4rem;
+  right: 8rem;
   margin: 0;
   .search-submit {
     display: none;
@@ -371,7 +371,7 @@ textarea {
   position: absolute;
   z-index: 4;
   top: 4rem;
-  left: 3rem;
+  left: 9rem;
 }
 
 .logo img {
@@ -379,6 +379,7 @@ textarea {
 }
 
 .nav {
+  font-size: 1.8rem;
   position: absolute;
   top: 4rem;
   left: 50%;
@@ -458,11 +459,11 @@ textarea {
 .cart-menu-item {
   position: absolute;
   top: 4rem;
-  right: 10rem;
+  right: 8rem;
   text-transform: uppercase;
   font-family: FranklinBold!important;
   background-color: transparent;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 3.5rem;
   margin-top: -5px;
   text-align: center;
 }
@@ -836,6 +837,10 @@ textarea {
 }
 
 .search-field {
+  &::placeholder {
+    font-family: $dc-font-franklin;
+    text-transform: uppercase;
+  }
   height: 36px;
   width: 16rem;
   border-radius: 0px;
@@ -948,6 +953,24 @@ pre {
 
 .entry-header {
 
+}
+
+.btn-404 {
+  text-transform: uppercase;
+  font-family: $dc-font-franklin;
+  min-width: 20rem;
+  color: $dc-color-pink !important;
+  border: solid 1px $dc-color-green !important;
+  background: $dc-color-green !important;
+  a {
+    color: $dc-color-pink;
+  }
+  &:hover {
+      background: $dc-color-pink !important;
+      a {
+        color: $dc-color-green !important;
+      }
+    }
 }
 
 @import '_woocommerce';

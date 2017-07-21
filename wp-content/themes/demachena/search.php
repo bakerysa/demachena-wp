@@ -5,7 +5,7 @@
  * @package storefront
  */
 
-get_header('pink'); ?>
+get_header(); ?>
 
 	<div id="primary">
 		<main id="main" class="site-main" role="main">
@@ -28,4 +28,4 @@ get_header('pink'); ?>
 	</div><!-- #primary -->
 
 <?php
-get_footer('');
+get_footer('none');

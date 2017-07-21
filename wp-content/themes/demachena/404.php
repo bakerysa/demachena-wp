@@ -5,26 +5,20 @@
  * @package storefront
  */
 
-get_header(); ?>
+get_header('pink'); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary">
+	<main class="main" role="main">
 
-		<main id="main" class="site-main" role="main">
+		<div class="container center" style="text-align: center;">
+			<h4>Oh no!</h4>
+			<p>
+				The page you're looking for does not exist. <br /> Let's get back to shopping!
+			</p>
+			<button class="btn-404"><a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>"  style="margin-top: 4rem;">Return To Shop</a></button>
+		</div>
 
-			<div class="error-404 not-found">
-
-				<div class="page-content">
-
-					<header class="page-header">
-						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'storefront' ); ?></h1>
-					</header><!-- .page-header -->
-
-
-
-				</div><!-- .page-content -->
-			</div><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main>
+</div><!-- #primary -->
 
 <?php get_footer('alt');

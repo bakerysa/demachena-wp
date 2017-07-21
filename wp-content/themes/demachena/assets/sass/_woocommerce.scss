@@ -1,7 +1,7 @@
 // Global
 
 .entry-title {
-  text-align: left;
+  text-align: center;
   font-size: 2.6rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -11,6 +11,10 @@
       text-decoration: underline !important;
     }
   }
+}
+
+.product_title.entry-title {
+  text-align: left;
 }
 
 .alpha {
@@ -37,6 +41,7 @@
   color: $dc-color-green !important;
   font-family: $dc-font-franklin;
   line-height: 1.8rem;
+  text-align: left;
 }
 
 .add_to_cart_button {
@@ -69,8 +74,8 @@
 
 .woocommerce-message {
   background-color: $dc-color-green;
-  padding: 0.5em;
-  margin-top: 6rem;
+  margin-top: 4rem;
+  padding-bottom: 0.5rem;
   color: white;
   font-size: 1.6rem;
   border-radius: 0px;
@@ -203,7 +208,7 @@ ul {
     border: none;
     text-align: left;
     padding-left: none;
-    margin-left: none;
+    margin-left: -0.7rem;
     font-size: 1.8rem !important;
     text-transform: uppercase;
     font-weight: bold;
@@ -218,7 +223,8 @@ ul {
 
   ul.products li.product .woocommerce-Price-amount {
     font-size: 1.6rem;
-    margin-right: 100%;
+    text-align: left;
+    display: inline-block;
   }
 
 ul.products li.product .woocommerce-loop-product__title {
@@ -436,7 +442,7 @@ td.product-subtotal  {
   text-align: left;
   .product-price {
     display: inline-block;
-    border-right: 3px solid $dc-color-green;
+    border-right: 1px solid $dc-color-green;
     padding-right: 1rem;
     font-weight: bold;
   }
@@ -456,8 +462,8 @@ td.product-subtotal  {
 }
 
 .button {
-  background-color: $dc-color-green !important;
-  color: white !important;
+  background-color: white !important;
+  color: $dc-color-green !important;
   border: 1px solid $dc-color-green;
   height: 35px;
   font-family: FranklinBold;
@@ -465,6 +471,13 @@ td.product-subtotal  {
   font-size: 1.2rem !important;
   &:hover {
     background-color: white !important;
+  }
+}
+
+.wc-forward {
+  margin-bottom: 0.7rem;
+  &:hover {
+    background-color: $dc-color-green !important;
   }
 }
 
@@ -599,16 +612,16 @@ label {
 .remodal {
   background: $dc-color-green !important;
   #modal1Title {
-    color: $dc-color-pink !important;
+    color: white !important;
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase !important;
     font-family: $dc-font-franklin;
   }
   .remodal-close {
-    color: $dc-color-pink;
+    color: white;
     &:hover {
-      background: $dc-color-pink;
+      background: white;
       color: $dc-color-green;
     }
   }
@@ -633,7 +646,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 }
 
 .woocommerce-currency-switcher {
-  width: 165px !important;
+  width: 146px !important;
   font-family: $dc-font-franklin;
   font-size: 1rem;
   position: absolute;
@@ -643,4 +656,22 @@ ul.products li.product .woocommerce-LoopProduct-link {
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
+}
+
+.shipping-calculator-button {
+  font-size: 1.2rem;
+  font-family: $dc-font-imprint;
+  white-space: nowrap;
+}
+
+.tawcvs-swatches {
+  margin-left: -0.4rem;
+}
+
+.swatch-color {
+  border: 1px solid black !important;
+}
+
+.swatch {
+  margin-bottom: 1rem;
 }

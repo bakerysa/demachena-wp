@@ -98,3 +98,11 @@ function woo_custom_single_add_to_cart_text() {
 if (wc_get_page_id( 'cart' ) == get_the_ID()) {
   get_footer('alt');
 }
+
+add_action( 'pre_get_posts', 'wpse223576_search_woocommerce_only' );
+
+function wpse223576_search_woocommerce_only( $query ) {
+  if( ! is_admin() && is_search() && $query->is_main_query() ) {
+    $query->set( 'post_type', 'product' );
+  }
+}

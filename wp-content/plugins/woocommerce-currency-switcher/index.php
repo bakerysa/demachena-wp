@@ -4,7 +4,7 @@
   Plugin URI: http://currency-switcher.com/
   Description: Currency Switcher for WooCommerce - the plugin that allows to the visitors and customers switch currencies on woocommerce store site
   Author: realmag777
-  Version: 1.1.9
+  Version: 2.1.9
   Requires at least: WP 4.1.0
   Tested up to: WP 4.7.3
   Text Domain: woocommerce-currency-switcher
@@ -39,7 +39,7 @@ if (defined('DOING_AJAX')) {
   }
  */
 //***
-define('WOOCS_VERSION', '1.1.9');
+define('WOOCS_VERSION', '2.1.9');
 define('WOOCS_MIN_WOOCOMMERCE', '2.4');
 define('WOOCS_PATH', plugin_dir_path(__FILE__));
 define('WOOCS_LINK', plugin_dir_url(__FILE__));
@@ -1208,10 +1208,6 @@ final class WOOCS {
 
 	if (count($currencies) < 2) {
 	    $currencies = $default;
-	}
-
-	if (count($currencies) !== 2) {
-	    $currencies = array_slice($currencies, 0, 2);
 	}
 
 

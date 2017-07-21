@@ -276,6 +276,7 @@
 
 
             <div id="tabs-1">
+                <a href="#" class="button" id="woocs_add_currency"><?php _e("Add currency", 'woocommerce-currency-switcher') ?></a><br />
 
                 <div style="display: none;">
                     <div id="woocs_item_tpl"><?php
@@ -535,7 +536,21 @@
 
                     <li><a href="http://en.wikipedia.org/wiki/ISO_4217#Active_codes" target="_blank" class="button button-primary button-large"><?php _e("Read wiki about Currency Active codes  <-  Get right currencies codes here", 'woocommerce-currency-switcher') ?></a></li>
 
-                    
+                    <li>
+                        <div id="plugin_warning" style="padding: 9px; border: solid red 3px; background: #eee; ">
+                            <div class="plugin_warning_head"><strong style="color: red;">ATTENTION MESSAGE FROM THE PLUGIN AUTHOR TO ALL USERS WHO USES PIRATE VERSION OF THE PLUGIN!</strong>!<br></div>
+                            <br />
+                            GET YOUR COPY OF THE PLUGIN <em> <span style="text-decoration: underline;"><span style="color: #ff0000;"><strong>ONLY</strong></span></span></em> FROM <a href="http://codecanyon.net/item/woocommerce-currency-switcher/8085217?ref=realmag777" target="_blank"><span style="color: #008000;"><strong>CODECANYON.NET</strong></span></a> OR <span style="color: #008000;"><strong><a href="https://wordpress.org/plugins/woocommerce-currency-switcher/" target="_blank">WORDPRESS.ORG</a></strong></span> IF YOU DO NOT WANT TO BE AN AFFILIATE OF PORNO VIRUS SITE.<br>
+                            <br>
+                            <strong>DID YOU CATCH A VIRUS DOWNLOADING THE PLUGIN FROM ANOTHER (PIRATE) SITES<span style="color: #ff0000;">?</span></strong> THIS IS YOUR TROUBLES AND <em>DO NOT WRITE TO SUPPORT THAT GOOGLE DOWN YOUR SITE TO ZERO BECAUSE OF &nbsp;PORNO VIRUS</em>!!<br>
+                            <br>
+                            <strong><span style="color: #ff0000;">REMEMBER</span></strong> - if somebody suggesting YOU premium version of the plugin for free - think twenty times before installing it ON YOUR SITE, as it can be trap for it! <strong>DOWNLOAD THE PLUGIN ONLY FROM OFFICIAL SITES TO AVOID THE COLLAPSE OF YOUR BUSINESS</strong>.<br>
+                            <br>
+                            <strong style="color: #ff0000;">Miser pays twice</strong>!<br>
+                            <br>
+                            P.S. Reason of this warning text - emails from the users! Be care!!
+                        </div>
+                    </li>
 
                     <li>
                         <a href="https://share.payoneer.com/nav/6I2wmtpBuitGE6ZnmaMXLYlP8iriJ-63OMLi3PT8SRGceUjGY1dvEhDyuAGBp91DEmf8ugfF3hkUU1XhP_C6Jg2" target="_blank"><img src="<?php echo WOOCS_LINK ?>/img/100125.png" alt=""></a>
@@ -566,22 +581,6 @@
 
     <b style="color:red;"><?php _e('Hint', 'woocommerce-currency-switcher'); ?>:</b>&nbsp;<?php _e('To update all currencies rates by one click - press radio button of the default currency and then press "Save changes" button!', 'woocommerce-currency-switcher'); ?><br />
 
-    <hr />
-
-    <i>In the free version of the plugin you can operate with 2 ANY currencies only. If you want more currencies and features you can make upgrade to the premium version of the plugin</i><br />
-
-    <table style="width: 100%;">
-        <tr>
-            <td style="width: 50%;">
-                <h3><?php _e("Get the full version of the plugin from Codecanyon", 'woocommerce-currency-switcher') ?>:</h3>
-                <a href="http://codecanyon.net/item/woocommerce-currency-switcher/8085217?ref=realmag777" target="_blank"><img src="<?php echo WOOCS_LINK ?>img/woocs_banner.png" alt="<?php _e("full version of the plugin", 'woocommerce-currency-switcher'); ?>" /></a>
-            </td>
-            <td style="width: 50%;">
-                <h3><?php _e("Get WooCommerce Products Filter", 'woocommerce-currency-switcher') ?>:</h3>
-                <a href="http://codecanyon.net/item/woof-woocommerce-products-filter/11498469?ref=realmag777" target="_blank"><img src="<?php echo WOOCS_LINK ?>img/woof_banner.png" alt="<?php _e("WOOF", 'woocommerce-currency-switcher'); ?>" /></a>
-            </td>
-        </tr>
-    </table>
 
     <div class="info_popup" style="display: none;"></div>
 
@@ -600,7 +599,17 @@
         jQuery('body').append('<div id="woocs_buffer" style="display: none;"></div>');
 
         jQuery("#woocs_list").sortable();
-       
+
+        jQuery('#woocs_add_currency').life('click', function () {
+            jQuery('#woocs_list').append(jQuery('#woocs_item_tpl').html());
+            return false;
+        });
+        jQuery('.woocs_del_currency').life('click', function () {
+            jQuery(this).parents('li').hide(220, function () {
+                jQuery(this).remove();
+            });
+            return false;
+        });
 
         jQuery('.woocs_is_etalon').life('click', function () {
             jQuery('.woocs_is_etalon').next('input[type=hidden]').val(0);
@@ -787,6 +796,7 @@ function woocs_print_currency($_this, $currency) {
         ?>
         <input type="hidden" value="<?php echo $flag ?>" class="woocs_flag_input" name="woocs_flag[]" />
         <a href="#" class="woocs_flag help_tip" data-tip="<?php _e("Click to select the flag", 'woocommerce-currency-switcher'); ?>"><img src="<?php echo $flag ?>" style="vertical-align: middle; width: 37px;" alt="<?php _e("Flag", 'woocommerce-currency-switcher'); ?>" /></a>
+        &nbsp;<a href="#" class="button woocs_del_currency help_tip" data-tip="<?php _e("remove", 'woocommerce-currency-switcher'); ?>" style="vertical-align: middle;">X</a>
         &nbsp;<a href="#" class="help_tip" data-tip="<?php _e("drag and drope", 'woocommerce-currency-switcher'); ?>"><img style="width: 22px; vertical-align: middle;" src="<?php echo WOOCS_LINK ?>img/move.png" alt="<?php _e("move", 'woocommerce-currency-switcher'); ?>" /></a>
     </li>
     <?php
