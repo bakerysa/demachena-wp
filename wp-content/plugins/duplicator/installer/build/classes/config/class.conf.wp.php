@@ -48,15 +48,6 @@ class DUPX_WPConfig
 			array_push($replace, "'FORCE_SSL_ADMIN', false");
 		}
 
-		if ($_POST['ssl_login']) {
-			if (!strstr($wpconfig, 'FORCE_SSL_LOGIN')) {
-				$wpconfig = $wpconfig.PHP_EOL."define('FORCE_SSL_LOGIN', true);";
-			}
-		} else {
-			array_push($patterns, "/'FORCE_SSL_LOGIN',\s*true/");
-			array_push($replace, "'FORCE_SSL_LOGIN', false");
-		}
-
 		//CACHE CHECKS
 		if ($_POST['cache_wp']) {
 			if (!strstr($wpconfig, 'WP_CACHE')) {
@@ -107,8 +98,9 @@ class DUPX_WPConfig
 			"'WP_HOME', '{$_POST['url_new']}');",
 			"'WP_SITEURL', '{$_POST['url_new']}');");
 
-		//Not sure how well tokenParser works on all servers so only using for
-	    //not critical constants at this point.
+		//Not sure how well tokenParser works on all servers so only using for not critical constants at this point.
+		//$count checks for dynamic variable types such as:  define('WP_TEMP_DIR',	'D:/' . $var . 'somepath/');
+		//which should not be updated.
 		$defines = self::tokenParser($wpconfig_path);
 
 		//WP_CONTENT_DIR
@@ -122,7 +114,7 @@ class DUPX_WPConfig
 
 		//WP_CONTENT_URL
 		if (isset($defines['WP_CONTENT_URL'])) {
-			$val = str_replace($_POST['url_old'], $_POST['url_new'], $defines['WP_CONTENT_URL'], $count);
+			$val = str_replace($_POST['url_old'] . '/', $_POST['url_new'] . '/', $defines['WP_CONTENT_URL'], $count);
 			if ($count > 0) {
 				array_push($patterns, "/('|\")WP_CONTENT_URL.*?\)\s*;/");
 				array_push($replace, "'WP_CONTENT_URL', '{$val}');");

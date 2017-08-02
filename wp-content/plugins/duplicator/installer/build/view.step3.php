@@ -45,7 +45,7 @@ VIEW: STEP 3- INPUT -->
 			<tr>
 				<td style="width:80px">URL:</td>
 				<td>
-					<input type="text" name="url_new" id="url_new" value="<?php echo $GLOBALS['FW_URL_NEW'] ?>" />
+					<input type="text" name="url_new" id="url_new" value="" />
 					<a href="javascript:DUPX.getNewURL('url_new')" style="font-size:12px">get</a>
 				</td>
 			</tr>
@@ -147,9 +147,9 @@ VIEW: STEP 3- INPUT -->
 		</table>
 		<br/>
 
-		<input type="checkbox" name="urlextended" id="urlextended" value="1" /> <label for="urlextended">Enable Extended URL Replace <small>(Searches multiple protocols: '//', 'http', 'https')</small></label><br/>
-		<input type="checkbox" name="postguid" id="postguid" value="1" /> <label for="postguid">Keep Post GUID unchanged</label><br/>
-		<input type="checkbox" name="fullsearch" id="fullsearch" value="1" /> <label for="fullsearch">Enable Full Search <small>(slower to process)</small> </label><br/>
+		<input type="checkbox" name="urlrelative" id="urlrelative" value="1" checked="true" /> <label for="urlrelative">Use Protocol Relative URL Replace</label><br/>
+		<input type="checkbox" name="fullsearch" id="fullsearch" value="1" /> <label for="fullsearch">Use Database Full Search Mode </label><br/>
+		<input type="checkbox" name="postguid" id="postguid" value="1" /> <label for="postguid">Keep Post GUID Unchanged</label><br/>
 		<br/><br/>
 		
 		<!-- WP-CONFIG -->
@@ -157,18 +157,17 @@ VIEW: STEP 3- INPUT -->
 		<table class="dupx-opts dupx-advopts">
 			<tr>
 				<td>Cache:</td>
-				<td style="width:125px"><input type="checkbox" name="cache_wp" id="cache_wp" <?php echo ($GLOBALS['FW_CACHE_WP']) ? "checked='checked'" : ""; ?> /> <label for="cache_wp">Keep Enabled</label></td>
-				<td><input type="checkbox" name="cache_path" id="cache_path" <?php echo ($GLOBALS['FW_CACHE_PATH']) ? "checked='checked'" : ""; ?> /> <label for="cache_path">Keep Home Path</label></td>
+				<td style="width:125px"><input type="checkbox" name="cache_wp" id="cache_wp" /> <label for="cache_wp">Keep Enabled</label></td>
+				<td><input type="checkbox" name="cache_path" id="cache_path" /> <label for="cache_path">Keep Home Path</label></td>
 			</tr>
 			<tr>
 				<td>SSL:</td>
-				<td><input type="checkbox" name="ssl_admin" id="ssl_admin" <?php echo ($GLOBALS['FW_SSL_ADMIN']) ? "checked='checked'" : ""; ?> /> <label for="ssl_admin">Enforce on Admin</label></td>
-				<td><input type="checkbox" name="ssl_login" id="ssl_login" <?php echo ($GLOBALS['FW_SSL_LOGIN']) ? "checked='checked'" : ""; ?> /> <label for="ssl_login">Enforce on Login</label></td>
+				<td><input type="checkbox" name="ssl_admin" id="ssl_admin" /> <label for="ssl_admin">Enforce on Admin</label></td>
+				<td></td>
 			</tr>
 		</table>
 		<br/><br/><br/>
 		<br/><br/>
-
 	</div>
 
 	<div class="dupx-footer-buttons">
@@ -275,7 +274,8 @@ DUPX.runUpdate = function()
 DUPX.getNewURL = function(id)
 {
 	var filename= window.location.pathname.split('/').pop() || 'installer.php' ;
-	$("#" + id).val(window.location.href.replace(filename, ''));
+	var path = window.location.href.replace(filename, '').replace(/\/$/, '');
+	$("#" + id).val(path);
 }
 
 /** Allows user to edit the package url  */

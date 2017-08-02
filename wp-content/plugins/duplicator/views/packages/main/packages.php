@@ -9,7 +9,7 @@
 ?>
 
 <style>
-	div#dup-list-alert-nodata {padding:50px 20px;text-align:center; font-size:20px; line-height:26px}
+	div#dup-list-alert-nodata {padding:70px 20px;text-align:center; font-size:20px; line-height:26px}
 	div.dup-notice-msg {border:1px solid silver; padding: 10px; border-radius: 5px; width: 550px; 
 		margin:40px auto 0px auto; font-size:12px; text-align: left; word-break:normal;
 		background: #fefcea; 
@@ -19,6 +19,7 @@
 	}
 	input#dup-bulk-action-all {margin:0px;padding:0px 0px 0px 5px;}
 	button.dup-button-selected {border:1px solid #000 !important; background-color:#dfdfdf !important;}
+	div.dup-quick-start {font-style:italic; font-size: 13px; line-height: 18px; margin-top: 15px}
 	
 	/* Table package details */
 	table.dup-pack-table {word-break:break-all;}
@@ -36,15 +37,28 @@
 	td.error-msg span {display:inline-block; padding:7px 18px 0px 0px; color:maroon}
 	div.dup-vote { position: absolute; top:15px; right:25px; }
 	div.dup-vote a { font-size:12px; font-style: italic }
+	div#dup-feedback-form {display:none; height:150px; top:70px; min-width:250px; padding:10px; background-color:#f9f9f9; border:1px solid silver; border-radius:5px;
+						   position:fixed; right:25px; z-index: 2; cursor:pointer; line-height:34px; font-size:14px; box-shadow: 10px 10px 5px -6px #999;}
+	div#dup-feedback-form i {display: inline-block; width: 15px}
+
 </style>
 
 <form id="form-duplicator" method="post">
 	
-<?php if($statusCount >= 2)  :	?>
-	<div class="dup-vote">
-		<a href="https://wordpress.org/support/plugin/duplicator/reviews/?filter=5" target="vote-wp"><?php _e("Rate Duplicator!", 'duplicator') ?></a>
-	</div>
-<?php endif; ?>	
+<div class="dup-vote">
+	<a href="javascript:void(0);" onclick="Duplicator.Pack.showFeedbackForm()">
+		<i class="fa fa-bullhorn" aria-hidden="true"></i> <?php _e("Feedback", 'duplicator') ?>
+	</a>
+</div>
+
+<div id="dup-feedback-form">
+	<div style="text-align: center"><b><?php _e("LEAVE FEEDBACK", 'duplicator') ?></b></div>
+	<i class="fa fa-question-circle"></i> <a href="https://snapcreek.com/ticket/" target="_blank"><?php _e("Need help with the plugin?", 'duplicator') ?></a> <br/>
+	<i class="fa fa-lightbulb-o"></i> <a href="https://snapcreek.com/support?idea=1" target="_blank"><?php _e("Have an idea for the plugin?", 'duplicator') ?></a> <br/>
+	<?php if($statusCount >= 2)  :	?>
+		<i class="fa fa-star-o"></i> <a href="https://wordpress.org/support/plugin/duplicator/reviews/?filter=5" target="vote-wp"><?php _e("Help review the plugin!", 'duplicator') ?></a>
+	<?php endif; ?>
+</div>
 
 <!-- ====================
 TOOL-BAR -->
@@ -79,7 +93,12 @@ TOOL-BAR -->
 				<div id='dup-list-alert-nodata'>
 					<i class="fa fa-archive"></i> 
 					<?php _e("No Packages Found.", 'duplicator'); ?><br/>
-					<?php _e("Click the 'Create New' button to build a package.", 'duplicator'); ?>
+					<?php _e("Click the 'Create New' button to build a package.", 'duplicator'); ?><br/>
+					<div class="dup-quick-start">
+						<?php _e("New to Duplicator?", 'duplicator'); ?><br/>
+						<a href="https://snapcreek.com/duplicator/docs/quick-start/" target="_blank"><?php _e("Check out the 'Quick Start' guide!", 'duplicator'); ?></a>
+					</div>
+					
 					<div style="height:75px">&nbsp;</div>
 				</div>
 				</td>
@@ -287,6 +306,12 @@ jQuery(document).ready(function($)
 	Duplicator.Pack.OpenPackageDetails = function (package_id) 
 	{
 		window.location.href = '?page=duplicator&action=detail&tab=detail&id=' + package_id;
+	}
+
+	/*	Toggles the feedback form */
+	Duplicator.Pack.showFeedbackForm = function ()
+	{
+		$("div#dup-feedback-form").toggle(300);
 	}
 	
 });

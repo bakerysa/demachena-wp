@@ -133,10 +133,8 @@ class DUP_Package
             $report['SRV']['WP']['ALL'],
             $report['ARC']['Status']['Size'],
             $report['ARC']['Status']['Names'],
-            //$report['ARC']['Status']['Big'],
             $db['Status']['DB_Size'],
-            $db['Status']['DB_Rows'],
-            $db['Status']['DB_Case']);
+            $db['Status']['DB_Rows']);
 
         //array_count_values will throw a warning message if it has null values,
         //so lets replace all nulls with empty string
@@ -145,9 +143,10 @@ class DUP_Package
                 $warnings[$i] = '';
             }
         }
+		
         $warn_counts               = is_array($warnings) ? array_count_values($warnings) : 0;
-        $report['RPT']['Warnings'] = $warn_counts['Warn'];
-        $report['RPT']['Success']  = $warn_counts['Good'];
+        $report['RPT']['Warnings'] = is_null($warn_counts['Warn']) ? 0 : $warn_counts['Warn'];
+        $report['RPT']['Success']  = is_null($warn_counts['Good']) ? 0 : $warn_counts['Good'];
         $report['RPT']['ScanTime'] = DUP_Util::elapsedTime(DUP_Util::getMicrotime(), $timerStart);
         $fp                        = fopen(DUPLICATOR_SSDIR_PATH_TMP."/{$this->ScanFile}", 'w');
 
@@ -161,7 +160,7 @@ class DUP_Package
     /**
      * Starts the package build process
      *
-     * @return obj Retuns a DUP_Package object
+     * @return obj Returns a DUP_Package object
      */
     public function runBuild()
     {
@@ -334,11 +333,6 @@ class DUP_Package
             $this->Installer->OptsDBPort    = esc_html($post['dbport']);
             $this->Installer->OptsDBName    = esc_html($post['dbname']);
             $this->Installer->OptsDBUser    = esc_html($post['dbuser']);
-            $this->Installer->OptsSSLAdmin  = isset($post['ssl-admin']) ? 1 : 0;
-            $this->Installer->OptsSSLLogin  = isset($post['ssl-login']) ? 1 : 0;
-            $this->Installer->OptsCacheWP   = isset($post['cache-wp']) ? 1 : 0;
-            $this->Installer->OptsCachePath = isset($post['cache-path']) ? 1 : 0;
-            $this->Installer->OptsURLNew    = esc_html($post['url-new']);
             //DATABASE
             $this->Database->FilterOn       = isset($post['dbfilter-on']) ? 1 : 0;
             $this->Database->FilterTables   = esc_html($tablelist);
