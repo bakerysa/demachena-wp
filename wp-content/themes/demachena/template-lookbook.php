@@ -17,7 +17,7 @@ get_header('green'); ?>
 	<div id="primary">
 		<main class="main h-margin-top" role="main">
 
-	    <div class="container center ">
+	    <div class="container center-2">
 	      <div class="col-md-12">
 					<?php
 					    echo do_shortcode("[metaslider id=52]");

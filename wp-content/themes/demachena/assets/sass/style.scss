@@ -127,6 +127,10 @@ ul.order_details {
   max-width: 70rem;
 }
 
+.center-2 {
+  max-width: 50rem;
+}
+
 a:focus,
 a:hover {
   text-decoration: none!important;
@@ -191,14 +195,14 @@ textarea {
       }
   }
   .footer {
-    .fa-facebook, .fa-twitter, .fa-instagram {
+    .fa-facebook-official, .fa-twitter, .fa-instagram {
     color:  $dc-color-green;
     &:hover {
       color: $dc-color-green-light;
       }
     }
     ul li a {
-      color: $dc-color-green;
+      color: $dc-color-green !important;
       &:hover {
         color: $dc-color-green-light;
       }
@@ -213,6 +217,14 @@ textarea {
     }
     &::placeholder {
       color: $dc-color-green;
+    }
+  }
+  .woocommerce-currency-switcher {
+    border: 1px solid $dc-color-green !important;
+  }
+  .select-wrapper {
+    &:after {
+      border-color: $dc-color-green transparent transparent transparent;
     }
   }
 }
@@ -249,7 +261,7 @@ textarea {
       }
   }
   .footer {
-    .fa-facebook, .fa-twitter, .fa-instagram {
+    .fa-facebook-official, .fa-twitter, .fa-instagram {
     color: $dc-color-pink;
     &:hover {
       color: $dc-color-pink-light;
@@ -273,6 +285,14 @@ textarea {
     }
     &::placeholder {
       color: $dc-color-pink;
+    }
+  }
+  .woocommerce-currency-switcher {
+    border: 1px solid $dc-color-pink !important;
+  }
+  .select-wrapper {
+    &:after {
+      border-color: $dc-color-pink transparent transparent transparent;
     }
   }
 }
@@ -308,7 +328,7 @@ textarea {
       }
   }
   .footer {
-    .fa-facebook, .fa-twitter, .fa-instagram {
+    .fa-facebook-official, .fa-twitter, .fa-instagram {
     color: #162d1c;
     &:hover {
       color: #224a2c;
@@ -335,6 +355,14 @@ textarea {
       color: $dc-color-green;
     }
   }
+  .woocommerce-currency-switcher {
+    border: 1px solid $dc-color-green !important;
+  }
+  .select-wrapper {
+    &:after {
+      border-color: $dc-color-green transparent transparent transparent;
+    }
+  }
 }
 
 .btn-subscribe {
@@ -351,7 +379,7 @@ textarea {
   position: absolute;
   text-align: center;
   bottom: 0rem;
-  left: 9rem;
+  left: 8rem;
   padding: 0.3rem 1.2rem;
 }
 
@@ -367,11 +395,11 @@ textarea {
 }
 
 .logo {
-  width: 85px;
+  width: 65px;
   position: absolute;
   z-index: 4;
   top: 4rem;
-  left: 9rem;
+  left: 8rem;
 }
 
 .logo img {
@@ -463,7 +491,7 @@ textarea {
   text-transform: uppercase;
   font-family: FranklinBold!important;
   background-color: transparent;
-  padding: 0.5rem 3.5rem;
+  padding: 0.7rem 5.5rem;
   margin-top: -5px;
   text-align: center;
 }
@@ -486,8 +514,12 @@ textarea {
   }
 }
 
-.desktop-hide {
-  display: none;
+.mobile {
+  display: none !important;
+}
+
+.desktop {
+  display: block !important;
 }
 
 .landing-grid {
@@ -911,7 +943,7 @@ textarea {
 pre {
   word-break: normal;
   word-wrap: normal;
-  background-color: white;
+  background-color: $dc-color-pink !important;
   border-radius: 0px;
   border: none;
 }

@@ -41,7 +41,7 @@
 
 	<header class="header">
     <div class="logo">
-      <a href="<?php echo get_home_url(); ?>">
+      <a href="<?php echo get_home_url(); ?>/about">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-v2-dark.png" alt="Logo">
         </a>
     </div>
@@ -49,7 +49,9 @@
         'after' => '</span>' ) ); ?>
 	</header><!-- #masthead -->
 		<a class="cart-menu-item" href="<?php echo WC()->cart->get_cart_url(); ?>">Cart (<?php echo sprintf (_n( '%d item', '%d',count( WC()->cart->get_cart())),count( WC()->cart->get_cart())); ?>)</a>
-		<?php echo do_shortcode('[woocs show_flags=1 txt_type="desc"]'); ?>
+		<div class="select-wrapper">
+			<?php echo do_shortcode('[woocs show_flags=1 txt_type="desc"]'); ?>
+		</div>
 
 	<?php
 	/**

@@ -17,7 +17,7 @@ get_header('landing'); ?>
 	<div id="primary">
 		<main role="main" class="main main-landing">
 
-	    <div class="desktop-hide">
+	    <div class="mobile">
 				<?php
 				    echo do_shortcode("[metaslider id=45]");
 				?>
@@ -25,14 +25,14 @@ get_header('landing'); ?>
 			<!-- END desktop-hide -->
 
 			<!-- START landing-grid -->
-      <div class="mobile-hide">
+      <div class="desktop-hide">
 				<div class="col-md-6" style="padding: 0;">
 					<?php
 							echo do_shortcode("[metaslider id=31]");
 					?>
 				</div>
       </div>
-			<div class="mobile-hide">
+			<div class="desktop-hide">
 				<div class="col-md-6" style="padding: 0;">
 					<?php
 							echo do_shortcode("[metaslider id=41]");

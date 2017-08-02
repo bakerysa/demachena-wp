@@ -14,7 +14,7 @@
 
 	<?php do_action( 'storefront_before_footer' ); ?>
 
-	<footer class="footer" role="contentinfo">
+	<footer class="footer desktop" role="contentinfo">
 		<a href="<?php echo get_site_url(); ?>/subscribe" class="btn-subscribe">Subscribe</a>
 		<?php get_search_form(); ?>
 		<ul class="footer-nav">
@@ -36,6 +36,36 @@
 						<i class="fa fa-facebook-official" aria-hidden="true"></i>
 					</a>
 				</div>
+			</li>
+			<li>
+				<a href="<?php echo get_site_url(); ?>/shipping-returns">Shipping &amp; Returns</a>
+			</li>
+			<li>
+				<a href="<?php echo get_site_url(); ?>/privacy-statement">Privacy Statement</a>
+			</li>
+		</ul>
+	</footer>
+
+	<footer class="footer mobile" role="contentinfo">
+		<a href="<?php echo get_site_url(); ?>/subscribe" class="btn-subscribe">Subscribe</a>
+		<?php get_search_form(); ?>
+			<div class="social">
+				<a href="https://www.instagram.com/dema_chena/">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+				<a href="https://twitter.com/dema_chena">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.facebook.com/demachena/">
+					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+				</a>
+			</div>
+		<ul class="footer-nav">
+			<li>
+				<a href="<?php echo get_site_url(); ?>/faqs">FAQ</a>
+			</li>
+			<li>
+				<a href="<?php echo get_site_url(); ?>/terms-of-service">Terms of Service</a>
 			</li>
 			<li>
 				<a href="<?php echo get_site_url(); ?>/shipping-returns">Shipping &amp; Returns</a>
