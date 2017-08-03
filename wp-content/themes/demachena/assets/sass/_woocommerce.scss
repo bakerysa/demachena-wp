@@ -667,6 +667,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
+  z-index: 10;
 }
 
 .select-wrapper {
@@ -681,7 +682,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
     border-style: solid;
     border-width: 8px 7.5px 0 7.5px;
     border-color: $dc-color-green transparent transparent transparent;
-    z-index:9998;
+    z-index: 0;
   }
 }
 

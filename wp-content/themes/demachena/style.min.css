@@ -306,9 +306,9 @@ label .payment_method_cheque{background-color:white}
 #chart-button{font-family:"FranklinBold";font-size:1.4rem;padding:0 !important}
 ul.products li.product .woocommerce-LoopProduct-link{position:relative}
 .pif-has-gallery .secondary-image{position:absolute;top:0;width:auto;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
-.woocommerce-currency-switcher{-webkit-appearance:none;width:180px !important;font-family:"FranklinBold";font-size:1rem;padding:1rem;border-radius:0;position:absolute;outline:0;top:5.5rem;right:8rem;border:0;background-color:transparent;text-transform:uppercase;text-align:center}
+.woocommerce-currency-switcher{-webkit-appearance:none;width:180px !important;font-family:"FranklinBold";font-size:1rem;padding:1rem;border-radius:0;position:absolute;outline:0;top:5.5rem;right:8rem;border:0;background-color:transparent;text-transform:uppercase;text-align:center;z-index:10}
 .select-wrapper{position:relative}
-.select-wrapper:after{content:"";position:absolute;right:9.2rem;top:7rem;width:0;height:0;border-style:solid;border-width:8px 7.5px 0 7.5px;border-color:#142c1c transparent transparent transparent;z-index:9998}
+.select-wrapper:after{content:"";position:absolute;right:9.2rem;top:7rem;width:0;height:0;border-style:solid;border-width:8px 7.5px 0 7.5px;border-color:#142c1c transparent transparent transparent;z-index:0}
 .shipping-calculator-button{font-size:1.2rem;font-family:"Franklin Gothic";white-space:nowrap}
 .tawcvs-swatches{margin-left:-0.4rem}
 .swatch-color{border:1px solid black !important;opacity:1 !important}
