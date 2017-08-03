@@ -25,14 +25,14 @@ get_header('landing'); ?>
 			<!-- END desktop-hide -->
 
 			<!-- START landing-grid -->
-      <div class="desktop-hide">
+      <div class="desktop">
 				<div class="col-md-6" style="padding: 0;">
 					<?php
 							echo do_shortcode("[metaslider id=31]");
 					?>
 				</div>
       </div>
-			<div class="desktop-hide">
+			<div class="desktop">
 				<div class="col-md-6" style="padding: 0;">
 					<?php
 							echo do_shortcode("[metaslider id=41]");
