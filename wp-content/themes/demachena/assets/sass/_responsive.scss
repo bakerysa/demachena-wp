@@ -194,7 +194,7 @@
   }
 
   #primary {
-    padding-top: 5rem !important;
+    padding-top: 6rem !important;
   }
 
   .widget,
@@ -266,12 +266,13 @@
   }
 
   .select-wrapper {
+    padding-top: 1rem;
     position: relative;
     &:after {
       content: "";
       position: absolute;
       right: calc(50% - 128px);
-      top: 6.7rem;
+      top: 9.1rem;
       width: 0;
       height: 0;
       border-style: solid;
@@ -285,7 +286,7 @@
     height: 100%;
     font-size: 1.4rem;
     position: relative;
-    top: 5rem;
+    top: 6.5rem;
     -webkit-appearance: none;
     transform: translate(-50%);
     left: 50%;
