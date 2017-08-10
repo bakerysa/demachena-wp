@@ -194,6 +194,9 @@ pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5 !important;borde
 .btn-404:hover{background:#eeb7b5 !important}
 .btn-404:hover a{color:#142c1c !important}
 .branding-container{display:none !important}
+#mc-COUNTRY{width:100% !important}
+.rslides_nav.prev{background-color:transparent;font-size:4rem;margin-left:-4rem;margin-top:-4rem;color:#eeb7b5;opacity:1;z-index:10}
+.rslides_nav.next{background-color:transparent;font-size:4rem;margin-right:-4rem;margin-top:-4rem;color:#eeb7b5;opacity:1;z-index:10}
 .entry-title{text-align:center;font-size:2.6rem;margin-bottom:2rem;margin-top:2rem}
 .entry-title a{color:#333}
 .entry-title a:hover{text-decoration:underline !important}

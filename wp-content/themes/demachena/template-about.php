@@ -30,5 +30,7 @@ get_header('pink'); ?>
 
 	  </main>
 	</div><!-- #primary -->
+
+	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"85f328408bd696758c7f32228","lid":"a33d5e4de2"}) })</script>
 <?php
 get_footer('alt');
