@@ -719,6 +719,20 @@ textarea {
   width: 35rem;
 }
 
+#mc_embed_signup_scroll select {
+  background-color: $dc-color-pink;
+  border: none;
+  height: 4.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 35rem;
+  text-align-last: center;
+}
+
+.option-field {
+  text-align: center;
+}
+
 #mc_embed_signup_scroll .mc-field-group {
   margin-bottom: 10px;
 }
@@ -754,6 +768,7 @@ textarea {
 #mc-embedded-subscribe {
   letter-spacing: 1px;
   color: $dc-color-pink !important;
+  background-color: $dc-color-green !important;
   border: 1px solid $dc-color-green;
   font-size: 15px;
   text-transform: uppercase;
@@ -1003,6 +1018,10 @@ pre {
         color: $dc-color-green !important;
       }
     }
+}
+
+.branding-container {
+  display: none !important;
 }
 
 @import '_woocommerce';

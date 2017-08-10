@@ -136,6 +136,8 @@ textarea{resize:none}
 #mc_embed_signup_scroll h2{margin-bottom:5rem;letter-spacing:1px;color:#142c1c;font-size:20px;text-transform:uppercase;font-family:FranklinBold !important;text-align:center}
 #mc_embed_signup_scroll .mc-field-group{text-align:center;color:#142c1c;font-size:1.6rem;font-family:FranklinBold !important}
 #mc_embed_signup_scroll input{background:#eeb7b5;color:#142c1c;text-size:1.6rem;text-transform:uppercase;border-radius:0;text-align:center;height:4.2rem;width:35rem}
+#mc_embed_signup_scroll select{background-color:#eeb7b5;border:0;height:4.2rem;text-align:center;text-transform:uppercase;width:35rem;-moz-text-align-last:center;text-align-last:center}
+.option-field{text-align:center}
 #mc_embed_signup_scroll .mc-field-group{margin-bottom:10px}
 .img-contain{position:relative;max-width:200px;max-height:150px;margin:25px auto}
 ::-webkit-input-placeholder{color:#142c1c;padding-left:5px}
@@ -143,7 +145,7 @@ textarea{resize:none}
 :-ms-input-placeholder{color:#142c1c}
 :-moz-placeholder{color:#142c1c}
 .clearfix{clear:both}
-#mc-embedded-subscribe{letter-spacing:1px;color:#eeb7b5 !important;border:1px solid #142c1c;font-size:15px;text-transform:uppercase;cursor:pointer;right:50%;outline:0;position:relative;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);margin-top:20px;font-weight:700}
+#mc-embedded-subscribe{letter-spacing:1px;color:#eeb7b5 !important;background-color:#142c1c !important;border:1px solid #142c1c;font-size:15px;text-transform:uppercase;cursor:pointer;right:50%;outline:0;position:relative;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);margin-top:20px;font-weight:700}
 #mc-embedded-subscribe:hover{background:#eeb7b5 !important;color:#142c1c !important;outline:0}
 .num{text-align:center;margin-top:3rem;margin-bottom:1rem;font-size:1rem;font-family:FranklinBold}
 #myCarousel{margin:0 auto;max-width:50rem}
@@ -191,6 +193,7 @@ pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5 !important;borde
 .btn-404 a{color:#eeb7b5}
 .btn-404:hover{background:#eeb7b5 !important}
 .btn-404:hover a{color:#142c1c !important}
+.branding-container{display:none !important}
 .entry-title{text-align:center;font-size:2.6rem;margin-bottom:2rem;margin-top:2rem}
 .entry-title a{color:#333}
 .entry-title a:hover{text-decoration:underline !important}
