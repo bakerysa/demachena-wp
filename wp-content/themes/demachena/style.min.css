@@ -136,7 +136,7 @@ textarea{resize:none}
 #mc_embed_signup_scroll h2{margin-bottom:5rem;letter-spacing:1px;color:#142c1c;font-size:20px;text-transform:uppercase;font-family:FranklinBold !important;text-align:center}
 #mc_embed_signup_scroll .mc-field-group{text-align:center;color:#142c1c;font-size:1.6rem;font-family:FranklinBold !important}
 #mc_embed_signup_scroll input{background:#eeb7b5;color:#142c1c;text-size:1.6rem;text-transform:uppercase;border-radius:0;text-align:center;height:4.2rem;width:35rem}
-#mc_embed_signup_scroll select{background-color:#eeb7b5;border:0;height:4.2rem;text-align:center;text-transform:uppercase;width:35rem;-moz-text-align-last:center;text-align-last:center}
+#mc_embed_signup_scroll select{background-color:#eeb7b5;border:0;height:4.2rem;text-align:center;text-transform:uppercase;width:35rem;-moz-text-align-last:center;text-align-last:center;color:#142c1c}
 .option-field{text-align:center}
 #mc_embed_signup_scroll .mc-field-group{margin-bottom:10px}
 .img-contain{position:relative;max-width:200px;max-height:150px;margin:25px auto}
@@ -195,8 +195,8 @@ pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5 !important;borde
 .btn-404:hover a{color:#142c1c !important}
 .branding-container{display:none !important}
 #mc-COUNTRY{width:100% !important}
-.rslides_nav.prev{background-color:transparent;font-size:4rem;margin-left:-4rem;margin-top:-4rem;color:#eeb7b5;opacity:1;z-index:10}
-.rslides_nav.next{background-color:transparent;font-size:4rem;margin-right:-4rem;margin-top:-4rem;color:#eeb7b5;opacity:1;z-index:10}
+.rslides_nav.prev{background-color:transparent;opacity:1;width:0;height:0;margin-left:-3rem;border-style:solid;border-width:10px 20px 10px 0;border-color:transparent #eeb7b5 transparent transparent;-webkit-transform:rotate(360deg);padding:0}
+.rslides_nav.next{background-color:transparent;opacity:1;margin-right:-3rem;border-style:solid;border-width:10px 0 10px 20px;border-color:transparent transparent transparent #eeb7b5;-webkit-transform:rotate(360deg);padding:0}
 .entry-title{text-align:center;font-size:2.6rem;margin-bottom:2rem;margin-top:2rem}
 .entry-title a{color:#333}
 .entry-title a:hover{text-decoration:underline !important}
@@ -204,8 +204,8 @@ pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5 !important;borde
 .alpha{text-align:center}
 #primary{padding-top:13rem}
 .woocommerce .widget-area{display:none}
-.woocommerce-loop-product__title{font-size:1.8rem !important;color:#142c1c;font-family:"Franklin Gothic"}
-.price{color:#142c1c !important;font-family:"FranklinBold";line-height:1.8rem;text-align:left}
+.woocommerce-loop-product__title{font-size:1.8rem !important;color:#142c1c;font-family:"Franklin Book" !important}
+.price{color:#142c1c !important;font-family:"Franklin Book" !important;line-height:1.8rem;text-align:left}
 .add_to_cart_button{display:none;height:55px;background-color:white;color:#142c1c;font-family:"FranklinBold";border:1px solid #142c1c;text-transform:capitalize}
 .add_to_cart_button:hover{background:#142c1c;border:1px solid #eeb7b5;color:#eeb7b5}
 .added_to_cart{background-color:#eeb7b5;color:#142c1c;font-family:"FranklinBold";border:1px solid #142c1c;text-transform:capitalize}

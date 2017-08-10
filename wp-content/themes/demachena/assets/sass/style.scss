@@ -727,6 +727,7 @@ textarea {
   text-transform: uppercase;
   width: 35rem;
   text-align-last: center;
+  color: $dc-color-green;
 }
 
 .option-field {
@@ -1030,22 +1031,26 @@ pre {
 
 .rslides_nav.prev {
   background-color: transparent;
-  font-size: 4rem;
-  margin-left: -4rem;
-  margin-top: -4rem;
-  color: $dc-color-pink;
   opacity: 1;
-  z-index: 10;
+  width: 0;
+  height: 0;
+  margin-left: -3rem;
+  border-style: solid;
+  border-width: 10px 20px 10px 0;
+  border-color: transparent $dc-color-pink transparent transparent;
+  -webkit-transform:rotate(360deg);
+  padding: 0;
 }
 
 .rslides_nav.next {
   background-color: transparent;
-  font-size: 4rem;
-  margin-right: -4rem;
-  margin-top: -4rem;
-  color: $dc-color-pink;
   opacity: 1;
-  z-index: 10;
+  margin-right: -3rem;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent $dc-color-pink;
+  -webkit-transform:rotate(360deg);
+  padding: 0;
 }
 
 @import '_woocommerce';

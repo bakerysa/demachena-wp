@@ -34,12 +34,12 @@
 .woocommerce-loop-product__title {
   font-size: 1.8rem !important;
   color: $dc-color-green;
-  font-family: $dc-font-imprint;
+  font-family: $dc-font-franklin-book !important;
 }
 
 .price {
   color: $dc-color-green !important;
-  font-family: $dc-font-franklin;
+  font-family: $dc-font-franklin-book !important;
   line-height: 1.8rem;
   text-align: left;
 }
