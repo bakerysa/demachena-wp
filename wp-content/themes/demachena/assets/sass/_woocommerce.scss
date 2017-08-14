@@ -710,3 +710,11 @@ ul.products li.product .woocommerce-LoopProduct-link {
     font-size: 1.4rem;
     text-transform: uppercase;
   }
+
+  #chart-button {
+    color: $dc-color-green !important;
+  }
+
+  .single-product div.product form.cart {
+    padding: 0;
+  }

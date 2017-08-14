@@ -1,3 +1,27 @@
+@media only screen and (max-width: 1200px) {
+  .logo {
+    left: 4rem;
+  }
+  .btn-subscribe {
+    left: 2rem;
+  }
+  .cart-menu-item {
+    right: 4rem;
+  }
+  .select-wrapper {
+    &::after {
+      right: 5.2rem;
+    }
+  }
+  .woocommerce-currency-switcher {
+    right: 4rem;
+  }
+  .search-form {
+    right: 2rem;
+    max-width: 15rem;
+  }
+}
+
 @media only screen and (max-width:992px) {
 .theme-white {
   .cart-menu-item {
@@ -278,7 +302,7 @@
       border-style: solid;
       border-width: 8px 7.5px 0 7.5px;
       border-color: $dc-color-green transparent transparent transparent;
-      z-index:9998;
+      z-index: 5;
     }
   }
 
@@ -297,5 +321,11 @@
     min-width: 30rem;
     outline: 0;
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 1080px !important;
   }
 }

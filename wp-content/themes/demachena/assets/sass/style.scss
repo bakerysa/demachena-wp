@@ -50,7 +50,6 @@ Text Domain:  	storefront
 	font-style: normal;
 }
 
-
 .sans {
   font-family: Franklin Book !important;
   p {
@@ -62,6 +61,7 @@ Text Domain:  	storefront
 
 p {
   font-size: 1.4rem;
+  margin: 0 0 1em;
 }
 
 .example {
@@ -146,6 +146,10 @@ img {
 
 a {
   outline: 0 !important;
+  color: black;
+  &:hover {
+    color: grey;
+  }
 }
 
 button {
@@ -789,6 +793,10 @@ textarea {
   }
 }
 
+  .content__titleDescription {
+    text-transform: uppercase !important;
+  }
+
 .num {
   text-align: center;
   margin-top: 3rem;
@@ -1051,6 +1059,10 @@ pre {
   border-color: transparent transparent transparent $dc-color-pink;
   -webkit-transform:rotate(360deg);
   padding: 0;
+}
+
+.special-request {
+  padding-bottom: 1rem;
 }
 
 @import '_woocommerce';

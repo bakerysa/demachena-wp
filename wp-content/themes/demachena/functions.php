@@ -106,3 +106,15 @@ function wpse223576_search_woocommerce_only( $query ) {
     $query->set( 'post_type', 'product' );
   }
 }
+
+// Email
+
+add_action( 'woocommerce_after_add_to_cart_form', 'add_content_after_addtocart_form_func' );
+/*
+ * Content below "Add to cart" Button.
+ */
+function add_content_after_addtocart_form_func() {
+
+        echo '<div class="special-request">If we do not have your desired size or colour in stock, please email your order to <a href="mailto:hello@dema-chena.com">hello@dema-chena.com.</a></div>';
+
+}

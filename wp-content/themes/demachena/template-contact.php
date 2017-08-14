@@ -19,20 +19,20 @@ get_header('green'); ?>
 
       <div class="container center">
         <div class="col-md-4 contact-details">
-          <p>SOUTH AFRICA</p>
-          <span><a class="contact-item" href="mailto:sam@dema-chena.com">sam@dema-chena.com</a></span>
-          <span><a class="contact-item" href="tel:+27745839433">+27 74 583 9433</a></span>
+          <p><?php the_field('country_1'); ?></p>
+          <span><a class="contact-item" href="mailto:<?php the_field('email_1'); ?>"><?php the_field('email_1'); ?></a></span>
+          <span><a class="contact-item" href="tel:<?php the_field('number_1'); ?>"><?php the_field('number_1'); ?></a></span>
         </div>
-        <div class="col-md-4 contact-details">
-          <p>ZIMBABWE</p>
-          <span><a class="contact-item" href="mailto:farai@dema-chena.com ">farai@dema-chena.com</a></span>
-          <span><a class="contact-item" href="tel:+263772572540 ">+263 77 257 2540 </a></span>
-        </div>
-        <div class="col-md-4 contact-details">
-          <p>NEW YORK</p>
-          <span><a class="contact-item" href="mailto:hello@dema-chena.com">hello@dema-chena.com</a></span>
-          <span><a class="contact-item" href="tel:+13476799406">+1 347 679 9406</a></span>
-        </div>
+				<div class="col-md-4 contact-details">
+					<p><?php the_field('country_2'); ?></p>
+					<span><a class="contact-item" href="mailto:<?php the_field('email_2'); ?>"><?php the_field('email_2'); ?></a></span>
+					<span><a class="contact-item" href="tel:<?php the_field('number_2'); ?>"><?php the_field('number_2'); ?></a></span>
+				</div>
+				<div class="col-md-4 contact-details">
+					<p><?php the_field('country_3'); ?></p>
+					<span><a class="contact-item" href="mailto:<?php the_field('email_3'); ?>"><?php the_field('email_3'); ?></a></span>
+					<span><a class="contact-item" href="tel:<?php the_field('number_3'); ?>"><?php the_field('number_3'); ?></a></span>
+				</div>
       </div>
 
     </main>

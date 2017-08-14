@@ -5,7 +5,7 @@
 @font-face{font-family:Franklin Gothic Bold;src:url("./assets/fonts/FranklinGothic.eot");src:url("./assets/fonts/FranklinGothic.eot?#iefix") format("embedded-opentype"),url("./assets/fonts/FranklinGothic.woff") format("woff"),url("./assets/fonts/FranklinGothic.ttf") format("truetype");font-weight:normal;font-style:normal}
 .sans{font-family:Franklin Book !important}
 .sans p{font-size:1.3rem;line-height:1.7em;margin:0 0 10px !important}
-p{font-size:1.4rem}
+p{font-size:1.4rem;margin:0 0 1em}
 .example{margin:1.35em auto;text-align:center;font-size:14px;line-height:21px}
 .example ul{display:inline-block;list-style-type:none;padding:0 0 0 1.5em;margin:0 auto 0 0;text-align:right}
 #browser,#browser-assist{text-align:justify;width:350px;margin:0 0 0 auto;display:inline-block;font-family:Imprint MT Pro;font-size:14px;line-height:21px}
@@ -20,7 +20,8 @@ ul.order_details:after{background:white}
 a:focus,a:hover{text-decoration:none !important}
 li{list-style:none}
 img{border-radius:0}
-a{outline:0 !important}
+a{outline:0 !important;color:black}
+a:hover{color:grey}
 button{outline:0 !important}
 textarea{resize:none}
 .theme-white{color:#142c1c;background:white}
@@ -147,6 +148,7 @@ textarea{resize:none}
 .clearfix{clear:both}
 #mc-embedded-subscribe{letter-spacing:1px;color:#eeb7b5 !important;background-color:#142c1c !important;border:1px solid #142c1c;font-size:15px;text-transform:uppercase;cursor:pointer;right:50%;outline:0;position:relative;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);margin-top:20px;font-weight:700}
 #mc-embedded-subscribe:hover{background:#eeb7b5 !important;color:#142c1c !important;outline:0}
+.content__titleDescription{text-transform:uppercase !important}
 .num{text-align:center;margin-top:3rem;margin-bottom:1rem;font-size:1rem;font-family:FranklinBold}
 #myCarousel{margin:0 auto;max-width:50rem}
 .h-margin-top{margin-top:3rem}
@@ -197,6 +199,7 @@ pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5 !important;borde
 #mc-COUNTRY{width:100% !important}
 .rslides_nav.prev{background-color:transparent;opacity:1;width:0;height:0;margin-left:-3rem;border-style:solid;border-width:10px 20px 10px 0;border-color:transparent #eeb7b5 transparent transparent;-webkit-transform:rotate(360deg);padding:0}
 .rslides_nav.next{background-color:transparent;opacity:1;margin-right:-3rem;border-style:solid;border-width:10px 0 10px 20px;border-color:transparent transparent transparent #eeb7b5;-webkit-transform:rotate(360deg);padding:0}
+.special-request{padding-bottom:1rem}
 .entry-title{text-align:center;font-size:2.6rem;margin-bottom:2rem;margin-top:2rem}
 .entry-title a{color:#333}
 .entry-title a:hover{text-decoration:underline !important}
@@ -320,9 +323,18 @@ ul.products li.product .woocommerce-LoopProduct-link{position:relative}
 .swatch-color{border:1px solid black !important;opacity:1 !important}
 .swatch{margin-bottom:1rem}
 .headline{font-family:"FranklinBold" !important;font-size:1.4rem;text-transform:uppercase}
+#chart-button{color:#142c1c !important}
+.single-product div.product form.cart{padding:0}
 @media(min-width:0){.flex-viewport{width:75%;float:right}
 .flex-control-nav{width:25%;float:left}
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li{width:90%;float:none;margin:0 0 15% 0}
+}@media only screen and (min-width:641px){.remodal{max-width:1080px !important}
+}@media only screen and (max-width:1200px){.logo{left:4rem}
+.btn-subscribe{left:2rem}
+.cart-menu-item{right:4rem}
+.select-wrapper::after{right:5.2rem}
+.woocommerce-currency-switcher{right:4rem}
+.search-form{right:2rem;max-width:15rem}
 }@media only screen and (max-width:992px){.theme-white .cart-menu-item{color:#142c1c}
 .theme-green .cart-menu-item{color:#eeb7b5}
 .theme-pink .cart-menu-item{color:#142c1c}
@@ -374,6 +386,6 @@ ul.products li.product .woocommerce-Price-amount{margin-right:0}
 .btn-subscribe{position:relative;margin-bottom:2rem;left:auto;bottom:auto;display:inline-block}
 .search-form{position:relative;margin:1rem auto;right:auto;display:block}
 .select-wrapper{padding-top:1rem;position:relative}
-.select-wrapper:after{content:"";position:absolute;right:calc(50% - 128px);top:9.1rem;width:0;height:0;border-style:solid;border-width:8px 7.5px 0 7.5px;border-color:#142c1c transparent transparent transparent;z-index:9998}
+.select-wrapper:after{content:"";position:absolute;right:calc(50% - 128px);top:9.1rem;width:0;height:0;border-style:solid;border-width:8px 7.5px 0 7.5px;border-color:#142c1c transparent transparent transparent;z-index:5}
 .woocommerce-currency-switcher{height:100%;font-size:1.4rem;position:relative;top:6.5rem;-webkit-appearance:none;-webkit-transform:translate(-50%);-ms-transform:translate(-50%);transform:translate(-50%);left:50%;right:2.5rem;border:1px solid #142c1c;padding:1rem 2rem;border-radius:0;min-width:30rem;outline:0;font-size:1.2rem}
 }

@@ -85,6 +85,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type='application/javascript' src='<?php echo get_stylesheet_directory_uri(); ?>/bower_components/fastclick/lib/fastclick.js'></script>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.min.js"></script>
 
 <script>
 	if ('addEventListener' in document) {

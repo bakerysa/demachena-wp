@@ -43,7 +43,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				    </tr>
 				    <?php $variations_ob = ob_get_clean(); $variations_arr[wc_attribute_label($attribute_name)] = $variations_ob; endforeach;
 
-				foreach ($variations_arr as $name => $ob) { echo str_ireplace('choose an option', $name, $ob );
+				foreach ($variations_arr as $name => $ob) { echo str_ireplace('choose an option', $name . " (South Africa)", $ob );
 				} ?>
 			</tbody>
 		</table>

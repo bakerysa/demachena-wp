@@ -18,10 +18,8 @@ get_header('pink'); ?>
 		<main class="main" role="main">
 	    <div class="container center">
 				<div class="row text-center" style="padding-top: 4rem;">
-	        <h3>THANK YOU!</h3>
-	        <p>
-	          Welcome to the Dema Chena family.
-	        </p>
+	        <h3><?php the_field('thanks_header'); ?></h3>
+	        <p><?php the_field('thanks_message'); ?></p>
 	      </div>
 	    </div>
 	  </main>

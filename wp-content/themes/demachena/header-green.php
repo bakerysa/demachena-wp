@@ -47,11 +47,12 @@
     </div>
 		<?php wp_nav_menu( array( 'container_class' => 'nav', 'before' => '<span>',
         'after' => '</span>' ) ); ?>
+					</header><!-- #masthead -->
 				<a class="cart-menu-item" href="<?php echo WC()->cart->get_cart_url(); ?>">Cart (<?php echo sprintf (_n( '%d item', '%d',count( WC()->cart->get_cart())),count( WC()->cart->get_cart())); ?>)</a>
 			<div class="select-wrapper">
 				<?php echo do_shortcode('[woocs show_flags=1 txt_type="desc"]'); ?>
 			</div>
-	</header><!-- #masthead -->
+
 
 	<?php
 	/**
