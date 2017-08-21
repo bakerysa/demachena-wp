@@ -14,14 +14,22 @@
 
 get_header('green'); ?>
 
+<style>
+.entry-header {
+	display: none;
+	}
+</style>
+
 	<div id="primary">
 		<main class="main h-margin-top" role="main">
 
 	    <div class="container center-2">
 	      <div class="col-md-12">
-					<?php
-					    echo do_shortcode("[metaslider id=52]");
-					?>
+					<?php while ( have_posts() ) : the_post();
+
+						get_template_part( 'content', 'page' );
+
+					endwhile; // End of the loop. ?>
 	      </div>
 	    </div>
 

@@ -6,7 +6,7 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
   a {
-    color: #333;
+    color: $dc-color-green;
     &:hover {
       text-decoration: underline !important;
     }
@@ -717,4 +717,14 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
   .single-product div.product form.cart {
     padding: 0;
+  }
+
+  .demo_store {
+    z-index: 1000;
+    background-color: white;
+    color: $dc-color-green;
+    a {
+      color: $dc-color-green;
+      background: white;
+    }
   }

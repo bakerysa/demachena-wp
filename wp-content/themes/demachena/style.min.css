@@ -201,7 +201,7 @@ pre{word-break:normal;word-wrap:normal;background-color:#eeb7b5 !important;borde
 .rslides_nav.next{background-color:transparent;opacity:1;margin-right:-3rem;border-style:solid;border-width:10px 0 10px 20px;border-color:transparent transparent transparent #eeb7b5;-webkit-transform:rotate(360deg);padding:0}
 .special-request{padding-bottom:1rem}
 .entry-title{text-align:center;font-size:2.6rem;margin-bottom:2rem;margin-top:2rem}
-.entry-title a{color:#333}
+.entry-title a{color:#142c1c}
 .entry-title a:hover{text-decoration:underline !important}
 .product_title.entry-title{text-align:left}
 .alpha{text-align:center}
@@ -325,6 +325,8 @@ ul.products li.product .woocommerce-LoopProduct-link{position:relative}
 .headline{font-family:"FranklinBold" !important;font-size:1.4rem;text-transform:uppercase}
 #chart-button{color:#142c1c !important}
 .single-product div.product form.cart{padding:0}
+.demo_store{z-index:1000;background-color:white;color:#142c1c}
+.demo_store a{color:#142c1c;background:white}
 @media(min-width:0){.flex-viewport{width:75%;float:right}
 .flex-control-nav{width:25%;float:left}
 .single-product div.product .woocommerce-product-gallery .flex-control-thumbs li{width:90%;float:none;margin:0 0 15% 0}
