@@ -2,7 +2,7 @@
 /**
  * The template for displaying full width pages.
  *
- * Template Name: Full width
+ * Template Name: Pink
  *
  * @package storefront
  */
@@ -31,4 +31,4 @@ get_header('pink'); ?>
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+get_footer('alt');

@@ -14,6 +14,12 @@
 
 get_header('landing'); ?>
 
+<style>
+.responsive-menu-box {
+	display: none !important;
+	}
+</style>
+
 	<div id="primary">
 		<main role="main" class="main main-landing">
 

@@ -2,12 +2,12 @@
 /**
  * The template for displaying full width pages.
  *
- * Template Name: Full width
+ * Template Name: Green
  *
  * @package storefront
  */
 
-get_header('pink'); ?>
+get_header('green'); ?>
 
 	<div id="primary">
 		<main id="main" class="site-main" role="main">

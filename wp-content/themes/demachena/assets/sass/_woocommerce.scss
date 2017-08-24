@@ -654,7 +654,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 .woocommerce-currency-switcher {
   -webkit-appearance: none;
-  width: 180px !important;
+  width: 165px !important;
   font-family: $dc-font-franklin;
   font-size: 1rem;
   padding: 1rem;
@@ -662,7 +662,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
   position: absolute;
   outline: none;
   top: 5.5rem;
-  right: 8rem;
+  right: 4rem;
   border: none;
   background-color: transparent;
   text-transform: uppercase;
@@ -675,7 +675,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
   &:after {
     content: "";
     position: absolute;
-    right: 9.2rem;
+    right: 5.2rem;
     top: 7rem;
     width: 0;
     height: 0;
@@ -723,6 +723,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
     z-index: 1000;
     background-color: white;
     color: $dc-color-green;
+    border-top: 1px solid $dc-color-green;
     a {
       color: $dc-color-green;
       background: white;

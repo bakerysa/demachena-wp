@@ -118,3 +118,10 @@ function add_content_after_addtocart_form_func() {
         echo '<div class="special-request">If we do not have your desired size or colour in stock, please email your order to <a href="mailto:hello@dema-chena.com">hello@dema-chena.com.</a></div>';
 
 }
+
+function storefront_before_content() {
+  ?>
+  <div id="primary">
+    <main id="main" class="site-main" role="main">
+  <?php
+}

@@ -161,6 +161,9 @@ textarea {
 }
 
 .theme-white {
+  .entry-title {
+    color: $dc-color-green;
+  }
   .woocommerce-currency-switcher {
     color: $dc-color-green;
   }
@@ -234,6 +237,9 @@ textarea {
 }
 
 .theme-green {
+  .entry-title {
+    color: $dc-color-pink;
+  }
   .woocommerce-currency-switcher {
     color: $dc-color-pink;
   }
@@ -302,6 +308,9 @@ textarea {
 }
 
 .theme-pink {
+  .entry-title {
+    color: $dc-color-green;
+  }
   .woocommerce-currency-switcher {
     color: $dc-color-green;
   }
@@ -383,7 +392,7 @@ textarea {
   position: absolute;
   text-align: center;
   bottom: 0rem;
-  left: 8rem;
+  left: 4rem;
   padding: 0.3rem 1.2rem;
 }
 
@@ -391,7 +400,7 @@ textarea {
   position: absolute;
   text-align: center;
   bottom: 0rem;
-  right: 8rem;
+  right: 4rem;
   margin: 0;
   .search-submit {
     display: none;
@@ -403,7 +412,7 @@ textarea {
   position: absolute;
   z-index: 4;
   top: 4rem;
-  left: 8rem;
+  left: 4rem;
 }
 
 .logo img {
@@ -431,7 +440,7 @@ textarea {
 
 .nav ul li {
   display: inline-block;
-  width: 19%;
+  width: 18%;
 }
 
 .nav ul li a {
@@ -491,11 +500,11 @@ textarea {
 .cart-menu-item {
   position: absolute;
   top: 4rem;
-  right: 8rem;
+  right: 4rem;
   text-transform: uppercase;
   font-family: FranklinBold!important;
   background-color: transparent;
-  padding: 0.7rem 5.5rem;
+  padding: 0.7rem 2.6rem;
   margin-top: -5px;
   text-align: center;
 }
@@ -873,11 +882,11 @@ textarea {
 .footer {
   width: 100%;
   height: 3rem;
-  margin-top: 5%;
   position: relative;
   left: 0;
   bottom: 3rem;
   display: block;
+  margin-top: 5%;
   ul {
     text-align: center;
     width: 72rem;
@@ -1008,7 +1017,7 @@ pre {
 }
 
 .entry-header {
-
+  max-height: 10rem;
 }
 
 .btn-404 {
@@ -1063,6 +1072,14 @@ pre {
 
 .special-request {
   padding-bottom: 1rem;
+}
+
+#responsive-menu-container {
+  border-right: 1px solid $dc-color-green;
+}
+
+.responsive-menu-item {
+  text-transform: uppercase !important;
 }
 
 @import '_woocommerce';
