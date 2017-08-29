@@ -3,7 +3,9 @@
     left: 2rem;
   }
   .btn-subscribe {
-    left: 2rem;
+    left: 1rem;
+    max-width: 10rem;
+    font-size: 1rem;
   }
   .cart-menu-item {
     right: 2rem;
@@ -17,8 +19,20 @@
     right: 2rem;
   }
   .search-form {
-    right: 3rem;
+    right: 1rem;
     max-width: 15rem;
+  }
+  .search-field {
+    max-width: 10rem;
+  }
+  .footer {
+    ul {
+      width: 70rem;
+      li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
   }
 }
 
@@ -320,6 +334,12 @@
     min-width: 30rem;
     outline: 0;
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #responsive-menu-button {
+    z-index: 100 !important;
   }
 }
 

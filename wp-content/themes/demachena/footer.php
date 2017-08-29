@@ -43,6 +43,9 @@
 			<li>
 				<a href="<?php echo get_site_url(); ?>/privacy-statement">Privacy Statement</a>
 			</li>
+			<li>
+				<a href="<?php echo get_site_url(); ?>/my-account">My Account</a>
+			</li>
 		</ul>
 	</footer>
 

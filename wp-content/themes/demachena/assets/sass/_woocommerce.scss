@@ -1,6 +1,7 @@
 // Global
 
 .entry-title {
+  text-transform: capitalize;
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 2rem;
@@ -654,7 +655,9 @@ ul.products li.product .woocommerce-LoopProduct-link {
 
 .woocommerce-currency-switcher {
   -webkit-appearance: none;
-  width: 165px !important;
+  -moz-appearance: none;
+  appearance: none;
+  width: 122px !important;
   font-family: $dc-font-franklin;
   font-size: 1rem;
   padding: 1rem;
@@ -668,6 +671,7 @@ ul.products li.product .woocommerce-LoopProduct-link {
   text-transform: uppercase;
   text-align: center;
   z-index: 10;
+
 }
 
 .select-wrapper {
@@ -728,4 +732,13 @@ ul.products li.product .woocommerce-LoopProduct-link {
       color: $dc-color-green;
       background: white;
     }
+  }
+
+  .woocommerce-Button {
+    background-color: $dc-color-green !important;
+    color: white !important;
+    border: none !important;
+     &:hover {
+       background-color: $dc-color-green !important;
+     }
   }

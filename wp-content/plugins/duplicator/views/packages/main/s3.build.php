@@ -6,14 +6,14 @@
 	$atext0  = __('Help', 'duplicator') . "&nbsp;<a target='_blank' href='https://wordpress.org/support/plugin/duplicator/reviews/?filter=5'>";
 	$atext0 .= __('review the plugin', 'duplicator') . '</a>&nbsp;' .  __('on WordPress.org!', 'duplicator');
 
-	//Get even more power & features with Professional
-	$atext1 = __('Get even more power & features with', 'duplicator');
+	//Get even more power & features with Duplicator Pro
+	$atext1 = __('Want more power?  Try', 'duplicator');
 	$atext1 .= "&nbsp;<a target='_blank' href='https://snapcreek.com/duplicator/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=package_build_more_power&utm_campaign=duplicator_pro'>";
-	$atext1 .=  __('Professional', 'duplicator') . '</a>!';
+	$atext1 .=  __('Duplicator Pro', 'duplicator') . '</a>!';
 
 	$rand_txt = array();
 	$rand_txt[0] = $atext0;
-	$rand_txt[1] = $atext1;
+	//$rand_txt[1] = $atext1;
 ?>
 
 <style>
@@ -25,12 +25,20 @@
 	div#dup-msg-success {color:#18592A; padding:5px;}
 	
 	div.dup-msg-success-stats{color:#999;margin:10px 0px 0px 0px}
-	div.dup-msg-success-links {margin:20px 5px 5px 5px; font-size: 14px; font-weight: bold}
+	div.dup-msg-success-links {margin:20px 5px 5px 5px; font-size: 13px;}
 	div#dup-progress-area div.done-title {font-size:22px; font-weight:bold; margin:0px 0px 10px 0px}
+	div#dup-progress-area div.dup-panel-title {background-color: #dfdfdf;}
+	
+	div#dup-progress-area div.dup-panel-panel { border-top: 1px solid silver}
+	fieldset.download-area {border:2px dashed #dfdfdf; padding:20px 20px 10px 20px; border-radius:9px; margin: auto; width:400px }
+	fieldset.download-area legend {font-weight: bold; font-size: 16px}
+	button#dup-btn-installer, button#dup-btn-archive {min-width: 150px}
+	div.one-click-download {margin:20px 0 10px 0; font-style: italic; font-size:16px; font-weight: bold}
+
 	div.dup-button-footer {text-align:right; margin:20px 10px 0px 0px}
 	button.button {font-size:16px !important; height:30px !important; font-weight:bold; padding:0px 10px 5px 10px !important; min-width: 150px }
 	span.dup-btn-size {font-size:11px;font-weight: normal}
-	p.get-pro {font-size:12px; color:#999; border-top:1px solid #eeeeee; padding:5px 0 0 0; margin:0; font-style:italic}
+	p.get-pro {font-size:13px; color:#999; border-top:1px solid #eeeeee; padding:5px 0 0 0; margin:0; font-style:italic}
 
 	/*HOST TIMEOUT */
 	div#dup-msg-error {color:maroon; padding:5px;}
@@ -95,24 +103,43 @@ TOOL BAR: STEPS -->
 			<div class="dup-msg-success-stats">
 				<b><?php _e('Name', 'duplicator'); ?>:</b> <span id="data-name-hash"></span><br/>
 				<b><?php _e('Process Time', 'duplicator'); ?>:</b> <span id="data-time"></span><br/>
-			</div><br/>
-
-			<button id="dup-btn-installer" class="button button-primary button-large">
-				<i class="fa fa-bolt"></i> <?php _e("Installer", 'duplicator') ?>
-				<span id="dup-btn-installer-size" class="dup-btn-size"></span>
-			</button> &nbsp;
-			<button id="dup-btn-archive" class="button button-primary button-large">
-				<i class="fa fa-file-archive-o"></i> <?php _e("Archive", 'duplicator') ?>
-				<span id="dup-btn-archive-size" class="dup-btn-size"></span>
-			</button>
-			<div style='margin: 7px 0 40px 0; color:#999'>
-				<small><i><?php _e("click buttons to download", 'duplicator') ?></i></small>
 			</div>
+			<br/><br/>
+
+			<!-- DOWNLOAD FILES -->
+			<fieldset class="download-area">
+				<legend>
+					&nbsp; <i class="fa fa-download"></i> <?php _e("Download Files", 'duplicator') ?> &nbsp;
+				</legend>
+				<button id="dup-btn-installer" class="button button-primary button-large" title="<?php _e("Click to download installer file", 'duplicator') ?>">
+					<i class="fa fa-bolt"></i> <?php _e("Installer", 'duplicator') ?> &nbsp;
+		
+				</button> &nbsp;
+				<button id="dup-btn-archive" class="button button-primary button-large" title="<?php _e("Click to download archive file", 'duplicator') ?>">
+					<i class="fa fa-file-archive-o"></i> <?php _e("Archive", 'duplicator') ?>
+					<span id="dup-btn-archive-size" class="dup-btn-size"></span> &nbsp;
+					
+				</button>
+				<div class="one-click-download">
+					<a href="javascript:void(0)" id="dup-link-download-both" title="<?php _e("Click to download both files", 'duplicator') ?>">
+						<?php _e("One-Click Download", 'duplicator') ?><i class="fa fa-download" style="padding-left:5px; color:#0073AA"></i>
+					</a>
+					
+				</div>
+			</fieldset>
+			<br/><br/>
+
+			 <div style="font-size:16px; font-style: italic">
+                <a href="https://snapcreek.com/duplicator/docs/quick-start/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=package_built_install_help&utm_campaign=duplicator_free#quick-040-q" target="_blank">
+					<?php _e('How do I install this Package?', 'duplicator'); ?>
+				</a>
+            </div>
+            <br/> 
+             
 			<div class="dup-msg-success-links">
 				<?php printf("<a href='?page=duplicator'>[ %s ]</a>", 	__('All Packages', 'duplicator'));?>
 				<?php printf("<a href='?page=duplicator&tab=new1'>[ %s ]</a>", 	__('Create New', 'duplicator'));?>
 			</div>
-			<br/>
 			<p class="get-pro">
 				<?php echo $rand_txt[array_rand($rand_txt, 1)]; ?>
 			</p>
@@ -136,7 +163,7 @@ TOOL BAR: STEPS -->
 					<b class="opt-title"><?php _e('OPTION 1:', 'duplicator'); ?></b><br/>
 
 					<?php _e('The first pass for reading files on some budget hosts is slow and may conflict with strict timeout settings '
-						. 'setup by the hosting provider.  If this is the case its recommended to retry the build.  <i>If the problem persists then consider the other options below.</i>', 'duplicator'); ?><br/><br/>
+						. 'set up by the hosting provider.  If this is the case its recommended to retry the build.  <i>If the problem persists then consider the other options below.</i>', 'duplicator'); ?><br/><br/>
 
 					<div style="text-align: center; margin: 10px">
 						<input type="button" class="button-large button-primary" value="<?php _e('Retry Package Build', 'duplicator'); ?>" onclick="window.location = 'admin.php?page=duplicator&tab=new1&retry=1'" />
@@ -203,7 +230,7 @@ TOOL BAR: STEPS -->
 
 					<b class="opt-title"><?php _e('OPTION 3:', 'duplicator'); ?></b><br/>
 						<?php _e('This option is available on some hosts that allow for users to adjust server configurations.  With this option you will be directed to an FAQ page that will show '
-						. 'various recommendations you can take to improve/unlock constraints setup on this server.', 'duplicator'); ?><br/><br/>
+						. 'various recommendations you can take to improve/unlock constraints set up on this server.', 'duplicator'); ?><br/><br/>
 
 						<div style="text-align: center; margin: 10px">
 							<input type="button" style="margin-right:10px;" class="button-large button-primary" value="<?php _e('Diagnose Server Setup', 'duplicator'); ?>"
@@ -313,7 +340,14 @@ jQuery(document).ready(function($) {
 				//Wire Up Downloads
 				$('#dup-btn-installer').on("click", {name: InstallURL }, Duplicator.Pack.DownloadFile  );
 				$('#dup-btn-archive').on("click",   {name: ArchiveURL }, Duplicator.Pack.DownloadFile  );
-					
+
+				$('#dup-link-download-both').on("click",   function() {
+					 window.open(InstallURL);
+					 window.open(ArchiveURL);
+
+				});
+
+				
 			},
 			error: function(data) { 
 				$('#dup-progress-bar-area').hide(); 

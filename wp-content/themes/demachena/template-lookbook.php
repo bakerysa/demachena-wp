@@ -15,9 +15,17 @@
 get_header('green'); ?>
 
 <style>
-.entry-header {
-	display: none;
+@media only screen and (max-width:992px) {
+	.woocommerce-currency-switcher {
+		display: none;
 	}
+	.select-wrapper {
+		display: none;
+	}
+	.entry-header {
+		display: none;
+		}
+}
 </style>
 
 	<div id="primary">

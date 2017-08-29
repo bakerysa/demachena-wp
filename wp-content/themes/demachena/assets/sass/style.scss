@@ -150,6 +150,9 @@ a {
   &:hover {
     color: grey;
   }
+  &:focus {
+    color: grey;
+  }
 }
 
 button {
@@ -889,7 +892,7 @@ textarea {
   margin-top: 5%;
   ul {
     text-align: center;
-    width: 72rem;
+    width: 82rem;
     display: block;
     margin: 0 auto;
     li {

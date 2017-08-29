@@ -14,6 +14,20 @@
 
 get_header('pink'); ?>
 
+<style>
+@media only screen and (max-width:992px) {
+	.woocommerce-currency-switcher {
+		display: none;
+	}
+	.select-wrapper {
+		display: none;
+	}
+	.entry-header {
+		display: none;
+		}
+}
+</style>
+
 	<div id="primary">
 		<main class="main" role="main">
 
